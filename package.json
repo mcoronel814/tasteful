@@ -1,0 +1,23 @@
+{
+  "name": "front-and-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/tw-p3/front-and-back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/tw-p3/front-and-back/issues"
+  },
+  "homepage": "https://gitlab.com/tw-p3/front-and-back#readme",
+  "devDependencies": {
+    "firebase-tools": "^12.4.7"
+  }
+}
