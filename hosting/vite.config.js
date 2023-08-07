@@ -8,7 +8,9 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         about: resolve(__dirname, 'about/index.html'),
+        aboutus: resolve(__dirname, 'aboutus/index.html'),
         map: resolve(__dirname, 'map/index.html'),
+        cookbook: resolve(__dirname, 'cookbook/index.html'),
       },
     },
   },
