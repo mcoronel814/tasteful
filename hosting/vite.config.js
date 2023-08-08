@@ -11,6 +11,7 @@ export default defineConfig({
         aboutus: resolve(__dirname, 'aboutus/index.html'),
         map: resolve(__dirname, 'map/index.html'),
         cookbook: resolve(__dirname, 'cookbook/index.html'),
+        myrecipes: resolve(__dirname, 'myrecipes/index.html'),
       },
     },
   },

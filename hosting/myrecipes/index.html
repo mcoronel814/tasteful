@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Recipes</title>
+    <script type="module" src="./myrecipes.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbarScroll">
+        <div class="container">
+          <a class="navbar-brand" href="https://tasteful-48763.web.app/"> 
+            <p id="foodExplorer"> 
+            Food <br> Explorer 
+          </p>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+    
+              <li class="nav-item active">
+                <a class="nav-link" href="https://tasteful-48763.web.app/map"> 
+                  <button type="button" id="lightBlue" class="button"> MAP </button>
+                 </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="https://tasteful-48763.web.app/cookbook"> 
+                  <button type="button" id="darkBlue" class="button"> COOKBOOK </button>
+                 </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://tasteful-48763.web.app/aboutus"> 
+                  <button type="button" id="lightPink" class="button"> ABOUT US </button>
+                 </a>
+              </li>         
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <main>
+      <div class="container text-center">
+        <div class="row m-4">
+          <h1 class="text-primary display-4 fw-normal">My Recipes</h1>
+          <p class="fs-5 text-muted">Add custom recipes below.</p>
+        </div>
+      </div>
+    
+    <div class="container">
+      <form id="recipe-form" class="p-4 m-4 row shadow-sm rounded-3 border border-primary">
+        <div class="form-group col-md-4 my-2">
+          <label for="name">Name of Recipe</label>
+          <input required autocomplete="off" type="text" id="name" class="form-control" placeholder="e.g., Abuelita's rice">
+        </div>
+        <div class="form-group col-md-4 my-2">
+          <label for="ingredient_one">Ingredient #1</label>
+          <input required autocomplete="off" type="text" id="ingredient_one" class="form-control" placeholder="e.g., Rice">
+        </div>
+        <div class="form-group col-md-4 my-2">
+          <label for="ingredient_two">Ingredient #2</label>
+          <input required autocomplete="off" type="text" id="ingredient_two" class="form-control" placeholder="e.g., Chicken">
+        </div>
+        <div class="form-group col-md-4 my-2">
+          <label for="ingredient_three">Ingredient #3</label>
+          <input required autocomplete="off" type="text" id="ingredient_three" class="form-control" placeholder="e.g., Onions">
+        </div>
+        <div class="form-group col-md-4 my-2">
+          <label for="ingredient_four">Ingredient #4</label>
+          <input required autocomplete="off" type="text" id="ingredient_four" class="form-control" placeholder="e.g., Shrimp">
+        </div>
+        <div class="form-group col-md-4 my-2">
+          <label for="note">Notes (optional)</label>
+          <input autocomplete="off" type="text" id="note" class="form-control">
+        </div>
+        <div class="form-group mt-4">
+          <input type="submit" value="Add Recipe" class="btn btn-primary">
+        </div>
+      </form>
+      <div class="container">
+        <div class="row m-4 border-bottom border-3 border-primary">
+          <p class="h3 text-primary">Saved Recipes</p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 mx-4 my-6 text-center" id="recipe-container">
+      </div>
+    </div>
+    </main>
+
+    <!-- Footer  -->
+<div class="fakeBg">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+    
+          <img class="ml-3" src="./guyTyping.png" alt="Guy Typing" id="guyPicture">  
+        </div>
+        <div class="col">
+          <h1 id="us"> Contact Us </h1>
+        <input type="text" placeholder="Name.." id="iputName">
+        <br>
+        <br>
+        <br>
+        <input type="text" placeholder="Email.." id="inputEmail">
+        <br>
+        <br>
+        <br>
+        </div> 
+        <div class="col">
+          <br>
+          <br>
+        <input type="text" placeholder="Inquiry.." id="inputInquiry">
+        </div>
+      </div>
+      <div class="row">
+        <button type="button"  class="button" id="bu2"> SUBMIT </button>
+      </div>
+    </div>
+    </div>
+    <footer id="footcolor"> 
+           <p>&copy; 2023 Tasteful@Team18. All rights reserved.</p>  
+     </footer> 
+  </body>
+</html>
