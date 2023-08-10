@@ -186,13 +186,24 @@
     "./src/meal8.png",
 ];
 
-var imgElement = document.getElementById("pinkPicture");
+//var imgElement = document.getElementById("pinkPicture");
 var currentImageIndex = 0;
 
 function toggleImage() {
-    imgElement.src = images[currentImageIndex];
+    //imgElement.src = images[currentImageIndex]; 
+    var pic;
+    if (currentImageIndex == 0 ) {
+        pic = "./src/meal1.png"
+    }
+    if (currentImageIndex == 1 ) {
+        pic = "./src/meal3.png"
+    }
+    if (currentImageIndex == 2 ) {
+        pic = "./src/meal8.png"
+    }
+    document.getElementById("pinkPicture").src = pic;
     currentImageIndex++;
-    if (currentImageIndex >= images.length) {
+    if (currentImageIndex >= 3 ) {
         currentImageIndex = 0;
     }
 }
