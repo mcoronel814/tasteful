@@ -180,7 +180,23 @@
         <p>&copy; 2023 Tasteful@Team18. All rights reserved.</p>  
     </footer> 
 <!-- load javascript after loading all html content -->
-<script src="./src/script.js"></script>
+<!-- <script src="./src/script.js"></script> -->
+<script>var images = [
+    "./src/meal1.png",
+    "./src/meal3.png",
+    "./src/meal8.png",
+];
+
+var imgElement = document.getElementById("pinkPicture");
+var currentImageIndex = 0;
+
+function toggleImage() {
+    imgElement.src = images[currentImageIndex];
+    currentImageIndex++;
+    if (currentImageIndex >= images.length) {
+        currentImageIndex = 0;
+    }
+}</script>
 
 </body>
 

@@ -14,6 +14,22 @@ function toggleImage() {
         currentImageIndex = 0;
     }
 }
-
 setInterval(toggleImage, 1000);
 
+// var images = [
+//     "./src/meal1.png",
+//     "./src/meal3.png",
+//     "./src/meal8.png",
+// ];
+
+// var imgElement = document.getElementById("pinkPicture");
+// var currentImageIndex = 0;
+
+// function toggleImage() {
+//     imgElement.src = images[currentImageIndex];
+//     currentImageIndex++;
+//     if (currentImageIndex >= images.length) {
+//         currentImageIndex = 0;
+//     }
+// }
+// setInterval(toggleImage, 1000);
