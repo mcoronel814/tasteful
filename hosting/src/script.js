@@ -4,11 +4,11 @@ var images = [
     "meal8.png",
 ];
 
-var imgElement = document.getElementById("pinkPicture");
+var imgElement = document.getElementById("pinkPicture").src;
 var currentImageIndex = 0;
 
 function toggleImage() {
-    imgElement.src = images[currentImageIndex];
+    imgElement = images[currentImageIndex];
     currentImageIndex++;
     if (currentImageIndex >= images.length) {
         currentImageIndex = 0;
