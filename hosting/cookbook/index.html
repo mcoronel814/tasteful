@@ -5,8 +5,12 @@
   <title>COOK BOOK</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  
+
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,206 +19,163 @@
   <!-- font Caprasimo -->
   <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <!-- font League Spartan -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap" rel="stylesheet">
 
   <!-- font RM sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
 
-    <!-- font fasthand -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+  <!-- font fasthand -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
 
-        <!-- Playfair display -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <!-- Playfair display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
   <!-- Cormorant Garamond -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
 
-<!-- linking script file -->
-<script type="module" src="./cookbook.js"></script>
-
+  <script type="module" src="./cookbook.js"></script>
+  
 </head>
 
 <body id="beige">
-    <nav class="navbar navbar-expand-lg navbarScroll fixed-top" id="navColor">
-        <div class="container">
-          <a class="navbar-brand" href="https://tasteful-48763.web.app/"> 
-    
-            <p id="foodExplorer"> 
-          Food <br> Explorer 
-
-        
-          </p>
-          </a>
-    
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
-    
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-    
-              <li class="nav-item active ">
-                <a class="nav-link" href="https://tasteful-48763.web.app/map"> 
-                  <button type="button" id="lightPink"  class="button"> MAP </button>
-                 </a>
-              </li>
-    
-              <li class="nav-item ">
-                <a class="nav-link" href="https://tasteful-48763.web.app/cookbook"> 
-                  <button type="button" id="darkBlue" class="button"> COOKBOOK </button>
-                 </a>
-              </li>
-    
-              <li class="nav-item">
-                <!-- <a class="nav-link" href="aboutUs.html"> 
-                  <button type="button" id="lightPink" class="button"> ABOUT US </button>
-                 </a> -->
-
-                 <input type="text" placeholder="Nutella Pancakes.." id="look">
-                 
-                 
-                 <!-- <button type="submit">
-
-                  <img src="search.png" alt="search picture" id="search">
-                 </button> -->
-
-
-
-              </li>
-    
-         
-              
-            </ul>
-    
-          </div>
-    
-    
-        </div>
-      </nav>
-
-
-    <!-- <img src="indianFood.jpg" alt="meal Picture" id="foodTop"> -->
-
-<p id="foodName">Tikka Massala</p>
-
-
-<!-- 
-<div>
-    <br>
-    <img src="fork.png" alt="fork knife" id="forkKnifePic">
-    2 sevings
-
-
-</div> -->
-
-
-
-<div class="container text-center">
-    
-    <div class="row">
-      <div class="col"   id="forkKnife" >
-  <br>
-        <img src="./fork.png" alt="fork knife" id="forkKnifePic" > 
-          
-        2 sevings 
-
+  <nav class="navbar navbar-expand-lg navbarScroll fixed-top" id="navColor">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <p id="foodExplorer"> Food <br> Explorer </p>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active ">
+            <a class="nav-link" href="map.html">
+              <button type="button" id="lightPink" class="button"> MAP </button>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">
+              <button type="button" id="darkBlue" class="button"> COOKBOOK </button>
+            </a>
+          </li>
+          <li class="nav-item">
+            <input type="text" placeholder="Search for recipes..." id="recipeSearch">
+            <button type="button" onclick="performSearch()">Search</button>
+          </li>          
+        </ul>
       </div>
-      
-      <div class="col" id="adjMinutes">
-        45 minutes
+    </div>
+  </nav>
 
+  <div class="row">
+  <div class="col">
+    <div id="searchResults"></div>
     </div>
   </div>
 
+  <p id="foodName">Tikka Massala</p>
 
-
-
-
-
-
-
-<br>
-<br>
-
-
-
-
-
+  <div class="container text-center">
+    <div class="row">
+      <div class="col" id="forkKnife">
+        <br>
+        <img src="pictures/fork.png" alt="fork knife" id="forkKnifePic">
+        2 servings
+      </div>
+      <div class="col" id="adjMinutes">
+        45 minutes
+      </div>
+    </div>
 
     <div class="container text-center" id="recipeBook">
-        <div class="row">
-
-            
-
-          <div class="col" >
-
-            <p id="headers">
-                INGREDIENTS 
-            </p>
-
-          
-            <p id="recipeResult">  
-           
-                100 ml milk
-                <br>
-                50 g butter
-                <br>
-                3 eggs
-                <br>
-                1 tbs cocoa
-                <br>
-                2 tsp baking soda
-                <br>
-                a pinch of salt
-                <br>
-                3 eggs
-             </p>
-
-       
-          </div>
-
-
-          <div class="col">
-          <div class="vl" id="linePos">       </div>
-
+      <div class="row">
+        <div class="col">
+          <p id="headers"> INGREDIENTS </p>
+          <p id="recipeResult">
+            100 ml milk
+            <br>
+            50 g butter
+            <br>
+            3 eggs
+            <br>
+            1 tbs cocoa
+            <br>
+            2 tsp baking soda
+            <br>
+            a pinch of salt
+            <br>
+            3 eggs
+          </p>
         </div>
-
-
-
-
-
-          <div class="col">
-            <p id="headers">
-                DIRECTIONS
-            </p>
-          
-
-           <p  id="recipeResult">
-Nunc nulla velit, feugiat vitae ex quis, lobortis porta leo.
-Donec dictum lectus in ex accumsan sodales. Pellentesque habitant morbi tristique. 
-Nunc nulla velit, feugiat vitae ex quis, lobortis porta leo. Donec dictum lectus in ex. lentesque habitant morbi tristique. Nunc nulla velit, feugiat vitae ex quis, lobortis porta leo. Donec dictum lectus in ex.
-Habitant morbi tristique.Nunc nulla velit, feugiat vitae ex quis, lobortis porta leo. Donec dictum lectu,
-Donec dictum lectus in ex accumsan sodales. Pellentesque habitant morbi tristique. 
-           </p>
-          </div>
+        <div class="col">
+          <div class="vl" id="linePos"></div>
+        </div>
+        <div class="col">
+          <p id="headers"> DIRECTIONS </p>
+          <p id="recipeResult">
+            Nunc nulla velit, feugiat vitae ex quis, lobortis porta leo.
+            <br>
+            Donec dictum lectus in ex accumsan sodales. Pellentesque habitant morbi tristique.
+            <br>
+            Nunc nulla velit, feugiat vitae ex quis, lobortis porta leo. Donec dictum lectus in ex.
+            <br>
+            Lentesque habitant morbi tristique. Nunc nulla velit, feugiat vitae ex quis, lobortis porta leo.
+            <br>
+            Donec dictum lectus in ex. Habitant morbi tristique. Nunc nulla velit, feugiat vitae ex quis, lobortis porta leo.
+            <br>
+            Donec dictum lectu,
+            <br>
+            Donec dictum lectus in ex accumsan sodales. Pellentesque habitant morbi tristique.
+          </p>
         </div>
       </div>
+    </div>
 
+  <script>
+    const apiKey = "AIzaSyBW9Vjicj1yYWXqmXGBMTVixG2yN9-ThZs";
+    const cx = "7389ae1a6d73e4231"; // Replace with your actual CX ID
 
-        
-   
+    function performSearch() {
+      const query = $("#recipeSearch").val();
+      const url = `https://www.googleapis.com/customsearch/v1?q=${query}&cx=${cx}&key=${apiKey}`;
+
+      $.ajax({
+        url: url,
+        type: "GET",
+        dataType: "json",
+        success: function(response) {
+          displaySearchResults(response.items);
+        },
+        error: function(error) {
+          console.error("Error performing search:", error);
+        }
+      });
+    }
+
+    function displaySearchResults(results) {
+      const searchResultsContainer = $("#searchResults");
+      searchResultsContainer.empty();
+
+      results.forEach(result => {
+        const link = $("<a>").attr("href", result.link).text(result.title);
+        const snippet = $("<p>").text(result.snippet);
+        const searchResult = $("<div>").addClass("search-result").append(link, snippet);
+
+        searchResultsContainer.append(searchResult);
+      });
+    }
+  </script>
+
 </body>
 
 </html>
