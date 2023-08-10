@@ -1,7 +1,4 @@
 var images = [
-    // "pictures/meal1.png",
-    // "pictures/meal3.png",
-    // "pictures/meal8.png",
     "meal1.png",
     "meal3.png",
     "meal8.png",
