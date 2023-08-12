@@ -33,7 +33,7 @@ import * as bootstrap from "bootstrap";
 
 // setInterval(toggleImage, 1000);
 
-// function wait() {
-//     document.getElementById("pinkPicture").src =  "./meal8.png" ;
-// }
-// setTimeout(wait, 4000);
+function wait() {
+    document.getElementById("pinkPicture").src =  "./meal8.png" ;
+}
+setTimeout(wait, 4000);
