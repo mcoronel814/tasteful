@@ -1,14 +1,8 @@
-// Import our custom CSS
-import "./styles.scss";
-
-// Import all of Bootstrap's JS
-import * as bootstrap from "bootstrap";
-
 //image toggling function
 // var images = [
-//     // "pictures/meal1.png",
-//     // "pictures/meal3.png",
-//     // "pictures/meal8.png",
+//         // "pictures/meal1.png",
+//         // "pictures/meal3.png",
+//         // "pictures/meal8.png",
 //         "./meal1.png",
 //         "./meal3.png",
 //         "./meal8.png",
@@ -24,4 +18,3 @@ import * as bootstrap from "bootstrap";
 //         }
 //     }
 //     setInterval(toggleImage, 1000);
-    
