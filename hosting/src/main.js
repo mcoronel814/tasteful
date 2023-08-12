@@ -24,10 +24,3 @@ import * as bootstrap from "bootstrap";
 //     }
 // }
 // setInterval(toggleImage, 1000);
-const button = document.querySelector("button");
-button.addEventListener("click", (event) => {
-    setTimeout(wait, 3000);
-    });
-function wait() {
-    document.getElementById("pinkPicture").src =  "./meal8.png" ;
-}
