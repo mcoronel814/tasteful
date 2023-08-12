@@ -5,16 +5,16 @@ import "./styles.scss";
 import * as bootstrap from "bootstrap";
 
 //image toggling function
-/*
+
 
 var images = [
   // "pictures/meal1.png",
   // "pictures/meal3.png",
   // "pictures/meal8.png",
 
-  "./src/meal1.png",
-  "./src/meal3.png",
-  "./src/meal8.png",
+  "/meal1.png",
+  "/meal3.png",
+  "/meal8.png",
 ];
 
 var imgElement = document.getElementById("pinkPicture");
@@ -32,5 +32,3 @@ function toggleImage() {
 }
 
 setInterval(toggleImage, 1000);
-
-*/

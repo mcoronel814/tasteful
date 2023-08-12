@@ -56,6 +56,7 @@
     />
     <!-- linking script file -->
     <script type="module" src="./src/main.js"></script>
+    <script src="./src/main.js"></script>
     </head>
 
     <body id="pink">
@@ -179,38 +180,6 @@
         <p>&copy; 2023 Tasteful@Team18. All rights reserved.</p>  
     </footer> 
 <!-- load javascript after loading all html content -->
-
-<script>var images = [
-    "./src/meal1.png",
-    "./src/meal3.png",
-    "./src/meal8.png",
-];
-
-//var imgElement = document.getElementById("pinkPicture");
-var currentImageIndex = 0;
-
-function toggleImage() {
-    //imgElement.src = images[currentImageIndex]; 
-    var pic;
-    if (currentImageIndex == 0 ) {
-        pic = "./src/meal1.png"
-    }
-    if (currentImageIndex == 1 ) {
-        pic = "./src/meal3.png"
-    }
-    if (currentImageIndex == 2 ) {
-        pic = "./src/meal8.png"
-    }
-    document.getElementById("pinkPicture").src = pic;
-    currentImageIndex++;
-    if (currentImageIndex >= 3 ) {
-        currentImageIndex = 0;
-    }
-}
-
-setInterval(toggleImage, 1000);
-</script>
-
 </body>
 
 </html>
