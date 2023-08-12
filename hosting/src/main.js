@@ -24,7 +24,8 @@ import * as bootstrap from "bootstrap";
 //     }
 // }
 // setInterval(toggleImage, 1000);
-
+var pic = document.createElement("button");
+pic.setAttribute("onclick",wait);
 function wait() {
     document.getElementById("pinkPicture").src =  "./meal8.png" ;
 }
