@@ -437,31 +437,53 @@ font-size: 26px;
 @media (min-width: 768px) {
     .fade {
         //@include transition($transition-fade); //OC
-        
             &:not(.show) {
             opacity: 1;  // 0
             }
         }
-        
-        // scss-docs-start collapse-classes
-        .collapse {
-            &:not(.show) {
-            display: block;  //none
+        div#navbarSupportedContent:not(#dup_div_collapse) {
+            .collapse {
+                &:not(.show) {
+                display: block;  //none
+                }
+            }
+            .collapsing {
+                height: auto; //0
+                overflow: auto; //hidden
+                //@include transition($transition-collapse); //OC
+            
+                &.collapse-horizontal {
+                width: auto; //0
+                height: auto;
+               // @include transition($transition-collapse-width); //OC
+                }
             }
         }
-        
-        .collapsing {
-            height: auto; //0
-            overflow: auto; //hidden
-            //@include transition($transition-collapse); //OC
-        
-            &.collapse-horizontal {
-            width: auto; //0
-            height: auto;
-           // @include transition($transition-collapse-width); //OC
-            }
+
+    // scss-docs-start collapse-classes
+    .collapse {
+        &:not(.show) {
+        display: contents;  //none
         }
+    }
+    
+    .collapsing {
+        height: auto; //0
+        overflow: clip; //hidden
+        //@include transition($transition-collapse); //OC
+    
+        &.collapse-horizontal {
+        width: 100%; //0
+        height: auto;
+        // @include transition($transition-collapse-width); //OC
+        }
+    }
       // scss-docs-end collapse-classes
+    .navbar-collapse {
+        flex-basis: contents; //100%;
+        flex-grow: 1;
+        align-items: center
+    }
 } 
 /* Large devices (laptops/desktops, 992px and up) */
 // @media only screen and (min-width: 992px) {
