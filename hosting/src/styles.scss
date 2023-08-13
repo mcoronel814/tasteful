@@ -432,13 +432,37 @@ font-size: 26px;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
-//@media only screen and (min-width: 600px) {...} 
-/* Medium devices (landscape tablets, 752px and up) */
-// @media (min-width: 752px) {
-//     #meal  {
-//     margin-top: 9%;
-//     }
-// } 
+//@media only screen and (min-width: 576px) {...} 
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    .fade {
+        //@include transition($transition-fade); //OC
+        
+            &:not(.show) {
+            opacity: 1;  // 0
+            }
+        }
+        
+        // scss-docs-start collapse-classes
+        .collapse {
+            &:not(.show) {
+            display: block;  //none
+            }
+        }
+        
+        .collapsing {
+            height: auto; //0
+            overflow: auto; //hidden
+            //@include transition($transition-collapse); //OC
+        
+            &.collapse-horizontal {
+            width: auto; //0
+            height: auto;
+           // @include transition($transition-collapse-width); //OC
+            }
+        }
+      // scss-docs-end collapse-classes
+} 
 /* Large devices (laptops/desktops, 992px and up) */
 // @media only screen and (min-width: 992px) {
 //     #meal  {
