@@ -463,7 +463,7 @@ font-size: 26px;
     // scss-docs-start collapse-classes
     .collapse {
         &:not(.show) {
-        display: content;  //none
+        display: contents;  //none
         }
     }
     
@@ -480,7 +480,7 @@ font-size: 26px;
     }
       // scss-docs-end collapse-classes
     .navbar-collapse {
-        flex-basis: contents; //100%;
+        flex-basis: content; //100%;
         flex-grow: 1;
         align-items: center
     }
