@@ -463,7 +463,7 @@ font-size: 26px;
     // scss-docs-start collapse-classes
     .collapse {
         &:not(.show) {
-        display: contents;  //none
+        display: content;  //none
         }
     }
     
