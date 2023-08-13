@@ -415,9 +415,12 @@ font-size: 26px;
  
 
 }
+#meal  {
+    margin-top: 9%;
+    }
 /* Extra small devices (phones, 600px and down) */
 // @media only screen and (max-width: 600px)  {
-    // #meals  {
+    // #meal  {
     //     width: 100%;
     //     height: 110%;
     //     }
@@ -426,7 +429,14 @@ font-size: 26px;
 //@media only screen and (min-width: 600px) {...} 
 /* Medium devices (landscape tablets, 752px and up) */
 @media (min-width: 752px) {
-    #meals  {
+    #meal  {
     margin-top: 9%;
     }
+} 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #meal  {
+        margin-top: 0%;
+        margin-bottom: 7%;
+        }
 } 
