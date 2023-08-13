@@ -421,14 +421,14 @@ font-size: 26px;
     height: auto;
     margin-top: 0px;
 }
-.navbar-nav:not(#dup_nav_navbar) {
-    flex-direction: row;
-}
+// .navbar-nav:not(#dup_nav_navbar) {
+//     flex-direction: row;
+// }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 575px)  {
-    .navbar-nav :not(#dup_nav_navbar) {
-        flex-direction: column;
-    }
+@media only screen and (min-width: 575px)  {
+    // .navbar-nav :not(#dup_nav_navbar) {
+    //     flex-direction: column;
+    // }
     #meal.col{
         padding-left: 0%;
     }
@@ -437,62 +437,39 @@ font-size: 26px;
         margin-top: 0px;
     }
 }
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 //@media only screen and (min-width: 576px) {...} 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
     .fade {
         //@include transition($transition-fade); //OC
+        
             &:not(.show) {
             opacity: 1;  // 0
             }
         }
-        div#navbarSupportedContent:not(#dup_div_collapse) {
-            .collapse {
-                &:not(.show) {
-                display: block;  //none
-                }
-            }
-            .collapsing {
-                height: auto; //0
-                overflow: auto; //hidden
-                //@include transition($transition-collapse); //OC
-            
-                &.collapse-horizontal {
-                width: auto; //0
-                height: auto;
-               // @include transition($transition-collapse-width); //OC
-                }
+        
+        // scss-docs-start collapse-classes
+        .collapse {
+            &:not(.show) {
+            display: block;  //none
             }
         }
-
-    // scss-docs-start collapse-classes
-    .collapse {
-        &:not(.show) {
-        display: contents;  //none
+        
+        .collapsing {
+            height: auto; //0
+            overflow: auto; //hidden
+            //@include transition($transition-collapse); //OC
+        
+            &.collapse-horizontal {
+            width: auto; //0
+            height: auto;
+           // @include transition($transition-collapse-width); //OC
+            }
         }
-    }
-    
-    .collapsing {
-        height: auto; //0
-        overflow: clip; //hidden
-        //@include transition($transition-collapse); //OC
-    
-        &.collapse-horizontal {
-        width: 100%; //0
-        height: auto;
-        // @include transition($transition-collapse-width); //OC
-        }
-    }
       // scss-docs-end collapse-classes
-    .navbar-collapse {
-        flex-basis: content; //100%;
-        flex-grow: 1;
-        align-items: center
-    }
-
 } 
+
 /* Large devices (laptops/desktops, 992px and up) */
 // @media only screen and (min-width: 992px) {
 //     #meal  {
