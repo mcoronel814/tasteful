@@ -415,24 +415,23 @@ font-size: 26px;
  
 
 }
-
-// .ml-3 {
-//     width: 700px;
-//     height: 700px;
-// }
-#meal  {
-    margin-top: 80px;
-    }
+/* imgs loop of plates of food */
+#pinkPicture {
+    width: 700px;
+    height: auto;
+    margin-top: 0px;
+}
 /* Extra small devices (phones, 600px and down) */
-// @media only screen and (max-width: 600px)  {
-//     #meal  {
-//         margin-top: 45px;
-//         // padding-top: 6%;
-//         }
-//     #txt-btn {
-//         padding-bottom: 10%;
-//     }
-// }
+@media only screen and (max-width: 600px)  {
+    #meal.col{
+        padding-left: 0%;
+    }
+    #pinkPicture {
+        width: 80%;
+        height: 80%;
+        margin-top: 0px;
+    }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 //@media only screen and (min-width: 600px) {...} 
 /* Medium devices (landscape tablets, 752px and up) */
@@ -449,9 +448,9 @@ font-size: 26px;
 //         }
 // } 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    #meal  {
-        margin-top: 0%;
-        // margin-bottom: 7%;
-        }
-}
+// @media only screen and (min-width: 1200px) {
+//     #meal  {
+//         margin-top: 0%;
+//         // margin-bottom: 7%;
+//         }
+// }
