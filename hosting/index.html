@@ -95,6 +95,8 @@
     <br>
     <br>
     <br>
+    <br>
+    <br>
 
     <!-- Side Text  -->
     <div class="container">
@@ -118,24 +120,17 @@
                             </div>
 
                             <div class="col">
-                            <div class="p-3">
-                                <a class="nav-link"> 
-                                <button type="button" id="sign up" class="button"> LOREM IPSUM </button>
-                                </a> 
-                            
+                                <div class="p-3">
+                                    <a class="nav-link"> 
+                                    <button type="button" id="sign up" class="button"> LOREM IPSUM </button>
+                                    </a> 
                                 </div>
                             </div>
                         </div>
                     </div> 
             </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <!-- Meals Picture  -->
-            <div class="col">
+            <div class="col" id="meals">
                 <img style="display: none;" src="./meal1.png"   >
                 <img class="ml-3" src="./meal7.png"  alt="food image" id="pinkPicture" >
                 <img style="display: none;" src="./meal8.png"   >
@@ -187,14 +182,9 @@
 <!-- load javascript after loading all html content -->
 <script>
     var images = [
-        // "pictures/meal1.png",
-        // "pictures/meal3.png",
-        // "pictures/meal8.png",
         "/assets/meal1-71571b1a.png",
         "/assets/meal7-8b5dc87d.png",
         "/assets/meal8-92d8a281.png",
-        //"/assets/meal9-cded8e37.png",
-        //"/assets/meal10-57dcf745.png", 
         ];
         var imgElement = document.getElementById("pinkPicture");
         var currentImageIndex = 0;
