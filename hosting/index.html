@@ -95,60 +95,57 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
+    <!-- <br>
+    <br> -->
 
     <!-- Side Text  -->
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col" id="txt-btn">
                 <p id="textColor" id="space11" class="ml-3" > 
                 Discover Global
                 Flavors from the
                 comfort of your 
                 Couch
-            </p>
+                </p>
             <!-- Login/SignUp  -->
                     <div class="container px-4 text-center">
                         <div class="row gx-5">
                             <div class="col">
                                 <div class="p-3"> 
-                                <a class="nav-link"> 
-                                    <button type="button" id="signin" class="button">Sign in</button>
-                                </a>       
+                                    <a class="nav-link"> 
+                                        <button type="button" id="signin" class="button">Sign in</button>
+                                    </a>       
                                 </div>
                             </div>
 
-                            <div class="col">
-                            <div class="p-3">
-                                <a class="nav-link"> 
-                                <button type="button" id="sign up" class="button"> LOREM IPSUM </button>
-                                </a> 
-                            
+                            <div class="col" >
+                                <div class="p-3">
+                                    <a class="nav-link"> 
+                                        <button type="button" id="sign up" class="button"> LOREM IPSUM </button>
+                                    </a> 
                                 </div>
                             </div>
                         </div>
                     </div> 
             </div>
-
         <!-- Meals Picture  -->
-            <div class="col">
-                <img style="display: none;" src="./meal1.png"   >
+            <div class="col" id="meal">
+                <img style="display: none;" src="./meal1.png" >
+                <img style="display: none;" src="./meal2.png">
                 <img class="ml-3" src="./meal7.png"  alt="food image" id="pinkPicture" >
-                <img style="display: none;" src="./meal8.png"   >
-                <img style="display: none;" src="./meal9.png"   >
-                <img style="display: none;" src="./meal10.png"   >
+                <img style="display: none;" src="./meal8.png">
+                <img style="display: none;" src="./meal9.png">
             </div>
         </div>
     </div>
 
+    <!-- <br>
     <br>
     <br>
     <br>
     <br>
-    <br>
-    <br>
-
+    <br> -->
 
     <!-- Footer  -->
 <div class="fakeBg">
@@ -185,14 +182,9 @@
 <!-- load javascript after loading all html content -->
 <script>
     var images = [
-        // "pictures/meal1.png",
-        // "pictures/meal3.png",
-        // "pictures/meal8.png",
-        "/assets/meal1-71571b1a.png",
+        "/assets/meal2-13094004.png",
         "/assets/meal7-8b5dc87d.png",
         "/assets/meal8-92d8a281.png",
-        //"/assets/meal9-cded8e37.png",
-        "/assets/meal10-57dcf745.png", 
         ];
         var imgElement = document.getElementById("pinkPicture");
         var currentImageIndex = 0;

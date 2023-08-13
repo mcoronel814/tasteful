@@ -15,7 +15,6 @@
     font-family: 'DM Sans', sans-serif;     
 }
 
-
 #darkBlue {
     background-color: #6766E0;
     color: white;
@@ -112,7 +111,6 @@
     white-space: nowrap;
 }
 
-
 #forkKnifePic
 {
     font-family: 'Cormorant Garamond', serif;
@@ -142,7 +140,6 @@ font-size: 26px;
 
 }
 
-
 .vl {
     border-left: 2px solid #000000;
     color: #F2535A;
@@ -155,16 +152,10 @@ font-size: 26px;
    background-color: #7EA1D2;
 }
 
-
-
-
 #recipeBook
 {
     font-family: 'Playfair Display', serif;
 }
-
-
-
 
 #headers{
     font-size: 27px;
@@ -178,7 +169,6 @@ font-size: 26px;
 
 
 }
-
 
 #look{
     height: 60px;
@@ -195,8 +185,6 @@ font-size: 26px;
     height: 30px;
 }
 
-
-
 #guyPicture
 {
     height: 350px;
@@ -208,16 +196,12 @@ font-size: 26px;
 
 } 
 
-
-  
-
-  footer{
+ footer{
 
     height: 100px;
 
 
 }  
-
 
 #iputName
 {
@@ -227,7 +211,6 @@ font-size: 26px;
     text-indent: 20px;
 }
 
-
 #inputEmail
 {
     height: 60px;
@@ -235,7 +218,6 @@ font-size: 26px;
     border-radius: 20px;
     text-indent: 20px;
 }
-
 
 #inputInquiry
 {
@@ -251,7 +233,6 @@ font-size: 26px;
     background-size: cover;
     background-position: center;   
 }
-
 
 #us
 {
@@ -286,7 +267,6 @@ font-size: 26px;
 
 }
 
-
 #profileSize
 {
     margin-left: 80px; 
@@ -297,7 +277,6 @@ font-size: 26px;
 /* border-radius: 90%; */
 }
 
-
 #profileSize2
 {
     margin-left: 80px; 
@@ -307,7 +286,6 @@ font-size: 26px;
     /* border-radius: 90% */
 /* border-radius: 90%; */
 }
-
 
 #profileSize3
 {
@@ -382,7 +360,6 @@ font-size: 26px;
     color: #000;
 }
 
-
 #center1{
     text-align: center;
     align-items: center;
@@ -425,8 +402,6 @@ font-size: 26px;
     background-color:  #FFEBDE; 
 }
 
-
-
 .fakeBg4
 {
     background-color: aliceblue;
@@ -440,8 +415,41 @@ font-size: 26px;
  
 
 }
-// /* For mobile phones: */
-// [class*="col"] {
-//     width: 100%;
-//     height: 110%;
-//   }
+/* imgs loop of plates of food */
+#pinkPicture {
+    width: 700px;
+    height: auto;
+    margin-top: 0px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)  {
+    #meal.col{
+        padding-left: 0%;
+    }
+    #pinkPicture {
+        width: 550px;
+        margin-top: 0px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+//@media only screen and (min-width: 600px) {...} 
+/* Medium devices (landscape tablets, 752px and up) */
+// @media (min-width: 752px) {
+//     #meal  {
+//     margin-top: 9%;
+//     }
+// } 
+/* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {
+//     #meal  {
+//         margin-top: 0%;
+//         margin-bottom: 7%;
+//         }
+// } 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {
+//     #meal  {
+//         margin-top: 0%;
+//         // margin-bottom: 7%;
+//         }
+// }
