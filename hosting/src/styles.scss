@@ -421,18 +421,18 @@ font-size: 26px;
 //     height: 700px;
 // }
 #meal  {
-    margin-top: 11%;
+    margin-top: 45px;
     }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px)  {
-    #meal  {
-        margin-top: 60px;
-        // padding-top: 6%;
-        }
-    #txt-btn {
-        padding-bottom: 10%;
-    }
-}
+// @media only screen and (max-width: 600px)  {
+//     #meal  {
+//         margin-top: 45px;
+//         // padding-top: 6%;
+//         }
+//     #txt-btn {
+//         padding-bottom: 10%;
+//     }
+// }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 //@media only screen and (min-width: 600px) {...} 
 /* Medium devices (landscape tablets, 752px and up) */
