@@ -430,7 +430,6 @@ font-size: 26px;
     list-style:none
 }
 .navbar-collapse {
-    flex-basis: 100%;
     flex-grow: 1;
     // For always expanded or extra full navbars, ensure content aligns itself
     // properly vertically. Can be easily overridden with flex utilities.
@@ -440,7 +439,7 @@ font-size: 26px;
 //     flex-direction: row;
 // }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 575px)  {
+@media only screen and (max-width: 575px)  {
     // .navbar-nav :not(#dup_nav_navbar) {
     //     flex-direction: column;
     // }
@@ -466,7 +465,6 @@ font-size: 26px;
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
     .navbar-collapse {
-        flex-basis: 100%;
         flex-shrink: 1;
         // For always expanded or extra full navbars, ensure content aligns itself
         // properly vertically. Can be easily overridden with flex utilities.
@@ -509,16 +507,28 @@ font-size: 26px;
            // @include transition($transition-collapse-width); //OC
             }
         }
+        .navbar-nav {
+            display:flex;
+            flex-direction: row;
+            width: auto;
+            padding-left: 10%;
+            margin-bottom:0;
+            list-style:none
+        }
       // scss-docs-end collapse-classes
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
-// @media only screen and (min-width: 992px) {
-//     #meal  {
-//         margin-top: 0%;
-//         margin-bottom: 7%;
-//         }
-// } 
+@media only screen and (min-width: 992px) {
+    .navbar-nav {
+        display:flex;
+        flex-direction: row;
+        width: auto;
+        padding-left: 10%;
+        margin-bottom:0;
+        list-style:none
+    }
+} 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 // @media only screen and (min-width: 1200px) {
 //     #meal  {
