@@ -422,12 +422,16 @@ font-size: 26px;
     margin-top: 0px;
 }
 .navbar-nav {
-
     display:flex;
     width: auto;
     padding-left: 10%;
     margin-bottom:0;
     list-style:none
+}
+.collapse {
+    &:not(.show) {
+    display: block;  //none
+    }
 }
 .navbar-collapse {
     // For always expanded or extra full navbars, ensure content aligns itself
