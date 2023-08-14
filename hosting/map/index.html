@@ -65,7 +65,10 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="https://tasteful-48763.web.app/cookbook">
+              <a
+                class="nav-link"
+                href="https://tasteful-48763.web.app/cookbook"
+              >
                 <button type="button" id="darkBlue" class="button">
                   COOKBOOK
                 </button>
@@ -80,6 +83,12 @@
               </a>
             </li>
           </ul>
+
+          <span id="user-name"></span>
+          <img id="user-photo" src="" alt="User photo" />
+          <button id="sign-in-button">Sign in with Google</button>
+          <button id="sign-out-button">Sign out</button>
+          
         </div>
       </div>
     </nav>
@@ -101,12 +110,7 @@
       <div id="restaurant-list" class="row mt-4">
         <!-- Restaurants will be dynamically added here -->
 
-        <img
-          class="ml-3"
-          src="./map.png"
-          alt="map picture"
-          id="map"
-        />
+        <img class="ml-3" src="./map.png" alt="map picture" id="map" />
       </div>
     </main>
 
@@ -200,24 +204,24 @@
       let map;
       let infoWindow;
       let markers = [];
-  
+
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 0, lng: 0 },
           zoom: 15,
         });
-  
+
         infoWindow = new google.maps.InfoWindow();
-  
+
         const locationForm = document.getElementById("location-form");
         locationForm.addEventListener("submit", searchPlaces);
         getCurrentLocation();
-  
+
         const locationInput = document.getElementById("location-input");
         const autocomplete = new google.maps.places.Autocomplete(locationInput);
         autocomplete.addListener("place_changed", () => {
           const place = autocomplete.getPlace();
-          if (!place.geometry || place.types.indexOf('restaurant') === -1) {
+          if (!place.geometry || place.types.indexOf("restaurant") === -1) {
             alert("Please enter a valid restaurant location.");
             return;
           }
@@ -227,38 +231,41 @@
           map.setZoom(15);
         });
       }
-  
+
       function searchPlaces(event) {
         event.preventDefault();
         const locationInput = document.getElementById("location-input");
         const location = locationInput.value.trim();
-  
+
         if (!location) {
           alert("Please enter a location.");
           return;
         }
-  
+
         const service = new google.maps.places.PlacesService(map);
-        service.textSearch({ query: location, type: "restaurant" }, (results, status) => {
-          if (status === google.maps.places.PlacesServiceStatus.OK) {
-            clearMarkers();
-            showPlacesList(results);
-          } else {
-            alert("No restaurants found for the given location.");
+        service.textSearch(
+          { query: location, type: "restaurant" },
+          (results, status) => {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+              clearMarkers();
+              showPlacesList(results);
+            } else {
+              alert("No restaurants found for the given location.");
+            }
           }
-        });
+        );
       }
-  
+
       function showPlacesList(places) {
         const resultsContainer = document.getElementById("restaurant-list");
         resultsContainer.innerHTML = "";
-  
+
         places.forEach((place) => {
           const name = place.name;
           const address = place.formatted_address;
           const rating = place.rating || "Not available";
           const website = place.website || "#";
-  
+
           const resultElement = `
             <div class="col">
               <div class="card">
@@ -266,30 +273,34 @@
                   <h5 class="card-title">${name}</h5>
                   <p class="card-text">${address}</p>
                   <p class="card-text">Rating: ${rating}</p>
-                  <a href="${website !== "#" ? website : 'javascript:void(0)'}" target="_blank" class="btn btn-primary visit-website-button" data-website="${website}">Visit Website</a>
+                  <a href="${
+                    website !== "#" ? website : "javascript:void(0)"
+                  }" target="_blank" class="btn btn-primary visit-website-button" data-website="${website}">Visit Website</a>
                 </div>
               </div>
             </div>
           `;
-  
+
           resultsContainer.insertAdjacentHTML("beforeend", resultElement);
-  
+
           const marker = new google.maps.Marker({
             map,
             position: place.geometry.location,
             title: name,
           });
-  
+
           google.maps.event.addListener(marker, "click", () => {
             infoWindow.setContent(name);
             infoWindow.open(map, marker);
           });
-  
+
           markers.push(marker);
         });
-  
+
         // Add event listeners to the "Visit Website" buttons
-        const visitWebsiteButtons = document.getElementsByClassName("visit-website-button");
+        const visitWebsiteButtons = document.getElementsByClassName(
+          "visit-website-button"
+        );
         Array.from(visitWebsiteButtons).forEach((button) => {
           button.addEventListener("click", () => {
             const websiteURL = button.getAttribute("data-website");
@@ -299,28 +310,28 @@
           });
         });
       }
-  
+
       function showPlaceOnMap(location) {
         map.setCenter(location);
-  
+
         const marker = new google.maps.Marker({
           map,
           position: location,
         });
-  
+
         google.maps.event.addListener(marker, "click", () => {
           infoWindow.setContent("Your location");
           infoWindow.open(map, marker);
         });
-  
+
         markers.push(marker);
       }
-  
+
       function clearMarkers() {
         markers.forEach((marker) => marker.setMap(null));
         markers = [];
       }
-  
+
       function getCurrentLocation() {
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(
@@ -331,18 +342,18 @@
               };
               map.setCenter(userLocation);
               map.setZoom(15);
-  
+
               const marker = new google.maps.Marker({
                 map,
                 title: "Your location",
                 position: userLocation,
               });
-  
+
               google.maps.event.addListener(marker, "click", () => {
                 infoWindow.setContent("Your location");
                 infoWindow.open(map, marker);
               });
-  
+
               markers.push(marker);
             },
             () => {
@@ -354,9 +365,12 @@
         }
       }
     </script>
-  
+
     <!-- Load the Google Maps API with the Places library -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-a6jcC_IgUAGb7AVlKLWo0DOWOzK96zY&libraries=places&callback=initMap" async defer></script>
-  
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-a6jcC_IgUAGb7AVlKLWo0DOWOzK96zY&libraries=places&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>
