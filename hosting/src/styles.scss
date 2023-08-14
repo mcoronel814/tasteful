@@ -453,16 +453,20 @@ font-size: 26px;
         width: 550px;
         margin-top: 0px;
     }
-.navbar-nav {
+    .navbar-nav {
 
-    display:flex;
-    flex-direction: column;
-    width: auto;
-    padding-left: 10%;
-    margin-bottom:0;
-    list-style:none
-}
-    
+        display:flex;
+        flex-direction: column;
+        width: auto;
+        padding-left: 10%;
+        margin-bottom:0;
+        list-style:none
+    }
+    .collapse {
+        &:not(.show) {
+        display: contents;  //none
+        }
+    } 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
