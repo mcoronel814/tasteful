@@ -421,6 +421,21 @@ font-size: 26px;
     height: auto;
     margin-top: 0px;
 }
+.navbar-nav {
+
+    display:flex;
+    width: auto;
+    padding-left: 10%;
+    margin-bottom:0;
+    list-style:none
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    // For always expanded or extra full navbars, ensure content aligns itself
+    // properly vertically. Can be easily overridden with flex utilities.
+    align-items: center;
+}
 // .navbar-nav:not(#dup_nav_navbar) {
 //     flex-direction: row;
 // }
@@ -436,9 +451,36 @@ font-size: 26px;
         width: 550px;
         margin-top: 0px;
     }
+.navbar-nav {
+
+    display:flex;
+    flex-direction: column;
+    width: auto;
+    padding-left: 10%;
+    margin-bottom:0;
+    list-style:none
 }
+    
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
-//@media only screen and (min-width: 576px) {...} 
+@media only screen and (min-width: 576px) {
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-shrink: 1;
+        // For always expanded or extra full navbars, ensure content aligns itself
+        // properly vertically. Can be easily overridden with flex utilities.
+        align-items: center;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: column;
+        width: auto;
+        padding-left: 10%;
+        margin-bottom:0;
+        list-style:none
+    }
+} 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
     .fade {
