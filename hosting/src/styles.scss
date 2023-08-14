@@ -450,7 +450,7 @@ font-size: 26px;
         padding-left: 0%;
     }
     #pinkPicture {
-        width: 550px;
+        width: 500px;
         margin-top: 0px;
     }
     .navbar-nav {
@@ -471,6 +471,10 @@ font-size: 26px;
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
+    #pinkPicture {
+        width: 550px;
+        margin-top: 0px;
+    }
     .navbar-collapse {
         // For always expanded or extra full navbars, ensure content aligns itself
         // properly vertically. Can be easily overridden with flex utilities.
