@@ -440,7 +440,9 @@ font-size: 26px;
     // properly vertically. Can be easily overridden with flex utilities.
     align-items: center;
 }
-
+// .navbar-nav:not(#dup_nav_navbar) {
+//     flex-direction: row;
+// }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 575px)  {
     // .navbar-nav :not(#dup_nav_navbar) {
@@ -454,6 +456,7 @@ font-size: 26px;
         margin-top: 0px;
     }
     .navbar-nav {
+
         display:flex;
         flex-direction: column;
         width: auto;
@@ -562,4 +565,3 @@ font-size: 26px;
     margin-left: 10px;
     margin-right: 10px;
 }
-
