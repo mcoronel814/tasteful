@@ -430,7 +430,6 @@ font-size: 26px;
     list-style:none
 }
 .navbar-collapse {
-    flex-grow: 1;
     // For always expanded or extra full navbars, ensure content aligns itself
     // properly vertically. Can be easily overridden with flex utilities.
     align-items: center;
@@ -465,7 +464,6 @@ font-size: 26px;
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
     .navbar-collapse {
-        flex-shrink: 1;
         // For always expanded or extra full navbars, ensure content aligns itself
         // properly vertically. Can be easily overridden with flex utilities.
         align-items: center;
