@@ -94,7 +94,7 @@ onAuthStateChanged(auth, (user) => {
 
     // Update the UI elements
     // Hide the user's name and photo in the nav bar
-    userName.textContent = "";
+    userName.textContent = "Guest";
     userPhoto.src = "";
     // Hide the sign out button and show the sign in button
     signOutButton.style.display = "none";
