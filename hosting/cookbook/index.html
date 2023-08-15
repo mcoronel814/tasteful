@@ -53,27 +53,27 @@
 <body id="beige">
   <nav class="navbar navbar-expand-lg navbarScroll fixed-top" id="navColor">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="https://tasteful-48763.web.app/">
         <p id="foodExplorer"> Food <br> Explorer </p>
       </a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item active ">
-            <a class="nav-link" href="map.html">
+            <a class="nav-link" href="https://tasteful-48763.web.app/map">
               <button type="button" id="lightPink" class="button"> MAP </button>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="https://tasteful-48763.web.app/cookbook">
               <button type="button" id="lightPink" class="button"> COOKBOOK </button>
             </a>
           </li>
           <li class="nav-item">
-            <div class="search-container">
+            <form id="searchForm" onsubmit="performSearch(); return false;">
               <input type="text" placeholder="Search for recipes..." id="recipeSearch" class="button" id="lightBlue">
-              <button type="button" onclick="performSearch()" class="button" id="lightPink">Search</button>
-            </div>
-          </li>                    
+              <button type="submit" class="button" id="lightPink">Search</button>
+            </form>
+          </li>                             
         </ul>
       </div>
     </div>
@@ -143,40 +143,59 @@
       </div>
     </div>
 
-  <script>
-    const apiKey = "AIzaSyBW9Vjicj1yYWXqmXGBMTVixG2yN9-ThZs";
-    const cx = "7389ae1a6d73e4231"; // Replace with your actual CX ID
-
-    function performSearch() {
-      const query = $("#recipeSearch").val();
-      const url = `https://www.googleapis.com/customsearch/v1?q=${query}&cx=${cx}&key=${apiKey}`;
-
-      $.ajax({
-        url: url,
-        type: "GET",
-        dataType: "json",
-        success: function(response) {
-          displaySearchResults(response.items);
-        },
-        error: function(error) {
-          console.error("Error performing search:", error);
-        }
-      });
-    }
-
+    <script>
+      const apiKey = "AIzaSyBW9Vjicj1yYWXqmXGBMTVixG2yN9-ThZs";
+      const cx = "3686ae705a2dc49e8"; // Replace with your actual CX ID
+  
+      function performSearch() {
+        const query = $("#recipeSearch").val();
+        const url = `https://www.googleapis.com/customsearch/v1?q=${query}&cx=${cx}&key=${apiKey}`;
+  
+        $.ajax({
+          url: url,
+          type: "GET",
+          dataType: "json",
+          success: function(response) {
+            displaySearchResults(response.items);
+          },
+          error: function(error) {
+            console.error("Error performing search:", error);
+          }
+        });
+      }
+  
     function displaySearchResults(results) {
       const searchResultsContainer = $("#searchResults");
       searchResultsContainer.empty();
-
+  
       results.forEach(result => {
         const link = $("<a>").attr("href", result.link).text(result.title);
         const snippet = $("<p>").text(result.snippet);
-        const searchResult = $("<div>").addClass("search-result").append(link, snippet);
-
-        searchResultsContainer.append(searchResult);
-      });
-    }
-  </script>
+  
+      // Create a container for each search result
+      const searchResult = $("<div>").addClass("search-result");
+  
+      // Check if the result contains an image
+      if (result.pagemap && result.pagemap.cse_thumbnail) {
+        const thumbnailUrl = result.pagemap.cse_thumbnail[0].src;
+        const thumbnailImg = $("<img>").attr("src", thumbnailUrl).addClass("thumbnail");
+        searchResult.append(thumbnailImg);
+      }
+  
+      // Create a container for title and snippet
+      const infoContainer = $("<div>").addClass("info-container");
+      infoContainer.append(link, snippet);
+  
+      // Append the info container to the search result container
+      searchResult.append(infoContainer);
+  
+      // Append the search result container to the search results container
+      searchResultsContainer.append(searchResult);
+    });
+  }
+  
+  
+    </script>
 
 </body>
 
