@@ -545,198 +545,198 @@ service.nearbySearch(
             content: `<strong>${restaurant.name}</strong><br>${restaurant.address}<br><a href="${restaurant.website}" target="_blank">Visit Website</a>`,
           });
 
-          marker.addListener("click", () => {
+//           marker.addListener("click", () => {
 
 
-            if (reviewCount > 0 )
-            {
-              oldLayout();
-            }
-            // blue1.style.display = "block";
-            // map.classList.remove("col-12")
-            // map.classList.add("col-6");
-            map2.className = "col-6";
-            // map.style.width= "5000px";
-            blue1.style.display = "block";
-            yellow1.style.display = "block";
+//             if (reviewCount > 0 )
+//             {
+//               oldLayout();
+//             }
+//             // blue1.style.display = "block";
+//             // map.classList.remove("col-12")
+//             // map.classList.add("col-6");
+//             map2.className = "col-6";
+//             // map.style.width= "5000px";
+//             blue1.style.display = "block";
+//             yellow1.style.display = "block";
             
             
-           // 
+//            // 
 
-var imageContainers = document.getElementsByClassName("image-box");
-for (var i = 0; i < imageContainers.length; i++) {
-    imageContainers[i].style.display = "none";
-}
+// var imageContainers = document.getElementsByClassName("image-box");
+// for (var i = 0; i < imageContainers.length; i++) {
+//     imageContainers[i].style.display = "none";
+// }
 
 
-            fetchRecipes();
-            const name = restaurant.name;
-            document.getElementById("restaurantName").innerHTML = name;
+//             fetchRecipes();
+//             const name = restaurant.name;
+//             document.getElementById("restaurantName").innerHTML = name;
 
-            var rating = restaurant.rating;
+//             var rating = restaurant.rating;
 
-            stars(rating);
+//             stars(rating);
             
-            var price_level  = restaurant.price_level;
-            var price_level1 = "";
+//             var price_level  = restaurant.price_level;
+//             var price_level1 = "";
 
-            if ( price_level == 1)
-            {
-              price_level1 = "$ ~ Inexpensive";
-            } else if ( price_level == 2)
-            {
-              price_level1 = "$$ ~ Moderate";
-            }else if ( price_level == 3)
-            {
-              price_level1 = "$$$ ~ Expensive";
-            }else if ( price_level == 4)
-            {
-              price_level1 = "$$$$ ~ Very Expensive";
-            }
-
-
+//             if ( price_level == 1)
+//             {
+//               price_level1 = "$ ~ Inexpensive";
+//             } else if ( price_level == 2)
+//             {
+//               price_level1 = "$$ ~ Moderate";
+//             }else if ( price_level == 3)
+//             {
+//               price_level1 = "$$$ ~ Expensive";
+//             }else if ( price_level == 4)
+//             {
+//               price_level1 = "$$$$ ~ Very Expensive";
+//             }
 
 
-            // const container = document.getElementById("imageContainer");
-            // const numberOfImages = rating ;
+
+
+//             // const container = document.getElementById("imageContainer");
+//             // const numberOfImages = rating ;
     
-            // const imageWidth = 15;   
-            // const imageHeight = 15;  
+//             // const imageWidth = 15;   
+//             // const imageHeight = 15;  
     
-            // for (let i = 0; i < Math.round(numberOfImages); i++) {
+//             // for (let i = 0; i < Math.round(numberOfImages); i++) {
     
     
-            //     const imageBox = document.createElement("div");
-            //     imageBox.className = "image-box";
+//             //     const imageBox = document.createElement("div");
+//             //     imageBox.className = "image-box";
     
-            //     const image = document.createElement("img");
-            //     image.src = "star.png";
-            //     image.alt = "Image " + (i + 1);
-            //     image.style.width = imageWidth + "px";
-            //     image.style.height = imageHeight + "px";
+//             //     const image = document.createElement("img");
+//             //     image.src = "star.png";
+//             //     image.alt = "Image " + (i + 1);
+//             //     image.style.width = imageWidth + "px";
+//             //     image.style.height = imageHeight + "px";
     
-            //     imageBox.appendChild(image);
-            //     container.appendChild(imageBox);
+//             //     imageBox.appendChild(image);
+//             //     container.appendChild(imageBox);
 
-            //     numberOfImages = 0;
-
-
-            // }
+//             //     numberOfImages = 0;
 
 
+//             // }
 
 
 
 
 
-            
 
-              document.getElementById("restaurantScore").innerHTML = rating ;
-            // document.getElementById("restaurantScore").innerHTML = price_level1 ;
 
             
 
+//               document.getElementById("restaurantScore").innerHTML = rating ;
+//             // document.getElementById("restaurantScore").innerHTML = price_level1 ;
 
-            var types = restaurant.types;
-            types = types[0];
-            types = types[0].toUpperCase() + types.substring(1);
-
-            document.getElementById("restaurantType").innerHTML = types + " Place";
-
-            const address = restaurant.address;
-
-            document.getElementById("address").innerHTML = address;
-
-            const opening_hours = restaurant.opening_hours['weekday_text'];
-
-
-
-            // console.log("first", opening_hours);
-
-            let weekday1 = "";
-
-            for (let i = 0; i < opening_hours.length; i++) {
-            if (opening_hours[i] != ",") {
-                weekday1 = weekday1 + opening_hours[i] + "<br>";
-                // console.log(weekday1);
-                }   
-            }
-
-
-
-             document.getElementById("OpeningHours").innerHTML =  "Opening Hours: <br> " + weekday1  ;
-            //  console.log("This is a line." + "<br>" + "This is another line.");
-            // document.getElementById("OpeningHours").innerHTML =  opening_hours  ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            const website = restaurant.website;
             
-            // const link = document.getElementById("website");
-
-            // link.setAttribute("href", website);
 
 
+//             var types = restaurant.types;
+//             types = types[0];
+//             types = types[0].toUpperCase() + types.substring(1);
 
-            document.getElementById("website").innerHTML = website;
+//             document.getElementById("restaurantType").innerHTML = types + " Place";
 
+//             const address = restaurant.address;
 
+//             document.getElementById("address").innerHTML = address;
 
-            // document.getElementById("Reviews").innerHTML =reviews;
-
-            // const change = state2();
-
-            // if (change)
-            // {
-            //   newLayout(reviews);
-            // }
+//             const opening_hours = restaurant.opening_hours['weekday_text'];
 
 
 
+//             // console.log("first", opening_hours);
+
+//             let weekday1 = "";
+
+//             for (let i = 0; i < opening_hours.length; i++) {
+//             if (opening_hours[i] != ",") {
+//                 weekday1 = weekday1 + opening_hours[i] + "<br>";
+//                 // console.log(weekday1);
+//                 }   
+//             }
 
 
-            //Reviews
-            // for (let i = 0; i < 5; i++) {
-            //     console.log(`Author: `, reviews[i]['author_name'] + "\n " + `Reviews: `, reviews[i]['text'] + "\n " +  "rating:  " + reviews[i]['rating'] + "\n " + "Visited:  "  + reviews[i]['relative_time_description'] );
-            //    }
+
+//              document.getElementById("OpeningHours").innerHTML =  "Opening Hours: <br> " + weekday1  ;
+//             //  console.log("This is a line." + "<br>" + "This is another line.");
+//             // document.getElementById("OpeningHours").innerHTML =  opening_hours  ;
 
 
 
 
 
-        const reviews = restaurant.reviews;
-        var reviews2 = document.getElementById("reviews");
-        reviews2.addEventListener("click", function() {
-          reviewCount += 1;
 
-          newLayout(reviews,rating);
-          console.log("step1 finished");
 
-          marker.addEventListener("click", oldLayout);
-          console.log("step2 finished");
 
-      });
 
-      // marker.addEventListener("click", oldLayout);
+
+
+
+
+
+
+
+
+
+
+
+
+
+//             const website = restaurant.website;
+            
+//             // const link = document.getElementById("website");
+
+//             // link.setAttribute("href", website);
+
+
+
+//             document.getElementById("website").innerHTML = website;
+
+
+
+//             // document.getElementById("Reviews").innerHTML =reviews;
+
+//             // const change = state2();
+
+//             // if (change)
+//             // {
+//             //   newLayout(reviews);
+//             // }
+
+
+
+
+
+//             //Reviews
+//             // for (let i = 0; i < 5; i++) {
+//             //     console.log(`Author: `, reviews[i]['author_name'] + "\n " + `Reviews: `, reviews[i]['text'] + "\n " +  "rating:  " + reviews[i]['rating'] + "\n " + "Visited:  "  + reviews[i]['relative_time_description'] );
+//             //    }
+
+
+
+
+
+//         const reviews = restaurant.reviews;
+//         var reviews2 = document.getElementById("reviews");
+//         reviews2.addEventListener("click", function() {
+//           reviewCount += 1;
+
+//           newLayout(reviews,rating);
+//           console.log("step1 finished");
+
+//           marker.addEventListener("click", oldLayout);
+//           console.log("step2 finished");
+
+//       });
+
+//       // marker.addEventListener("click", oldLayout);
 
   
 
@@ -753,7 +753,7 @@ for (var i = 0; i < imageContainers.length; i++) {
 
 
             
-        });
+//         });
 
 
 
