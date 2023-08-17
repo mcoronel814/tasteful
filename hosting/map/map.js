@@ -115,8 +115,8 @@ function mySignOut() {
 }
 
 // Attach event listeners to the buttons
-signInButton.addEventListener("click", mySignInWithRedirect); // Use your custom function name
-signOutButton.addEventListener("click", mySignOut); // Use your custom function name
+// signInButton.addEventListener("click", mySignInWithRedirect); // Use your custom function name
+// signOutButton.addEventListener("click", mySignOut); // Use your custom function name
 
 // Call getRedirectResult when the page loads
 myGetRedirectResult(); // Use your custom function name
