@@ -92,7 +92,7 @@
     height: 400px;  
 }
 .button{
-    margin-right: 40px;
+    margin-right: auto;
     width: 145px;
     height: 60px;
     border-radius: 40px;
@@ -440,18 +440,11 @@ font-size: 26px;
     }
 }
 .navbar-collapse {
-    // For always expanded or extra full navbars, ensure content aligns itself
-    // properly vertically. Can be easily overridden with flex utilities.
     align-items: center;
 }
-// .navbar-nav:not(#dup_nav_navbar) {
-//     flex-direction: row;
-// }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 575px)  {
-    // .navbar-nav :not(#dup_nav_navbar) {
-    //     flex-direction: column;
-    // }
     #meal.col{
         padding-left: 0%;
     }
@@ -460,7 +453,6 @@ font-size: 26px;
         margin-top: 0px;
     }
     .navbar-nav {
-
         display:flex;
         flex-direction: column;
         width: auto;
@@ -482,8 +474,6 @@ font-size: 26px;
         margin-top: 0px;
     }
     .navbar-collapse {
-        // For always expanded or extra full navbars, ensure content aligns itself
-        // properly vertically. Can be easily overridden with flex utilities.
         align-items: center;
     }
     .navbar-nav {
@@ -503,8 +493,6 @@ font-size: 26px;
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
     .fade {
-        //@include transition($transition-fade); //OC
-        
             &:not(.show) {
             opacity: 1;  // 0
             }
@@ -520,12 +508,10 @@ font-size: 26px;
         .collapsing {
             height: auto; //0
             overflow: auto; //hidden
-            //@include transition($transition-collapse); //OC
-        
+            
             &.collapse-horizontal {
             width: auto; //0
             height: auto;
-           // @include transition($transition-collapse-width); //OC
             }
         }
         .navbar-nav {
@@ -552,10 +538,6 @@ font-size: 26px;
 } 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 // @media only screen and (min-width: 1200px) {
-//     #meal  {
-//         margin-top: 0%;
-//         // margin-bottom: 7%;
-//         }
 // }
 //** End _Nav bar  buttons display on all screen sizes */
 
