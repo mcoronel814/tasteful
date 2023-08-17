@@ -580,3 +580,487 @@ font-size: 26px;
 //         }
 // }
 //** End _Nav bar  buttons display on all screen sizes */
+
+
+
+
+
+
+
+
+
+
+
+
+// layout css
+#blue{
+    background-color: blue; 
+    color: #000000;
+    background-image: url("bg001.jpeg"); 
+
+  
+}
+
+
+
+#red1{
+    background-color: rgb(192, 20, 20);
+}
+
+#red{
+    background-color: rgb(255, 255, 255);
+}
+
+#yellow{
+    background-color: rgb(243, 220, 10);
+}
+
+
+
+#yellow1{
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 0px 5px 10px 0px rgba(149, 148, 148, 0.5);
+}
+
+
+#blue1{
+    height: 900px;
+    background-color: rgb(255, 255, 255);  
+    color: #000000;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto; 
+    box-shadow: 0px 5px 10px 0px rgba(149, 148, 148, 0.5);
+    font-family: 'Open Sans', sans-serif;
+    overflow: auto;
+    
+    /* background-size: 100% 190px;
+    background-repeat: no-repeat;  */
+
+    /* background-image: url("bgResto.jpeg"); */
+    /* height: 170px; */
+    
+}
+
+.info1{
+       background-image: url("bg001.jpeg"); 
+       background-size: 100% 190px;
+       background-repeat: no-repeat; 
+         /* height: 170px;  */
+}
+
+#bgImg{
+    color: #ffffff;
+    background-image: url("bgResto.jpeg");
+    width: 100%;
+
+}
+#map {
+    height: 900px;
+    width: 100%;
+
+  }
+
+
+
+
+
+
+
+
+
+#searchBar
+{
+width: 110%;
+height: 50px;
+margin-top: 10px;
+margin-left: -5%;
+border-radius: 30px; 
+border: 4px solid white;
+text-indent: 30px;
+
+
+}
+
+
+
+// placeinformation.css
+#restaurantName{
+    margin-top: -25px;
+    font-size: 20px;
+    /* margin-left: -100px ; */
+    text-align: left;
+ }
+ 
+ #restaurantScore
+ {
+     font-size: 14px;
+     text-align: left;
+     margin-top: -20px;
+     color: rgb(155, 155, 158);
+ 
+ }
+ #restaurantType
+ {
+     font-size: 13px;
+     text-align: left;
+     /* margin-bottom: -30px; */
+     margin-bottom: 10px;
+     color: rgb(155, 155, 158);
+ 
+ }
+ 
+ #button1
+ {
+     width: 120px;
+     height: 50px;
+ 
+     border-color: rgb(255, 255, 255);
+ 
+ 
+ }
+ #button2
+ {
+     width: 120px;
+     height: 50px;
+ }
+ 
+ #search
+ {
+     width: 35px;
+     height: 35px;
+     margin-top: -80px;
+     margin-left: 240px;
+ }
+ 
+ 
+ .image-container {
+     display: flex; 
+     margin-top: -61px; 
+     margin-left: 30px; 
+ 
+ }
+ 
+ .image-box {
+     margin: 5px;
+ 
+ }
+ 
+ 
+ 
+ /* #topnav
+ {
+ background-color: rgb(71, 131, 228);
+ }  */
+ 
+ 
+   .topnav a.active {
+     border-bottom: 3px solid rgb(103, 127, 250);
+    
+   }
+   
+ 
+ 
+ #Overview
+ {
+     margin-right: 160px; 
+     /* text-align: start; */
+     font-size: 15px;
+     /* position: fixed; */
+ }
+ #Overview1
+ {
+     /* margin-left: -89%; 
+     margin-right: 150px;  
+     text-align: start;
+     font-size: 15px;
+     position: fixed; */
+ 
+     margin-right: 160px; 
+     /* text-align: start; */
+     font-size: 15px;
+     /* position: fixed; */
+ }
+ #reviews
+ {
+    color: rgb(164, 166, 167);
+    font-size: 15px;
+    text-align: left; 
+    /* position: fixed; */
+ }
+ #reviews1
+ {
+    /* color: rgb(164, 166, 167);
+    font-size: 15px;
+    text-align: left;  */
+    /* margin-left: 5px; */
+    /* position: fixed; */
+    color: rgb(164, 166, 167);
+    font-size: 15px;
+    text-align: left; 
+ }
+ 
+ #greyLine
+ {
+     margin-top: 1px;
+     width: 3000px;
+      margin-left: -200px;
+      box-shadow: 0px 5px 10px 0px rgba(149, 148, 148, 0.5);
+     /* margin-right: auto;  */
+ }
+ 
+ .greyLine
+ {
+     margin-top: 1px;
+     width: 186%;
+      margin-left: -200px;
+      box-shadow: 0px 5px 10px 0px rgba(149, 148, 148, 0.5);
+     /* margin-right: auto;  */
+ }
+ 
+ #describe
+ {
+     font-size: 13px;
+     text-indent: -20px;
+  
+ }
+ 
+ #describe1
+ {
+     margin-top: -12px;
+     font-size: 13px;
+     text-indent: -25px;
+ }
+ 
+ 
+ #describe2
+ {
+     margin-top: 15px;
+     font-size: 13px;
+     text-indent: -59%;
+ }
+ 
+ #describeA
+ {
+     font-size: 13px;
+     text-indent: 5px;
+  
+ }
+ 
+ #describeB
+ {
+     margin-top: -12px;
+     font-size: 13px;
+     text-indent: 5px;
+ }
+ 
+ 
+ #describeC
+ {
+     margin-top: 15px;
+     font-size: 13px;
+     text-indent: -40%;
+ }
+ 
+ #address
+ {
+     margin-top: -42px;
+     font-size: 13px;
+     /* text-indent: -2%;  */
+     text-align: left;
+     margin-left: 30px;
+ }
+ 
+ #website
+ {
+     margin-top: -22px;
+     font-size: 13px;
+     /* text-indent: -7%;  */
+     text-align: left;
+     margin-left: 30px;
+ }
+ 
+ #pin
+ {
+     width: 30px;
+     height: 30px;
+     margin-top: -50px;
+     margin-left: -105%;
+ }
+ 
+ #link
+ {
+     width: 30px;
+     height: 30px;
+     margin-top: 30px;
+     margin-left: -105%; 
+     /* text-align: left; */
+ }
+ 
+ #time
+ {
+     width: 35px;
+     height: 35px;
+     /* margin-top: -120px; */
+     margin-left: -105%;
+ }
+ 
+ 
+ #pinA
+ {
+     width: 33px;
+     height: 33px;
+     margin-top: -50px;
+     margin-left: -95%;
+ }
+ 
+ #linkB
+ {
+     width: 30px;
+     height: 30px;
+     margin-top: 30px;
+     margin-left: -95%;
+     /* text-align: left; */
+ }
+ 
+ #timeC
+ {
+     width: 35px;
+     height: 35px;
+     /* margin-top: -120px; */
+     margin-left: -95%;
+ }
+ 
+ 
+ 
+ #recipe1
+ {
+ 
+     width: 3000px;
+     margin-left: -200px;
+     box-shadow: 0px 5px 10px 0px rgba(149, 148, 148, 0.5);
+ }
+ 
+ 
+ 
+ #shadowTest1
+ {
+     box-shadow: 0px 5px 10px 0px rgba(149, 148, 148, 0.5);
+ }
+ 
+ #recipePic
+ {
+     width: 275px;
+     height: 165px;
+     margin-top: -5px;
+     margin-left: -5px;
+ 
+ }
+ 
+ #RecipeName
+ {
+     font-size: 15px;
+     /* margin-left: -60%; */
+     text-align: center;
+     margin-top: 15px;
+ }
+ 
+ #instruction
+ {
+     font-size: 13px;
+     text-align: left;
+     margin-bottom: 45px;
+ }
+ 
+ #btnRecipe
+ {
+ background-color: white;
+   color: #3f54d9;
+   border: 2px solid #3f54d9;
+   border-radius: 25px;
+   width: 300px;
+   height: 45px;
+   margin-left: -13px;
+ 
+ 
+ 
+ }
+ 
+ 
+ .hiddenimg {
+     display: none;
+   }
+   
+ 
+ .hiddentxt:hover ~ .hiddenimg {
+     display: block;
+     position: absolute;
+   
+   }
+ 
+ 
+ #OpeningHours
+ {
+     text-align: left;
+     font-size: 13px;
+     margin-left: 30px;
+     margin-top: -30px;
+ 
+ 
+ }
+   
+ 
+ .image-container {
+     display: flex; 
+ }
+ 
+ .image-box {
+     margin: 5px;
+ 
+ }
+ 
+ /* #starRate
+ {
+     display: flex;
+ } */
+ 
+ 
+ 
+ #author
+ {
+     font-size: 16px;
+     text-align: left;
+ }
+ 
+ 
+  #rating
+ {
+     font-size: 12px;
+     margin-top: 45px;
+ } 
+ 
+ #visited
+ {
+     font-size: 12px;
+     text-align: left;
+     color: #a0a0a0;
+ }
+ 
+ 
+ #review
+ {
+     font-size: 12px;
+     text-align: left;
+     margin-bottom: 20px; 
+ }
+ 
+ #rate1
+ {
+     font-size: 90px;
+     margin-top: 45px;
+     margin-bottom: 110px; 
+     color: rgb(0, 0, 0);
+ }

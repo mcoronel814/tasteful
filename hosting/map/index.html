@@ -1,376 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>FOOD MAP</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/31149d48b0.js"
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- font Caprasimo -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"
-      rel="stylesheet"
     />
 
-    <!-- font League Spartan -->
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="placeInformation.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
       rel="stylesheet"
     />
-
-    <!-- font RM sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- font bebas neue -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <!-- linking script file -->
-    <script type="module" src="./map.js"></script>
+    <title>Knives, Out!</title>
   </head>
+  <body>
+    <div class="container-fluid text-center" id="displaEverything">
+      <div class="row">
+        <div class="col info1" id="blue1">
+          <div class="container-fluid text-center" id="body1">
+            <div class="row">
+              <div class="col">
+                <form action="">
+                  <input type="search" id="searchBar" placeholder="   " />
+                  <img src="search.png" alt="search" id="search" />
+                </form>
 
-  <body id="beige">
-    <nav class="navbar navbar-expand-lg navbarScroll">
-      <div class="container">
-        <a class="navbar-brand" href="https://tasteful-48763.web.app/">
-          <p id="foodExplorer">
-            Food <br />
-            Explorer
-          </p>
-        </a>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                <button type="button" id="lightBlue" class="button">MAP</button>
-              </a>
-            </li>
+                <h1 id="restaurantName"></h1>
+                <br />
 
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://tasteful-48763.web.app/cookbook"
-              >
-                <button type="button" id="darkBlue" class="button">
-                  COOKBOOK
-                </button>
-              </a>
-            </li>
+                <!-- <div id="starRate">  -->
 
-            <li class="nav-item">
-              <a class="nav-link" href="https://tasteful-48763.web.app/aboutus">
-                <button type="button" id="lightPink" class="button">
-                  ABOUT US
-                </button>
-              </a>
-            </li>
-          </ul>
+                <h5 id="restaurantScore"></h5>
 
-          <span id="user-name"></span>
-          <img id="user-photo" src="" alt="User photo" />
-          <button id="sign-in-button">Sign in with Google</button>
-          <button id="sign-out-button">Sign out</button>
-          
-        </div>
-      </div>
-    </nav>
+                <h5 id="restaurantType">
+                  <br />
+                </h5>
 
-    <main class="container mt-4">
-      <h2 class="mb-4" id="us2">Select a Location</h2>
-      <form id="location-form" class="d-flex">
-        <input
-          type="text"
-          id="location-input"
-          class="form-control me-2"
-          placeholder="Enter a location"
-        />
-        <button type="submit" class="btn btn-primary">Search</button>
-      </form>
+                <!-- stars -->
+                <div class="image-container" id="imageContainer"></div>
+                <br />
+                <br />
 
-      <div id="map"></div>
-
-      <div id="restaurant-list" class="row mt-4">
-        <!-- Restaurants will be dynamically added here -->
-
-        <img class="ml-3" src="./map.png" alt="map picture" id="map" />
-      </div>
-    </main>
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <div class="fakeBg">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            <img
-              class="ml-3"
-              src="./guyTyping.png"
-              alt="Guy Typing"
-              id="guyPicture"
-            />
-            <!-- <p>&copy; 2023 Tasteful@Team18. All rights reserved.</p>  -->
-          </div>
-
-          <div class="col">
-            <h1 id="us">Contact Us</h1>
-            <input type="text" placeholder="Name.." id="iputName" />
-            <br />
-            <br />
-            <br />
-            <input type="text" placeholder="Email.." id="inputEmail" />
-            <br />
-            <br />
-            <br />
-          </div>
-
-          <div class="col">
-            <br />
-            <br />
-
-            <input type="text" placeholder="Inquiry.." id="inputInquiry" />
-          </div>
-        </div>
-
-        <div class="row">
-          <button type="button" class="button" id="bu2">SUBMIT</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- class="bg-dark text-light py-3" -->
-    <footer id="footcolor">
-      <p>&copy; 2023 Tasteful@Team18. All rights reserved.</p>
-    </footer>
-
-    <script>
-      let map;
-      let infoWindow;
-      let markers = [];
-
-      function initMap() {
-        map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: 0, lng: 0 },
-          zoom: 15,
-        });
-
-        infoWindow = new google.maps.InfoWindow();
-
-        const locationForm = document.getElementById("location-form");
-        locationForm.addEventListener("submit", searchPlaces);
-        getCurrentLocation();
-
-        const locationInput = document.getElementById("location-input");
-        const autocomplete = new google.maps.places.Autocomplete(locationInput);
-        autocomplete.addListener("place_changed", () => {
-          const place = autocomplete.getPlace();
-          if (!place.geometry || place.types.indexOf("restaurant") === -1) {
-            alert("Please enter a valid restaurant location.");
-            return;
-          }
-          clearMarkers();
-          showPlaceOnMap(place.geometry.location);
-          map.setCenter(place.geometry.location);
-          map.setZoom(15);
-        });
-      }
-
-      function searchPlaces(event) {
-        event.preventDefault();
-        const locationInput = document.getElementById("location-input");
-        const location = locationInput.value.trim();
-
-        if (!location) {
-          alert("Please enter a location.");
-          return;
-        }
-
-        const service = new google.maps.places.PlacesService(map);
-        service.textSearch(
-          { query: location, type: "restaurant" },
-          (results, status) => {
-            if (status === google.maps.places.PlacesServiceStatus.OK) {
-              clearMarkers();
-              showPlacesList(results);
-            } else {
-              alert("No restaurants found for the given location.");
-            }
-          }
-        );
-      }
-
-      function showPlacesList(places) {
-        const resultsContainer = document.getElementById("restaurant-list");
-        resultsContainer.innerHTML = "";
-
-        places.forEach((place) => {
-          const name = place.name;
-          const address = place.formatted_address;
-          const rating = place.rating || "Not available";
-          const website = place.website || "#";
-
-          const resultElement = `
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">${name}</h5>
-                  <p class="card-text">${address}</p>
-                  <p class="card-text">Rating: ${rating}</p>
-                  <a href="${
-                    website !== "#" ? website : "javascript:void(0)"
-                  }" target="_blank" class="btn btn-primary visit-website-button" data-website="${website}">Visit Website</a>
-                </div>
+                <!-- </div> -->
               </div>
             </div>
-          `;
 
-          resultsContainer.insertAdjacentHTML("beforeend", resultElement);
+            <div class="row">
+              <div class="col">
+                <div id="myTopnav" class="topnav">
+                  <a href="#" class="active" id="Overview">Overview</a>
+                  <a href="#" id="reviews"> Reviews</a>
+                </div>
 
-          const marker = new google.maps.Marker({
-            map,
-            position: place.geometry.location,
-            title: name,
-          });
+                <hr id="greyLine" />
+              </div>
+            </div>
 
-          google.maps.event.addListener(marker, "click", () => {
-            infoWindow.setContent(name);
-            infoWindow.open(map, marker);
-          });
+            <div class="row">
+              <div class="col">
+                <p id="describe">
+                  Big Slices with creamy artichokes topping & other
+                </p>
 
-          markers.push(marker);
-        });
+                <p id="describe1">
+                  unique twist draw crowds to this casual pie spot.
+                </p>
 
-        // Add event listeners to the "Visit Website" buttons
-        const visitWebsiteButtons = document.getElementsByClassName(
-          "visit-website-button"
-        );
-        Array.from(visitWebsiteButtons).forEach((button) => {
-          button.addEventListener("click", () => {
-            const websiteURL = button.getAttribute("data-website");
-            if (websiteURL && websiteURL !== "#") {
-              window.open(websiteURL, "_blank");
-            }
-          });
-        });
-      }
+                <p id="describe2">Dine-in - Takeout - Delivery</p>
 
-      function showPlaceOnMap(location) {
-        map.setCenter(location);
+                <hr id="greyLine" />
+                <br />
+                <br />
 
-        const marker = new google.maps.Marker({
-          map,
-          position: location,
-        });
+                <img src="placeholder.png" alt="" id="pin" />
+                <h5 id="address"></h5>
 
-        google.maps.event.addListener(marker, "click", () => {
-          infoWindow.setContent("Your location");
-          infoWindow.open(map, marker);
-        });
+                <img src="link.png" alt="" id="link" />
+                <h5 id="website"></h5>
+                <!-- <a id="website" href="#" target="_blank"> Check Out Our Website!</a> -->
 
-        markers.push(marker);
-      }
+                <br />
 
-      function clearMarkers() {
-        markers.forEach((marker) => marker.setMap(null));
-        markers = [];
-      }
+                <img src="time.png" alt="" id="time" />
 
-      function getCurrentLocation() {
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(
-            (position) => {
-              const userLocation = {
-                lat: position.coords.latitude,
-                lng: position.coords.longitude,
-              };
-              map.setCenter(userLocation);
-              map.setZoom(15);
+                <p id="OpeningHours"></p>
 
-              const marker = new google.maps.Marker({
-                map,
-                title: "Your location",
-                position: userLocation,
-              });
+                <br />
+                <br />
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-              google.maps.event.addListener(marker, "click", () => {
-                infoWindow.setContent("Your location");
-                infoWindow.open(map, marker);
-              });
+        <div class="col" id="yellow1">
+          <div class="container-fluid text-center" id="recipes">
+            <!-- <div class="row" >
 
-              markers.push(marker);
-            },
-            () => {
-              console.log("Error: The Geolocation service failed.");
-            }
-          );
-        } else {
-          console.log("Error: Your browser doesn't support geolocation.");
-        }
-      }
-    </script>
+               <div class="col" >
+                
+                col
 
-    <!-- Load the Google Maps API with the Places library -->
+                <hr id="recipe1">
+              
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                
+                col
+                <hr id="recipe2">
+              
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                col
+                <hr id="recipe3">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                
+                col
+                <hr id="recipe4">
+              
+              </div>
+            </div>  -->
+          </div>
+        </div>
+
+        <div class="col-6" id="map">
+          <!-- -->
+
+          <!-- 2 of 3 (wider)  -->
+        </div>
+      </div>
+
+      <!-- <div class="row">
+          <div class="col">
+            1 of 3
+          </div>
+          <div class="col-5">
+            2 of 3 (wider)
+          </div>
+          <div class="col">
+            3 of 3
+          </div>
+        </div> -->
+    </div>
+
+    <!-- Google JavaScript -->
+
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-a6jcC_IgUAGb7AVlKLWo0DOWOzK96zY&libraries=places&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCojeyZ3gqEIRutinm6DuOUvA9nrSiYSLQ&libraries=places&callback=initMap"
       async
       defer
+    ></script>
+
+    <!-- <script src="script2.js"></script>-->
+    <!-- <script src="script3.js"></script> -->
+    <script type="module" src="./script4.js"></script>
+   <!-- <script type="module" src="./map.js"></script> -->
+    <!-- linking script file -->
+   <!-- linking script file -->
+
+    <!-- <script src="script7.js"></script> -->
+    <!-- <script src="meal.js"></script> -->
+    <!-- <script src="star.js"></script> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
     ></script>
   </body>
 </html>
