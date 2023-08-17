@@ -137,160 +137,161 @@ function stars(numberOfStars)
 
 
 
-body1 = document.getElementById("body1");
-blue1 = document.getElementById("blue1");
-function newLayout(reviews,rating)
-{
+// body1 = document.getElementById("body1");
+// blue1 = document.getElementById("blue1");
+
+// function newLayout(reviews,rating)
+// {
 
 
-  // const reviews = "hello";
-  // blue1.style.
-  // <p id="rating" >  ${visited}  </p>
-     body1.innerHTML = '';
-     const rate1 = document.createElement('div');
-     rate1.classList.add('note');
-     rate1.innerHTML = `<h2 id="rate1" > ${rating} </h2>
-     <div class="image-container" id="imageContainer">
+//   // const reviews = "hello";
+//   // blue1.style.
+//   // <p id="rating" >  ${visited}  </p>
+//      body1.innerHTML = '';
+//      const rate1 = document.createElement('div');
+//      rate1.classList.add('note');
+//      rate1.innerHTML = `<h2 id="rate1" > ${rating} </h2>
+//      <div class="image-container" id="imageContainer">
      
-     `
+//      `
 
-    //  stars(rating);
+//     //  stars(rating);
 
-     body1.appendChild(rate1);
+//      body1.appendChild(rate1);
 
-            for (let i = 0; i < 3; i++) {
+//             for (let i = 0; i < 3; i++) {
 
-                const author = reviews[i]['author_name'];
-                const text =  reviews[i]['text'];
-                const rating =  reviews[i]['rating'];
-                const visited =  reviews[i]['relative_time_description'] ;
+//                 const author = reviews[i]['author_name'];
+//                 const text =  reviews[i]['text'];
+//                 const rating =  reviews[i]['rating'];
+//                 const visited =  reviews[i]['relative_time_description'] ;
 
-                const reviewCard = document.createElement('div');
-                reviewCard.classList.add('col');
+//                 const reviewCard = document.createElement('div');
+//                 reviewCard.classList.add('col');
                 
-                reviewCard.innerHTML = 
+//                 reviewCard.innerHTML = 
 
-                `
-                <h2 id="author" > ${author} </h2>
+//                 `
+//                 <h2 id="author" > ${author} </h2>
 
         
 
 
                
-                <p id="visited" > ${visited} </p>
+//                 <p id="visited" > ${visited} </p>
 
        
 
-                <p id="review" > ${text} </p>
+//                 <p id="review" > ${text} </p>
 
-                <hr id="greyLine">
+//                 <hr id="greyLine">
                 
-                `
+//                 `
 
 
-                body1.appendChild(reviewCard);
+//                 body1.appendChild(reviewCard);
 
-                // stars(rating);
+//                 // stars(rating);
 
-                //console.log(`Author: `, reviews[i]['author_name'] + "\n " + `Reviews: `, reviews[i]['text'] + "\n " +  "rating:  " + reviews[i]['rating'] + "\n " + "Visited:  "  + reviews[i]['relative_time_description'] );           
+//                 //console.log(`Author: `, reviews[i]['author_name'] + "\n " + `Reviews: `, reviews[i]['text'] + "\n " +  "rating:  " + reviews[i]['rating'] + "\n " + "Visited:  "  + reviews[i]['relative_time_description'] );           
             
-            }
+//             }
 
-    // console.log(reviews);
+//     // console.log(reviews);
 
-}
+// }
 
 
-function oldLayout()
-{
-  body1.innerHTML = '';
-  const div = document.createElement('div');
-  div.classList.add('row');
-  div.innerHTML = `
-  <div class="col">
-  <form action="">
-    <input type="search" id="searchBar" placeholder="   " />
-    <img src="search.png" alt="search" id="search" />
-  </form>
+// function oldLayout()
+// {
+//   body1.innerHTML = '';
+//   const div = document.createElement('div');
+//   div.classList.add('row');
+//   div.innerHTML = `
+//   <div class="col">
+//   <form action="">
+//     <input type="search" id="searchBar" placeholder="   " />
+//     <img src="search.png" alt="search" id="search" />
+//   </form>
 
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
+//   <br />
+//   <br />
+//   <br />
+//   <br />
+//   <br />
+//   <br />
 
-  <h1 id="restaurantName"></h1>
-  <br />
+//   <h1 id="restaurantName"></h1>
+//   <br />
 
-  <!-- <div id="starRate">  -->
+//   <!-- <div id="starRate">  -->
 
-  <h5 id="restaurantScore"></h5>
+//   <h5 id="restaurantScore"></h5>
 
-  <h5 id="restaurantType">
-    <br />
-  </h5>
+//   <h5 id="restaurantType">
+//     <br />
+//   </h5>
 
  
-  <!-- stars -->
-  <div class="image-container" id="imageContainer"></div>
-  <br />
-  <br />
+//   <!-- stars -->
+//   <div class="image-container" id="imageContainer"></div>
+//   <br />
+//   <br />
 
-  <!-- </div> -->
+//   <!-- </div> -->
 
-</div>
-<div class="row">
-  <div class="col">
-  <div id="myTopnav" class="topnav">
-  <a href="#" class="active" id="Overview">Overview</a>
-  <a href="#" id="reviews"> Reviews</a>
-</div>
- <hr class="greyLine" /> 
-  </div>
-</div>
+// </div>
+// <div class="row">
+//   <div class="col">
+//   <div id="myTopnav" class="topnav">
+//   <a href="#" class="active" id="Overview">Overview</a>
+//   <a href="#" id="reviews"> Reviews</a>
+// </div>
+//  <hr class="greyLine" /> 
+//   </div>
+// </div>
 
 
-<!--   -->
+// <!--   -->
 
-<div class="row">
-  <div class="col">
-    <p id="describeA">Big Slices with creamy artichokes topping & other</p>
+// <div class="row">
+//   <div class="col">
+//     <p id="describeA">Big Slices with creamy artichokes topping & other</p>
 
-    <p id="describeB">unique twist draw crowds to this casual pie spot.</p>
+//     <p id="describeB">unique twist draw crowds to this casual pie spot.</p>
 
-    <p id="describeC">Dine-in - Takeout - Delivery</p>
+//     <p id="describeC">Dine-in - Takeout - Delivery</p>
 
-    <hr class="greyLine" />  
+//     <hr class="greyLine" />  
 
-    <br />
-    <br />
+//     <br />
+//     <br />
 
-    <img src="placeholder.png" alt="" id="pinA" />
-    <h5 id="address"></h5>
+//     <img src="placeholder.png" alt="" id="pinA" />
+//     <h5 id="address"></h5>
 
-    <img src="link.png" alt="" id="linkB" />
-    <h5 id="website"></h5>
+//     <img src="link.png" alt="" id="linkB" />
+//     <h5 id="website"></h5>
 
-    <br />
+//     <br />
 
-    <img src="time.png" alt="" id="timeC" />
+//     <img src="time.png" alt="" id="timeC" />
 
-    <p id="OpeningHours"></p>
+//     <p id="OpeningHours"></p>
 
-    <br />
-    <br />
-    <p></p>
-  </div>
-</div>
+//     <br />
+//     <br />
+//     <p></p>
+//   </div>
+// </div>
 
   
-  `
+//   `
 
-  body1.appendChild(div);
+//   body1.appendChild(div);
 
 
-}
+// }
 
 
 
@@ -418,10 +419,13 @@ service.nearbySearch(
           marker.addListener("click", () => {
 
 
-            if (reviewCount > 0 )
-            {
-              oldLayout();
-            }
+            // if (reviewCount > 0 )
+            // {
+            //   oldLayout();
+            // }
+
+
+            
             // blue1.style.display = "block";
             // map.classList.remove("col-12")
             // map.classList.add("col-6");
@@ -593,18 +597,18 @@ for (var i = 0; i < imageContainers.length; i++) {
 
 
 
-        const reviews = restaurant.reviews;
-        var reviews2 = document.getElementById("reviews");
-        reviews2.addEventListener("click", function() {
-          reviewCount += 1;
+      //   const reviews = restaurant.reviews;
+      //   var reviews2 = document.getElementById("reviews");
+      //   reviews2.addEventListener("click", function() {
+      //     reviewCount += 1;
 
-          newLayout(reviews,rating);
-          console.log("step1 finished");
+      //     newLayout(reviews,rating);
+      //     console.log("step1 finished");
 
-          marker.addEventListener("click", oldLayout);
-          console.log("step2 finished");
+      //     marker.addEventListener("click", oldLayout);
+      //     console.log("step2 finished");
 
-      });
+      // });
 
       // marker.addEventListener("click", oldLayout);
 
