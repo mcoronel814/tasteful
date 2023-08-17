@@ -80,7 +80,7 @@ onAuthStateChanged(auth, (user) => {
 
     // Update the UI elements
     // Show the user's name and photo in the nav bar
-    // userName.textContent = user.displayName;
+    userName.textContent = user.displayName;
     userPhoto.src = user.photoURL;
     // Show the sign out button and hide the sign in button
     signOutButton.style.display = "block";
@@ -93,7 +93,7 @@ onAuthStateChanged(auth, (user) => {
 
     // Update the UI elements
     // Hide the user's name and photo in the nav bar
-    // userName.textContent = "";
+    userName.textContent = "";
     userPhoto.src = "";
     // Hide the sign out button and show the sign in button
     signOutButton.style.display = "none";
@@ -115,8 +115,8 @@ function mySignOut() {
 }
 
 // Attach event listeners to the buttons
-// signInButton.addEventListener("click", mySignInWithRedirect); // Use your custom function name
-// signOutButton.addEventListener("click", mySignOut); // Use your custom function name
+signInButton.addEventListener("click", mySignInWithRedirect); // Use your custom function name
+signOutButton.addEventListener("click", mySignOut); // Use your custom function name
 
 // Call getRedirectResult when the page loads
 myGetRedirectResult(); // Use your custom function name
@@ -137,10 +137,10 @@ map2.classList.remove("col-6")
 
 
 
-// var blue1 = document.getElementById("blue1");
-// blue1.style.display = "none";
-// var yellow1 = document.getElementById("yellow1");
-// yellow1.style.display = "none";
+var blue1 = document.getElementById("blue1");
+blue1.style.display = "none";
+var yellow1 = document.getElementById("yellow1");
+yellow1.style.display = "none";
 
 
 function state2()
@@ -267,160 +267,160 @@ function stars(numberOfStars)
 
 
 
-// body1 = document.getElementById("body1");
-// blue1 = document.getElementById("blue1");
-// function newLayout(reviews,rating)
-// {
+body1 = document.getElementById("body1");
+blue1 = document.getElementById("blue1");
+function newLayout(reviews,rating)
+{
 
 
-//   // const reviews = "hello";
-//   // blue1.style.
-//   // <p id="rating" >  ${visited}  </p>
-//      body1.innerHTML = '';
-//      const rate1 = document.createElement('div');
-//      rate1.classList.add('note');
-//      rate1.innerHTML = `<h2 id="rate1" > ${rating} </h2>
-//      <div class="image-container" id="imageContainer">
+  // const reviews = "hello";
+  // blue1.style.
+  // <p id="rating" >  ${visited}  </p>
+     body1.innerHTML = '';
+     const rate1 = document.createElement('div');
+     rate1.classList.add('note');
+     rate1.innerHTML = `<h2 id="rate1" > ${rating} </h2>
+     <div class="image-container" id="imageContainer">
      
-//      `
+     `
 
-//     //  stars(rating);
+    //  stars(rating);
 
-//      body1.appendChild(rate1);
+     body1.appendChild(rate1);
 
-//             for (let i = 0; i < 3; i++) {
+            for (let i = 0; i < 3; i++) {
 
-//                 const author = reviews[i]['author_name'];
-//                 const text =  reviews[i]['text'];
-//                 const rating =  reviews[i]['rating'];
-//                 const visited =  reviews[i]['relative_time_description'] ;
+                const author = reviews[i]['author_name'];
+                const text =  reviews[i]['text'];
+                const rating =  reviews[i]['rating'];
+                const visited =  reviews[i]['relative_time_description'] ;
 
-//                 const reviewCard = document.createElement('div');
-//                 reviewCard.classList.add('col');
+                const reviewCard = document.createElement('div');
+                reviewCard.classList.add('col');
                 
-//                 reviewCard.innerHTML = 
+                reviewCard.innerHTML = 
 
-//                 `
-//                 <h2 id="author" > ${author} </h2>
+                `
+                <h2 id="author" > ${author} </h2>
 
         
 
 
                
-//                 <p id="visited" > ${visited} </p>
+                <p id="visited" > ${visited} </p>
 
        
 
-//                 <p id="review" > ${text} </p>
+                <p id="review" > ${text} </p>
 
-//                 <hr id="greyLine">
+                <hr id="greyLine">
                 
-//                 `
+                `
 
 
-//                 body1.appendChild(reviewCard);
+                body1.appendChild(reviewCard);
 
-//                 // stars(rating);
+                // stars(rating);
 
-//                 //console.log(`Author: `, reviews[i]['author_name'] + "\n " + `Reviews: `, reviews[i]['text'] + "\n " +  "rating:  " + reviews[i]['rating'] + "\n " + "Visited:  "  + reviews[i]['relative_time_description'] );           
+                //console.log(`Author: `, reviews[i]['author_name'] + "\n " + `Reviews: `, reviews[i]['text'] + "\n " +  "rating:  " + reviews[i]['rating'] + "\n " + "Visited:  "  + reviews[i]['relative_time_description'] );           
             
-//             }
+            }
 
-//     // console.log(reviews);
+    // console.log(reviews);
 
-// }
+}
 
 
-// function oldLayout()
-// {
-//   body1.innerHTML = '';
-//   const div = document.createElement('div');
-//   div.classList.add('row');
-//   div.innerHTML = `
-//   <div class="col">
-//   <form action="">
-//     <input type="search" id="searchBar" placeholder="   " />
-//     <img src="search.png" alt="search" id="search" />
-//   </form>
+function oldLayout()
+{
+  body1.innerHTML = '';
+  const div = document.createElement('div');
+  div.classList.add('row');
+  div.innerHTML = `
+  <div class="col">
+  <form action="">
+    <input type="search" id="searchBar" placeholder="   " />
+    <img src="search.png" alt="search" id="search" />
+  </form>
 
-//   <br />
-//   <br />
-//   <br />
-//   <br />
-//   <br />
-//   <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
 
-//   <h1 id="restaurantName"></h1>
-//   <br />
+  <h1 id="restaurantName"></h1>
+  <br />
 
-//   <!-- <div id="starRate">  -->
+  <!-- <div id="starRate">  -->
 
-//   <h5 id="restaurantScore"></h5>
+  <h5 id="restaurantScore"></h5>
 
-//   <h5 id="restaurantType">
-//     <br />
-//   </h5>
+  <h5 id="restaurantType">
+    <br />
+  </h5>
 
  
-//   <!-- stars -->
-//   <div class="image-container" id="imageContainer"></div>
-//   <br />
-//   <br />
+  <!-- stars -->
+  <div class="image-container" id="imageContainer"></div>
+  <br />
+  <br />
 
-//   <!-- </div> -->
+  <!-- </div> -->
 
-// </div>
-// <div class="row">
-//   <div class="col">
-//   <div id="myTopnav" class="topnav">
-//   <a href="#" class="active" id="Overview">Overview</a>
-//   <a href="#" id="reviews"> Reviews</a>
-// </div>
-//  <hr class="greyLine" /> 
-//   </div>
-// </div>
+</div>
+<div class="row">
+  <div class="col">
+  <div id="myTopnav" class="topnav">
+  <a href="#" class="active" id="Overview">Overview</a>
+  <a href="#" id="reviews"> Reviews</a>
+</div>
+ <hr class="greyLine" /> 
+  </div>
+</div>
 
 
-// <!--   -->
+<!--   -->
 
-// <div class="row">
-//   <div class="col">
-//     <p id="describeA">Big Slices with creamy artichokes topping & other</p>
+<div class="row">
+  <div class="col">
+    <p id="describeA">Big Slices with creamy artichokes topping & other</p>
 
-//     <p id="describeB">unique twist draw crowds to this casual pie spot.</p>
+    <p id="describeB">unique twist draw crowds to this casual pie spot.</p>
 
-//     <p id="describeC">Dine-in - Takeout - Delivery</p>
+    <p id="describeC">Dine-in - Takeout - Delivery</p>
 
-//     <hr class="greyLine" />  
+    <hr class="greyLine" />  
 
-//     <br />
-//     <br />
+    <br />
+    <br />
 
-//     <img src="placeholder.png" alt="" id="pinA" />
-//     <h5 id="address"></h5>
+    <img src="placeholder.png" alt="" id="pinA" />
+    <h5 id="address"></h5>
 
-//     <img src="link.png" alt="" id="linkB" />
-//     <h5 id="website"></h5>
+    <img src="link.png" alt="" id="linkB" />
+    <h5 id="website"></h5>
 
-//     <br />
+    <br />
 
-//     <img src="time.png" alt="" id="timeC" />
+    <img src="time.png" alt="" id="timeC" />
 
-//     <p id="OpeningHours"></p>
+    <p id="OpeningHours"></p>
 
-//     <br />
-//     <br />
-//     <p></p>
-//   </div>
-// </div>
+    <br />
+    <br />
+    <p></p>
+  </div>
+</div>
 
   
-//   `
+  `
 
-//   body1.appendChild(div);
+  body1.appendChild(div);
 
 
-// }
+}
 
 
 
@@ -545,198 +545,198 @@ service.nearbySearch(
             content: `<strong>${restaurant.name}</strong><br>${restaurant.address}<br><a href="${restaurant.website}" target="_blank">Visit Website</a>`,
           });
 
-//           marker.addListener("click", () => {
+          marker.addListener("click", () => {
 
 
-//             if (reviewCount > 0 )
-//             {
-//               oldLayout();
-//             }
-//             // blue1.style.display = "block";
-//             // map.classList.remove("col-12")
-//             // map.classList.add("col-6");
-//             map2.className = "col-6";
-//             // map.style.width= "5000px";
-//             blue1.style.display = "block";
-//             yellow1.style.display = "block";
+            if (reviewCount > 0 )
+            {
+              oldLayout();
+            }
+            // blue1.style.display = "block";
+            // map.classList.remove("col-12")
+            // map.classList.add("col-6");
+            map2.className = "col-6";
+            // map.style.width= "5000px";
+            blue1.style.display = "block";
+            yellow1.style.display = "block";
             
             
-//            // 
+           // 
 
-// var imageContainers = document.getElementsByClassName("image-box");
-// for (var i = 0; i < imageContainers.length; i++) {
-//     imageContainers[i].style.display = "none";
-// }
+var imageContainers = document.getElementsByClassName("image-box");
+for (var i = 0; i < imageContainers.length; i++) {
+    imageContainers[i].style.display = "none";
+}
 
 
-//             fetchRecipes();
-//             const name = restaurant.name;
-//             document.getElementById("restaurantName").innerHTML = name;
+            fetchRecipes();
+            const name = restaurant.name;
+            document.getElementById("restaurantName").innerHTML = name;
 
-//             var rating = restaurant.rating;
+            var rating = restaurant.rating;
 
-//             stars(rating);
+            stars(rating);
             
-//             var price_level  = restaurant.price_level;
-//             var price_level1 = "";
+            var price_level  = restaurant.price_level;
+            var price_level1 = "";
 
-//             if ( price_level == 1)
-//             {
-//               price_level1 = "$ ~ Inexpensive";
-//             } else if ( price_level == 2)
-//             {
-//               price_level1 = "$$ ~ Moderate";
-//             }else if ( price_level == 3)
-//             {
-//               price_level1 = "$$$ ~ Expensive";
-//             }else if ( price_level == 4)
-//             {
-//               price_level1 = "$$$$ ~ Very Expensive";
-//             }
-
-
+            if ( price_level == 1)
+            {
+              price_level1 = "$ ~ Inexpensive";
+            } else if ( price_level == 2)
+            {
+              price_level1 = "$$ ~ Moderate";
+            }else if ( price_level == 3)
+            {
+              price_level1 = "$$$ ~ Expensive";
+            }else if ( price_level == 4)
+            {
+              price_level1 = "$$$$ ~ Very Expensive";
+            }
 
 
-//             // const container = document.getElementById("imageContainer");
-//             // const numberOfImages = rating ;
+
+
+            // const container = document.getElementById("imageContainer");
+            // const numberOfImages = rating ;
     
-//             // const imageWidth = 15;   
-//             // const imageHeight = 15;  
+            // const imageWidth = 15;   
+            // const imageHeight = 15;  
     
-//             // for (let i = 0; i < Math.round(numberOfImages); i++) {
+            // for (let i = 0; i < Math.round(numberOfImages); i++) {
     
     
-//             //     const imageBox = document.createElement("div");
-//             //     imageBox.className = "image-box";
+            //     const imageBox = document.createElement("div");
+            //     imageBox.className = "image-box";
     
-//             //     const image = document.createElement("img");
-//             //     image.src = "star.png";
-//             //     image.alt = "Image " + (i + 1);
-//             //     image.style.width = imageWidth + "px";
-//             //     image.style.height = imageHeight + "px";
+            //     const image = document.createElement("img");
+            //     image.src = "star.png";
+            //     image.alt = "Image " + (i + 1);
+            //     image.style.width = imageWidth + "px";
+            //     image.style.height = imageHeight + "px";
     
-//             //     imageBox.appendChild(image);
-//             //     container.appendChild(imageBox);
+            //     imageBox.appendChild(image);
+            //     container.appendChild(imageBox);
 
-//             //     numberOfImages = 0;
-
-
-//             // }
+            //     numberOfImages = 0;
 
 
+            // }
 
 
 
 
 
-            
 
-//               document.getElementById("restaurantScore").innerHTML = rating ;
-//             // document.getElementById("restaurantScore").innerHTML = price_level1 ;
 
             
 
+              document.getElementById("restaurantScore").innerHTML = rating ;
+            // document.getElementById("restaurantScore").innerHTML = price_level1 ;
 
-//             var types = restaurant.types;
-//             types = types[0];
-//             types = types[0].toUpperCase() + types.substring(1);
-
-//             document.getElementById("restaurantType").innerHTML = types + " Place";
-
-//             const address = restaurant.address;
-
-//             document.getElementById("address").innerHTML = address;
-
-//             const opening_hours = restaurant.opening_hours['weekday_text'];
-
-
-
-//             // console.log("first", opening_hours);
-
-//             let weekday1 = "";
-
-//             for (let i = 0; i < opening_hours.length; i++) {
-//             if (opening_hours[i] != ",") {
-//                 weekday1 = weekday1 + opening_hours[i] + "<br>";
-//                 // console.log(weekday1);
-//                 }   
-//             }
-
-
-
-//              document.getElementById("OpeningHours").innerHTML =  "Opening Hours: <br> " + weekday1  ;
-//             //  console.log("This is a line." + "<br>" + "This is another line.");
-//             // document.getElementById("OpeningHours").innerHTML =  opening_hours  ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//             const website = restaurant.website;
             
-//             // const link = document.getElementById("website");
-
-//             // link.setAttribute("href", website);
 
 
+            var types = restaurant.types;
+            types = types[0];
+            types = types[0].toUpperCase() + types.substring(1);
 
-//             document.getElementById("website").innerHTML = website;
+            document.getElementById("restaurantType").innerHTML = types + " Place";
 
+            const address = restaurant.address;
 
+            document.getElementById("address").innerHTML = address;
 
-//             // document.getElementById("Reviews").innerHTML =reviews;
-
-//             // const change = state2();
-
-//             // if (change)
-//             // {
-//             //   newLayout(reviews);
-//             // }
+            const opening_hours = restaurant.opening_hours['weekday_text'];
 
 
 
+            // console.log("first", opening_hours);
+
+            let weekday1 = "";
+
+            for (let i = 0; i < opening_hours.length; i++) {
+            if (opening_hours[i] != ",") {
+                weekday1 = weekday1 + opening_hours[i] + "<br>";
+                // console.log(weekday1);
+                }   
+            }
 
 
-//             //Reviews
-//             // for (let i = 0; i < 5; i++) {
-//             //     console.log(`Author: `, reviews[i]['author_name'] + "\n " + `Reviews: `, reviews[i]['text'] + "\n " +  "rating:  " + reviews[i]['rating'] + "\n " + "Visited:  "  + reviews[i]['relative_time_description'] );
-//             //    }
+
+             document.getElementById("OpeningHours").innerHTML =  "Opening Hours: <br> " + weekday1  ;
+            //  console.log("This is a line." + "<br>" + "This is another line.");
+            // document.getElementById("OpeningHours").innerHTML =  opening_hours  ;
 
 
 
 
 
-//         const reviews = restaurant.reviews;
-//         var reviews2 = document.getElementById("reviews");
-//         reviews2.addEventListener("click", function() {
-//           reviewCount += 1;
 
-//           newLayout(reviews,rating);
-//           console.log("step1 finished");
 
-//           marker.addEventListener("click", oldLayout);
-//           console.log("step2 finished");
 
-//       });
 
-//       // marker.addEventListener("click", oldLayout);
+
+
+
+
+
+
+
+
+
+
+
+
+
+            const website = restaurant.website;
+            
+            // const link = document.getElementById("website");
+
+            // link.setAttribute("href", website);
+
+
+
+            document.getElementById("website").innerHTML = website;
+
+
+
+            // document.getElementById("Reviews").innerHTML =reviews;
+
+            // const change = state2();
+
+            // if (change)
+            // {
+            //   newLayout(reviews);
+            // }
+
+
+
+
+
+            //Reviews
+            // for (let i = 0; i < 5; i++) {
+            //     console.log(`Author: `, reviews[i]['author_name'] + "\n " + `Reviews: `, reviews[i]['text'] + "\n " +  "rating:  " + reviews[i]['rating'] + "\n " + "Visited:  "  + reviews[i]['relative_time_description'] );
+            //    }
+
+
+
+
+
+        const reviews = restaurant.reviews;
+        var reviews2 = document.getElementById("reviews");
+        reviews2.addEventListener("click", function() {
+          reviewCount += 1;
+
+          newLayout(reviews,rating);
+          console.log("step1 finished");
+
+          marker.addEventListener("click", oldLayout);
+          console.log("step2 finished");
+
+      });
+
+      // marker.addEventListener("click", oldLayout);
 
   
 
@@ -753,7 +753,7 @@ service.nearbySearch(
 
 
             
-//         });
+        });
 
 
 
