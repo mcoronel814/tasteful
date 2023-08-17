@@ -128,7 +128,6 @@ myGetRedirectResult(); // Use your custom function name
 
 //script4.js
 
-
 var reviewCount = 0;
 var markCount = 0;
 
@@ -138,10 +137,10 @@ map2.classList.remove("col-6")
 
 
 
-// var blue1 = document.getElementById("blue1");
-// blue1.style.display = "none";
-// var yellow1 = document.getElementById("yellow1");
-// yellow1.style.display = "none";
+var blue1 = document.getElementById("blue1");
+blue1.style.display = "none";
+var yellow1 = document.getElementById("yellow1");
+yellow1.style.display = "none";
 
 
 function state2()
@@ -270,7 +269,6 @@ function stars(numberOfStars)
 
 body1 = document.getElementById("body1");
 blue1 = document.getElementById("blue1");
-
 function newLayout(reviews,rating)
 {
 
@@ -448,32 +446,32 @@ function oldLayout()
 const restaurants = [];
 
 function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 40.7128, lng: -74.0060 },
-    zoom: 15,
-  });
+  // const map = new google.maps.Map(document.getElementById("map"), {
+  //   center: { lat: 40.7128, lng: -74.0060 },
+  //   zoom: 15,
+  // });
 
-  const userLocation = { lat: 40.7128, lng: -74.0060 };
-
-
+  // const userLocation = { lat: 40.7128, lng: -74.0060 };
 
 
 
-  // navigator.geolocation.getCurrentPosition(
-  //   function(position) {
-  //       // Retrieve latitude and longitude from the position object
-  //       var userLat = position.coords.latitude;
-  //       var userLng = position.coords.longitude;
 
-  //       // Create a map centered on the user's location
-  //       var map = new google.maps.Map(document.getElementById('map'), {
-  //           center: { lat: userLat, lng: userLng },
-  //           zoom: 15
-  //       });
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(
+    function(position) {
+        // Retrieve latitude and longitude from the position object
+        var userLat = position.coords.latitude;
+        var userLng = position.coords.longitude;
+
+        // Create a map centered on the user's location
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: userLat, lng: userLng },
+            zoom: 15
+        });
 
 
 
-  //     const  userLocation = { lat: userLat, lng: userLng};
+      const  userLocation = { lat: userLat, lng: userLng};
 
 
 
@@ -554,12 +552,9 @@ service.nearbySearch(
             {
               oldLayout();
             }
-
-
-
-            blue1.style.display = "block";
-            map.classList.remove("col-12")
-            map.classList.add("col-6");
+            // blue1.style.display = "block";
+            // map.classList.remove("col-12")
+            // map.classList.add("col-6");
             map2.className = "col-6";
             // map.style.width= "5000px";
             blue1.style.display = "block";
@@ -728,18 +723,18 @@ for (var i = 0; i < imageContainers.length; i++) {
 
 
 
-      //   const reviews = restaurant.reviews;
-      //   var reviews2 = document.getElementById("reviews");
-      //   reviews2.addEventListener("click", function() {
-      //     reviewCount += 1;
+        const reviews = restaurant.reviews;
+        var reviews2 = document.getElementById("reviews");
+        reviews2.addEventListener("click", function() {
+          reviewCount += 1;
 
-      //     newLayout(reviews,rating);
-      //     console.log("step1 finished");
+          newLayout(reviews,rating);
+          console.log("step1 finished");
 
-      //     marker.addEventListener("click", oldLayout);
-      //     console.log("step2 finished");
+          marker.addEventListener("click", oldLayout);
+          console.log("step2 finished");
 
-      // });
+      });
 
       // marker.addEventListener("click", oldLayout);
 
@@ -768,8 +763,8 @@ for (var i = 0; i < imageContainers.length; i++) {
 );
 }
 
-  // )} 
-
+  )} 
+}
 
 
 
