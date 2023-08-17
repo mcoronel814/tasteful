@@ -44,10 +44,10 @@ map2.classList.remove("col-6")
 
 
 
-var blue1 = document.getElementById("blue1");
-blue1.style.display = "none";
-var yellow1 = document.getElementById("yellow1");
-yellow1.style.display = "none";
+// var blue1 = document.getElementById("blue1");
+// blue1.style.display = "none";
+// var yellow1 = document.getElementById("yellow1");
+// yellow1.style.display = "none";
 
 
 function state2()
