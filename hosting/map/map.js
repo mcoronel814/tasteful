@@ -80,7 +80,7 @@ onAuthStateChanged(auth, (user) => {
 
     // Update the UI elements
     // Show the user's name and photo in the nav bar
-    userName.textContent = user.displayName;
+    // userName.textContent = user.displayName;
     userPhoto.src = user.photoURL;
     // Show the sign out button and hide the sign in button
     signOutButton.style.display = "block";
@@ -93,7 +93,7 @@ onAuthStateChanged(auth, (user) => {
 
     // Update the UI elements
     // Hide the user's name and photo in the nav bar
-    userName.textContent = "";
+    // userName.textContent = "";
     userPhoto.src = "";
     // Hide the sign out button and show the sign in button
     signOutButton.style.display = "none";
