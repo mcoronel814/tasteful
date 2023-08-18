@@ -147,8 +147,8 @@ function stars(numberOfStars)
 
 
 
-body1 = document.getElementById("body1");
-blue1 = document.getElementById("blue1");
+// body1 = document.getElementById("body1");
+// blue1 = document.getElementById("blue1");
 function newLayout(reviews,rating)
 {
 
