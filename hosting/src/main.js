@@ -43,6 +43,8 @@ const signInButton = document.getElementById("sign-in-button");
 const signOutButton = document.getElementById("sign-out-button");
 const userName = document.getElementById("user-name");
 const userPhoto = document.getElementById("user-photo");
+const recipesButton = document.getElementById("myrecipes"); 
+
 
 // Create an instance of the GoogleAuthProvider class
 const provider = new GoogleAuthProvider();
@@ -86,6 +88,8 @@ onAuthStateChanged(auth, (user) => {
     // Show the sign out button and hide the sign in button
     signOutButton.style.display = "block";
     signInButton.style.display = "none";
+    // Show the my recipees  button
+    recipesButton.style.display = "block";
   } else {
     // User is signed out
     // Clear the user's information from the global variable or the local storage
@@ -94,11 +98,13 @@ onAuthStateChanged(auth, (user) => {
 
     // Update the UI elements
     // Hide the user's name and photo in the nav bar
-    userName.textContent = "";
-    userPhoto.src = "";
+    userName.textContent = "Guest";
+    userPhoto.src = "./assets/guest_meal2-e7634b25.png";
     // Hide the sign out button and show the sign in button
     signOutButton.style.display = "none";
     signInButton.style.display = "block";
+    // Hide  the my recipees  button
+    recipesButton.style.display = "none";
   }
 });
 
