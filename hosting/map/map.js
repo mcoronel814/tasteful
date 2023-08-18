@@ -128,8 +128,6 @@ myGetRedirectResult(); // Use your custom function name
 
 
 
-
-
 // script4a.js
 
 
