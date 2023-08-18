@@ -426,189 +426,120 @@ font-size: 26px;
     margin-top: 0px;
 }
 
-@mixin caret-down($width: $caret-width) {
-    border-top: $width solid;
-    border-right: $width solid transparent;
-    border-bottom: 0;
-    border-left: $width solid transparent;
-}
-
-@mixin caret-up($width: $caret-width) {
-    border-top: 0;
-    border-right: $width solid transparent;
-    border-bottom: $width solid;
-    border-left: $width solid transparent;
-}
-
-@mixin caret-end($width: $caret-width) {
-    border-top: $width solid transparent;
-    border-right: 0;
-    border-bottom: $width solid transparent;
-    border-left: $width solid;
-}
-
-@mixin caret-start($width: $caret-width) {
-    border-top: $width solid transparent;
-    border-right: $width solid;
-    border-bottom: $width solid transparent;
-}
-
-@mixin caret(
-    $direction: down,
-    $width: $caret-width,
-    $spacing: $caret-spacing,
-    $vertical-align: $caret-vertical-align
-) {
-    @if $enable-caret {
-    &::after {
-        display: inline-block;
-        margin-left: $spacing;
-        vertical-align: $vertical-align;
-        content: "";
-        @if $direction == down {
-        @include caret-down($width);
-        } @else if $direction == up {
-        @include caret-up($width);
-        } @else if $direction == end {
-        @include caret-end($width);
-        }
-    }
-
-    @if $direction == start {
-        &::after {
-        display: none;
-        }
-
-        &::before {
-        display: inline-block;
-        margin-right: $spacing;
-        vertical-align: $vertical-align;
-        content: "";
-        @include caret-start($width);
-        }
-    }
-
-    &:empty::after {
-        margin-left: 0;
-    }
-    }
-}
-
-
 
 //** Start _Nav bar  buttons display on all screen sizes */
-// .navbar-nav {
-//     display:flex;
-//     width: auto;
-//     padding-left: 10%;
-//     margin-bottom:0;
-//     list-style:none
-// }
-// .collapse {
-//     &:not(.show) {
-//     display: block;  //none
-//     }
-// }
-// .navbar-collapse {
-//     align-items: center;
-// }
+.navbar-nav {
+    display:flex;
+    width: auto;
+    padding-left: 10%;
+    margin-bottom:0;
+    list-style:none
+}
+.collapse {
+    &:not(.show) {
+    display: block;  //none
+    }
+}
+.navbar-collapse {
+    align-items: center;
+}
 
-// /* Extra small devices (phones, 600px and down) */
-// @media only screen and (max-width: 575px)  {
-//     #meal.col{
-//         padding-left: 0%;
-//     }
-//     #pinkPicture {
-//         width: 500px;
-//         margin-top: 0px;
-//     }
-//     .navbar-nav {
-//         display:flex;
-//         flex-direction: column;
-//         width: auto;
-//         padding-left: 10%;
-//         margin-bottom:0;
-//         list-style:none
-//     }
-//     .collapse {
-//         &:not(.show) {
-//         display: contents;  //none
-//         }
-//     } 
-// }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 575px)  {
+    #meal.col{
+        padding-left: 0%;
+    }
+    #pinkPicture {
+        width: 500px;
+        margin-top: 0px;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: column;
+        width: auto;
+        padding-left: 10%;
+        margin-bottom:0;
+        list-style:none
+    }
+    .collapse {
+        &:not(.show) {
+        display: contents;  //none
+        }
+    } 
+}
 
-// /* Small devices (portrait tablets and large phones, 600px and up) */
-// @media only screen and (min-width: 576px) {
-//     #pinkPicture {
-//         width: 550px;
-//         margin-top: 0px;
-//     }
-//     .navbar-collapse {
-//         align-items: center;
-//     }
-//     .navbar-nav {
-//         display:flex;
-//         flex-direction: column;
-//         width: auto;
-//         padding-left: 10%;
-//         margin-bottom:0;
-//         list-style:none
-//     }
-//     .collapse {
-//         &:not(.show) {
-//         display: contents;  //none
-//         }
-//     }
-// } 
-// /* Medium devices (landscape tablets, 768px and up) */
-// @media (min-width: 768px) {
-//     .fade {
-//             &:not(.show) {
-//             opacity: 1;  // 0
-//             }
-//         }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+    #pinkPicture {
+        width: 550px;
+        margin-top: 0px;
+    }
+    .navbar-collapse {
+        align-items: center;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: column;
+        width: auto;
+        padding-left: 10%;
+        margin-bottom:0;
+        list-style:none
+    }
+    .collapse {
+        &:not(.show) {
+        display: contents;  //none
+        }
+    }
+} 
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+    .fade {
+            &:not(.show) {
+            opacity: 1;  // 0
+            }
+        }
+    
+        // scss-docs-start collapse-classes
+        .collapse {
+            &:not(.show) {
+            display: block;  //none
+            }
+        }
+    
+        .collapsing {
+            height: auto; //0
+            overflow: auto; //hidden
         
-//         // scss-docs-start collapse-classes
-//         .collapse {
-//             &:not(.show) {
-//             display: block;  //none
-//             }
-//         }
-        
-//         .collapsing {
-//             height: auto; //0
-//             overflow: auto; //hidden
-            
-//             &.collapse-horizontal {
-//             width: auto; //0
-//             height: auto;
-//             }
-//         }
-//         .navbar-nav {
-//             display:flex;
-//             flex-direction: row;
-//             width: auto;
-//             padding-left: 10%;
-//             margin-bottom:0;
-//             list-style:none
-//         }
-//       // scss-docs-end collapse-classes
-// } 
+            &.collapse-horizontal {
+            width: auto; //0
+            height: auto;
+            }
+        }
+        .navbar-nav {
+            display:flex;
+            flex-direction: row;
+            width: auto;
+            padding-left: 10%;
+            margin-bottom:0;
+            list-style:none
+        }
+      // scss-docs-end collapse-classes
+} 
 
-// /* Large devices (laptops/desktops, 992px and up) */
-// @media only screen and (min-width: 992px) {
-//     .navbar-nav {
-//         display:flex;
-//         flex-direction: row;
-//         width: auto;
-//         padding-left: 10%;
-//         margin-bottom:0;
-//         list-style:none
-//     }
-// } 
-// /* Extra large devices (large laptops and desktops, 1200px and up) */
-// // @media only screen and (min-width: 1200px) {
-// // }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .navbar-nav {
+        display:flex;
+        flex-direction: row;
+        width: auto;
+        padding-left: 10%;
+        margin-bottom:0;
+        list-style:none
+    }
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {
+// }
 //** End _Nav bar  buttons display on all screen sizes */
 
 

@@ -60,70 +60,46 @@
 
     <!-- Nav Bar -->
     <!-- <nav class="navbar navbar-expand-lg navbarScroll"> -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">   
+    <nav class="navbar navbar-expand-lg">   
         <div class="container">
         <a class="navbar-brand" href="https://tasteful-48763.web.app/"> 
             <p id="foodExplorer"> Food <br> Explorer </p>
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
-            <!-- <li class="nav-item active"> -->
-            <li class="nav-item">
-                <a class="nav-link" href="https://tasteful-48763.web.app/map"> 
-                <button type="button" id="lightBlue" class="button"> MAP </button>
-                </a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="https://tasteful-48763.web.app/cookbook"> 
-                <button type="button" id="darkBlue" class="button"> COOKBOOK </button>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://tasteful-48763.web.app/aboutus"> 
-                <button type="button" id="lightPink" class="button"> ABOUT US </button>
-                </a>
-            </li> 
-            
-            <li class="nav-item">
-                <span id="user-name" style="line-height: 4;"></span>
-            </li> 
-            <li class="nav-item">
-                <a> 
-                    <img style="display: none;" src="./guest_meal2.png">
-                    <img id="user-photo" src="" alt="User photo" width="60px" height="60px" style="display: inline;">
-                </a>
-            </li>
-            <li class="nav-item">
-                <a > 
-                    <button class="button" id="sign-in-button">Sign in with Google</button>
-                    <button class="button" id="sign-out-button">Sign out</button>
-                </a>
-            </li> 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span id="user-name"></span>
+                <!-- <li class="nav-item active"> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://tasteful-48763.web.app/map"> 
+                    <button type="button" id="lightBlue" class="button"> MAP </button>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="https://tasteful-48763.web.app/cookbook"> 
+                    <button type="button" id="darkBlue" class="button"> COOKBOOK </button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://tasteful-48763.web.app/aboutus"> 
+                    <button type="button" id="lightPink" class="button"> ABOUT US </button>
+                    </a>
+                </li> 
+                <li class="nav-item">
+                    <!-- <a class="nav-link"><span id="user-name" style="line-height: 4;"></span></a> -->
+                    <span id="user-name" style="line-height: 4;"></span>
+                </li> 
+                <li class="nav-item">
+                    <a> 
+                        <img style="display: none;" src="./guest_meal2.png">
+                        <img id="user-photo" src="" alt="User photo" width="60px" height="60px" style="display: inline; align-items: end;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a > 
+                        <button class="button" id="sign-in-button">Sign in with Google</button>
+                        <button class="button" id="sign-out-button">Sign out</button>
+                    </a>
                 </li>        
             </ul>
-            <!-- 
-            <div class="dropdown"> --> 
-                <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> --> 
-                <!--<button class="btn btn-default dropdown-toggle" type="button" id="menu1"  data-bs-toggle="dropdown" aria-expanded="false"  id="sign-in-button">
-                    <img id="user-photo" src="" alt="User photo">
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div> 
-            -->
                 <!-- <span id="user-name"></span> -->
                 <!-- <img id="user-photo" src="" alt="User photo">
                 <img style="display: none;" src="./guest_meal2.png"> -->
@@ -132,17 +108,6 @@
             </div>
         </div>
     </nav>
-
-    <div class="dropdown" style="align-items: end;">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown button
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
 
     <!-- Side Text  -->
     <div class="container">
@@ -155,7 +120,7 @@
                 Couch
                 </p>
             <!-- Login/SignUp  -->
-                    <div class="container px-4 text-center">
+                    <!-- <div class="container px-4 text-center">
                         <div class="row gx-5">
                             <div class="col">
                                 <div class="p-3"> 
@@ -164,16 +129,15 @@
                                     </a>       
                                 </div>
                             </div>
-
-                            <!-- <div class="col" >
+                            <div class="col" >
                                 <div class="p-3">
                                     <a class="nav-link"> 
                                         <button type="button" id="sign up" class="button"> LOREM IPSUM </button>
                                     </a> 
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
-                    </div> 
+                    </div>  -->
             </div>
         <!-- Meals Picture  -->
             <div class="col" id="meal">
@@ -183,12 +147,6 @@
             </div>
         </div>
     </div>
-    <!-- <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> -->
 
     <!-- Footer  -->
 <div class="fakeBg">
