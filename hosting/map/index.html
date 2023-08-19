@@ -195,10 +195,7 @@
         <div class="col-6" id="map">
 
       
-            <p id="foodExplorer">
-              Food <br />
-              Explorer
-            </p>
+
     
 
           <!-- -->
@@ -565,6 +562,12 @@ function initMap() {
           zoom: 15
         });
 
+        document.getElementById("map").innerHTML = ` 
+        <p id="foodExplorer">
+              Food <br />
+              Explorer
+            </p>
+        `;
 
 
         const userLocation = { lat: userLat, lng: userLng };
