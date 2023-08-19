@@ -43,7 +43,7 @@ const signInButton = document.getElementById("sign-in-button");
 const signOutButton = document.getElementById("sign-out-button");
 const userName = document.getElementById("user-name");
 const userPhoto = document.getElementById("user-photo");
-const recipesButton = document.getElementById("myrecipes"); 
+const recipesButton = document.getElementById("yellow"); 
 
 
 // Create an instance of the GoogleAuthProvider class
@@ -88,7 +88,7 @@ onAuthStateChanged(auth, (user) => {
     // Show the sign out button and hide the sign in button
     signOutButton.style.display = "block";
     signInButton.style.display = "none";
-    // Show the my recipees  button
+    //Show the my recipes button
     recipesButton.style.display = "block";
   } else {
     // User is signed out
@@ -103,7 +103,7 @@ onAuthStateChanged(auth, (user) => {
     // Hide the sign out button and show the sign in button
     signOutButton.style.display = "none";
     signInButton.style.display = "block";
-    // Hide  the my recipees  button
+    // Hide my recipes button
     recipesButton.style.display = "none";
   }
 });

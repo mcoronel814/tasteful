@@ -83,13 +83,13 @@
                     <button type="button" id="lightPink" class="button"> ABOUT US </button>
                     </a>
                 </li> 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="https://tasteful-48763.web.app/myrecipes"> 
                         <button  id="yellow" id="myrecipes"  class="button" > MY RECIPES </button>
                     </a>
-                </li>  
+                </li>   -->
                 <li class="nav-item">
-                    <a class="nav-link"><span id="user-name" style="line-height: 4;"></span></a>
+                    <a class="nav-link"><span id="user-name" style="line-height: 2;"></span></a>
                     <!-- <span id="user-name" style="line-height: 4;"></span> -->
                 </li> 
                 <li class="nav-item">
@@ -103,7 +103,12 @@
                         <button style="display: none;" class="button" id="sign-in-button">Sign in with Google</button>
                         <button style="display: none;" class="button" id="sign-out-button">Sign out</button>
                     </a>
-                </li>        
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://tasteful-48763.web.app/myrecipes"> 
+                        <button  style="display: none;" class="button"  id="yellow" id="myrecipes"> MY RECIPES </button>
+                    </a>
+                </li>      
             </ul>
                 <!-- <span id="user-name"></span> -->
                 <!-- <img id="user-photo" src="" alt="User photo">
@@ -204,6 +209,16 @@
     }
     setInterval(toggleImage, 1100);
 </script>
+<!-- <script>
+    const userName = document.getElementById("user-name");
+    const recipesButton = document.getElementById("yellow"); 
+    userName.textContent = "Guest";
+    function toggleRecipesBtn() {
+        if (userName.textContent != "Guest") {
+            recipesButton.style.display = "block";
+        }
+    }
+</script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
