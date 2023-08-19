@@ -659,8 +659,11 @@ font-size: 26px;
 
 }
 #map {
+    position: absolute;
     height: 900px;
     width: 100%;
+    z-index: 1;
+
 
   }
 
@@ -1078,10 +1081,10 @@ text-indent: 30px;
     // font-family: 'Caprasimo', cursive;
     // padding: 4px;
    
-    // position: absolute; 
+    position: absolute; 
     margin-right: 250px;
     margin-bottom: 450px;
-    z-index: 1;
+    z-index: 2;
     // background-color: rgba(255, 255, 255, 0.8); 
     // padding: 10px; 
 
