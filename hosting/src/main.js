@@ -43,7 +43,7 @@ const signInButton = document.getElementById("sign-in-button");
 const signOutButton = document.getElementById("sign-out-button");
 const userName = document.getElementById("user-name");
 const userPhoto = document.getElementById("user-photo");
-// const recipesButton = document.getElementById("myrecipes"); 
+const recipesButton = document.getElementById("yellow"); 
 
 
 // Create an instance of the GoogleAuthProvider class
@@ -88,8 +88,8 @@ onAuthStateChanged(auth, (user) => {
     // Show the sign out button and hide the sign in button
     signOutButton.style.display = "block";
     signInButton.style.display = "none";
-    // Show the my recipees  button
-    // recipesButton.style.display = "block";
+    //Show the my recipees  button
+    recipesButton.style.display = "block";
   } else {
     // User is signed out
     // Clear the user's information from the global variable or the local storage
