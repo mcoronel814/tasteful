@@ -446,8 +446,41 @@ font-size: 26px;
 /* ~~~~~~~~~  End Navbar  ~~~~~~~~~~~*/
 
 /* ====== Start  Screen Sizes =====*/
-//* Extra small devices (phones, 575px and down) */
-@media only screen and (max-width: 575px)  {
+//* Smartphones devices (phones, 400px and down) */
+@media only screen and (max-width: 400px)  {
+    .navbar-brand{
+        font-size:  1rem;
+    }
+    #pinkPicture {
+        width: 350px;
+        margin-top: 0px;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: column;
+        // width: auto;
+        padding-left: 10%;
+        // margin-bottom:0;
+        // list-style:none
+        align-items: center;
+    }
+    .collapse {
+        &:not(.show) {
+        display: contents;  //none
+        }
+    } 
+    .button{
+        margin-right: auto; //auto
+        width: 145px;
+        height: 60px;
+        border-radius: 40px;
+    }
+    #meal.col{
+        padding-left: 4%;
+    }
+}
+//* Extra small devices (401px and up) */
+@media only screen and (min-width: 401px)  {
     .navbar-brand{
         font-size:  2rem;
     }
@@ -507,7 +540,7 @@ font-size: 26px;
 //* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
     .navbar-brand{
-        font-size:  2.25rem;
+        font-size:  1rem;
     }
     .fade {
             &:not(.show) {
