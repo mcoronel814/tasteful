@@ -526,14 +526,14 @@ font-size: 26px;
         display:flex;
         flex-direction: row;
         width: auto;
-        padding-left: 0%;
+        padding-left: 1%;
         margin-bottom:0;
         list-style:none
     }
       // scss-docs-end collapse-classes
     .button{
             margin-right: auto; //auto
-            width: 120px;
+            width: 110px;
             height: 60px;
             border-radius: 40px;
     }
@@ -541,6 +541,26 @@ font-size: 26px;
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .navbar-nav {
+        display:flex;
+        flex-direction: row;
+        width: auto;
+        padding-left: 2%;
+        margin-bottom:0;
+        list-style:none
+    }
+    .button{
+        margin-right: auto;
+        width: 125px;
+        height: 60px;
+        border-radius: 40px;
+    }
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #user-name{
+        line-height: 4    
+    }
     .navbar-nav {
         display:flex;
         flex-direction: row;
@@ -554,12 +574,6 @@ font-size: 26px;
         width: 135px;
         height: 60px;
         border-radius: 40px;
-    }
-} 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    #user-name{
-        line-height: 4    
     }
 }
 //** End different screen sizes styles*/
