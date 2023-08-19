@@ -555,6 +555,9 @@ footer{
         width: 550px;
         margin-top: 0px;
     }
+    .navbar-brand{
+        font-size:  2.25rem;
+    }
     .navbar-nav {
         display:flex;
         flex-direction: column;
@@ -583,10 +586,10 @@ footer{
             width: auto; //0
             height: auto;
         }
-    }    
-    // scss-docs-end collapse-classes
+    }       // scss-docs-end collapse-classes
+
     .navbar-brand{
-        font-size:  1rem;
+        font-size:  1.5rem;
     }
     .navbar-nav {
         display:flex;
@@ -604,6 +607,12 @@ footer{
 } 
 //* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    p{
+        margin-bottom: 0rem;
+    }
+    .navbar-brand{
+        font-size:  1.35rem;
+    }
     .navbar-nav {
         display:flex;
         flex-direction: row;
@@ -624,7 +633,7 @@ footer{
         margin-bottom: 0rem;
     }
     .navbar-brand{
-        font-size:  1.25rem;
+        font-size:  1.35rem;
     }
     .navbar-nav {
         display:flex;

@@ -461,7 +461,7 @@ font-size: 26px;
         &:not(.show) {
         display: contents;  //none
         }
-    } 
+    }      // scss-docs-end collapse-classes
     .navbar-brand{
         font-size:  1.5rem;
     }
@@ -534,7 +534,9 @@ font-size: 26px;
         display: contents;  //none
         }
     }     // scss-docs-end collapse-classes
-
+    .navbar-brand{
+        font-size:  2.25rem;
+    }
     .navbar-nav {
         display:flex;
         flex-direction: column;
@@ -564,9 +566,8 @@ font-size: 26px;
             height: auto;
         }
     }  // scss-docs-end collapse-classes
-
     .navbar-brand{
-        font-size:  1rem;
+        font-size:  1.5rem;
     }
     .navbar-nav {
         display:flex;
@@ -584,6 +585,12 @@ font-size: 26px;
 } 
 //* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    p{
+        margin-bottom: 0rem;
+    }
+    .navbar-brand{
+        font-size:  1.35rem;
+    }
     .navbar-nav {
         display:flex;
         flex-direction: row;
@@ -603,7 +610,7 @@ font-size: 26px;
         margin-bottom: 0rem;
     }
     .navbar-brand{
-        font-size:  1.25rem;
+        font-size:  1.35rem;
     }
     .navbar-nav {
         display:flex;
