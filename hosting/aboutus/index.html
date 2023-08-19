@@ -1,177 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>ABOUT US</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <title>ABOUT US</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/31149d48b0.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- font Caprasimo -->
+    <!-- bootstrap CDN -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"
-      rel="stylesheet"
-    />
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"/>
 
-    <!-- font League Spartan -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap"
-      rel="stylesheet"
-    />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- font RM sans -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap"
-      rel="stylesheet"
-    />
+        <!-- font awesome -->
+        <script
+        src="https://kit.fontawesome.com/31149d48b0.js"
+        crossorigin="anonymous"
+        ></script>
 
-    <!-- font bebas neue -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
+        <!-- font Caprasimo -->
+        <link
+        href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"
+        rel="stylesheet"
+        />
 
-    <!-- font Roboto -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
-      rel="stylesheet"
-    />
+        <!-- font League Spartan -->
+        <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap"
+        rel="stylesheet"
+        />
 
-    <!-- linking script file -->
-    <script type="module" src="./aboutUs.js"></script>
-  </head>
+        <!-- font RM sans -->
+        <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap"
+        rel="stylesheet"
+        />
 
-  <body id="pink1">
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbarScroll">
-      <div class="container">
-        <a class="navbar-brand" href="https://tasteful-48763.web.app/">
-          <p id="foodExplorer">
-            Food <br />
-            Explorer
-          </p>
-        </a>
+        <!-- font bebas neue -->
+        <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+        rel="stylesheet"
+        />
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="https://tasteful-48763.web.app/map">
-                <button type="button" id="lightBlue" class="button">MAP</button>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://tasteful-48763.web.app/cookbook"
-              >
-                <button type="button" id="darkBlue" class="button">
-                  COOKBOOK
-                </button>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://tasteful-48763.web.app/aboutus">
-                <button type="button" id="lightPink" class="button">
-                  ABOUT US
-                </button>
-              </a>
-            </li>
-          </ul>
+        <!-- font Roboto -->
+        <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet"
+        />
 
-          <span id="user-name"></span>
-          <img id="user-photo" src="" alt="User photo" />
-          <button id="sign-in-button">Sign in with Google</button>
-          <button id="sign-out-button">Sign out</button>
-          
+        <!-- linking script file -->
+        <script type="module" src="./aboutUs.js"></script>
+    </head>
+
+    <body id="pink1">
+        <!-- Nav Bar OC -->
+        <!-- <nav class="navbar navbar-expand-lg navbarScroll">
+            <div class="container">
+                <a class="navbar-brand" href="https://tasteful-48763.web.app/">
+                <p id="foodExplorer">
+                    Food <br />
+                    Explorer
+                </p>
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://tasteful-48763.web.app/map">
+                            <button type="button" id="lightBlue" class="button">MAP</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tasteful-48763.web.app/cookbook">
+                            <button type="button" id="darkBlue" class="button">COOKBOOK</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tasteful-48763.web.app/aboutus">
+                            <button type="button" id="lightPink" class="button">ABOUT US</button>
+                        </a>
+                    </li>
+                </ul>
+
+                <span id="user-name"></span>
+                <img id="user-photo" src="" alt="User photo" />
+                <button id="sign-in-button">Sign in with Google</button>
+                <button id="sign-out-button">Sign out</button>
+                
+                </div>
+            </div>
+        </nav> -->
+        <!-- Nav Bar Updated-->
+        <nav class="navbar navbar-expand-lg">   
+            <div class="container">
+            <a class="navbar-brand" href="https://tasteful-48763.web.app/"> 
+                <p id="foodExplorer"> Food <br> Explorer </p>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tasteful-48763.web.app/map"> 
+                        <button type="button" id="lightBlue" class="button"> MAP </button>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://tasteful-48763.web.app/cookbook"> 
+                        <button type="button" id="darkBlue" class="button"> COOKBOOK </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tasteful-48763.web.app/aboutus"> 
+                        <button type="button" id="lightPink" class="button"> ABOUT US </button>
+                        </a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tasteful-48763.web.app/myrecipes"> 
+                            <button  style="display: none;" class="button"  id="yellow" id="myrecipes"> MY RECIPES </button>
+                        </a>
+                    </li>   
+                    <li class="nav-item">
+                        <a class="nav-link" style="display: inline-flex; justify-content: end; align-items: stretch; align-content: center;">
+                            <span id="user-name" style="display: flex; width: 45px;"></span>
+                            <!-- <img style="display: none;" src="./knife_fork_icon.png"> -->
+                            <img id="user-photo" src="" alt="" > 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"> 
+                            <button style="display: none;" class="button" id="sign-in-button">Sign in with Google</button>
+                            <button style="display: none;" class="button" id="sign-out-button">Sign out</button>
+                        </a>
+                    </li>   
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Lettuce Tomato About Us bar -->
+        <div class="container text-center">
+        <div class="row">
+            <div class="col">
+            <img src="./bellPepper.png" alt="" id="center3" />
+            </div>
+            <div class="col-6">
+            <img src="./about.png" alt="" id="about" />
+            </div>
+            <div class="col" id="center2">
+            <img src="./tomatoes.png" alt="" id="tomato" />
+            </div>
         </div>
-      </div>
-    </nav>
-
-    <!--Lettuce Tomato About Us bar -->
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
-          <img src="./bellPepper.png" alt="" id="center3" />
-        </div>
-        <div class="col-6">
-          <img src="./about.png" alt="" id="about" />
-        </div>
-        <div class="col" id="center2">
-          <img src="./tomatoes.png" alt="" id="tomato" />
-        </div>
-      </div>
-    </div>
-
-    <!--Meet Our Team -->
-    <h1>Meet Our Team</h1>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <div class="container text-center" id="profileText">
-      <div class="row">
-        <div class="col">
-          <img
-            src="./Manuel.png"
-            alt="food meditation image"
-            id="profileSize"
-          />
-          <h1>Manuel Coronel</h1>
         </div>
 
-        <div class="col">
-          <br />
+        <!--Meet Our Team -->
+        <h1>Meet Our Team</h1>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
 
-          <img
-            src="./april.png"
-            alt="food meditation image"
-            id="profileSize2"
-          />
+        <div class="container text-center" id="profileText">
+        <div class="row">
+            <div class="col">
+            <img
+                src="./Manuel.png"
+                alt="food meditation image"
+                id="profileSize"
+            />
+            <h1>Manuel Coronel</h1>
+            </div>
 
-          <h1>April Gilmore</h1>
+            <div class="col">
+            <br />
+
+            <img
+                src="./april.png"
+                alt="food meditation image"
+                id="profileSize2"
+            />
+
+            <h1>April Gilmore</h1>
+            </div>
+
+            <div class="col">
+            <img src="./peter.png" alt="food meditation image" id="profileSize" />
+            <h1>Peter Itodo</h1>
+            </div>
         </div>
 
-        <div class="col">
-          <img src="./peter.png" alt="food meditation image" id="profileSize" />
-          <h1>Peter Itodo</h1>
+        <div class="row">
+            <div class="col">
+            <img
+                src="./maimouna.png"
+                alt="food meditation image"
+                id="profileSize3"
+            />
+            <h1>Maimouna Diallo</h1>
+            </div>
+
+            <div class="col">
+            <br />
+
+            <img
+                src="./kanchana2.png"
+                alt="food meditation image"
+                id="profileSize4"
+            />
+            <h1>Kanchana Iyer</h1>
+            </div>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <img
-            src="./maimouna.png"
-            alt="food meditation image"
-            id="profileSize3"
-          />
-          <h1>Maimouna Diallo</h1>
         </div>
 
-        <div class="col">
-          <br />
-
-          <img
-            src="./kanchana2.png"
-            alt="food meditation image"
-            id="profileSize4"
-          />
-          <h1>Kanchana Iyer</h1>
-        </div>
-      </div>
-    </div>
-
-    <br />
-    <br />
-    <br />
-    <br />
-  </body>
+        <br />
+        <br />
+        <br />
+        <br />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
 </html>
