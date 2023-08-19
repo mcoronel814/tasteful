@@ -448,11 +448,11 @@ font-size: 26px;
 /* ====== Start  Screen Sizes =====*/
 //* Extra small devices (phones, 575px and down) */
 @media only screen and (max-width: 575px)  {
-    #meal.col{
-        padding-left: 0%;
+    .navbar-brand{
+        font-size:  2rem;
     }
     #pinkPicture {
-        width: 500px;
+        width: 450px;
         margin-top: 0px;
     }
     .navbar-nav {
@@ -462,16 +462,22 @@ font-size: 26px;
         padding-left: 10%;
         // margin-bottom:0;
         // list-style:none
+        align-items: center;
     }
     .collapse {
         &:not(.show) {
         display: contents;  //none
         }
     } 
-    // #user-name{
-    //     line-height: 1;
-    //     font-size: 14px;
-    // }
+    .button{
+        margin-right: auto; //auto
+        width: 225px;
+        height: 60px;
+        border-radius: 40px;
+    }
+    #meal.col{
+        padding-left: 4%;
+    }
 }
 //* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
@@ -487,6 +493,7 @@ font-size: 26px;
         flex-direction: column;
         width: auto;
         padding-left: 10%;
+        align-items: center;
     }
     .collapse {
         &:not(.show) {
@@ -499,6 +506,9 @@ font-size: 26px;
 } 
 //* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
+    .navbar-brand{
+        font-size:  2.25rem;
+    }
     .fade {
             &:not(.show) {
             opacity: 1;  // 0
@@ -524,10 +534,6 @@ font-size: 26px;
         padding-left: 0;
         justify-content: space-between;
     }
-    // .nav-link {
-    //     display: block;
-    //     padding: 0.5rem 0.5rem;
-    // }
     // scss-docs-end collapse-classes
     .button{
             margin-right: auto; //auto
@@ -535,9 +541,6 @@ font-size: 26px;
             height: 60px;
             border-radius: 40px;
     }
-    // #user-name{
-    //     line-height: 2   
-    // }
 } 
 //* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
