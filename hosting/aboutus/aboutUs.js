@@ -42,6 +42,7 @@ const signInButton = document.getElementById("sign-in-button");
 const signOutButton = document.getElementById("sign-out-button");
 const userName = document.getElementById("user-name");
 const userPhoto = document.getElementById("user-photo");
+const recipesButton = document.getElementById("yellow"); 
 
 // Create an instance of the GoogleAuthProvider class
 const provider = new GoogleAuthProvider();
@@ -85,6 +86,8 @@ onAuthStateChanged(auth, (user) => {
         // Show the sign out button and hide the sign in button
         signOutButton.style.display = "block";
         signInButton.style.display = "none";
+        //Show the my recipes button
+        recipesButton.style.display = "block";
     } else {
         // User is signed out
         // Clear the user's information from the global variable or the local storage
@@ -93,11 +96,13 @@ onAuthStateChanged(auth, (user) => {
 
         // Update the UI elements
         // Hide the user's name and photo in the nav bar
-        userName.textContent = "";
-        userPhoto.src = "";
+        userName.textContent = "Guest";
+        userPhoto.src = "./assets/knife_fork_icon-6a4a4b01.png";
         // Hide the sign out button and show the sign in button
         signOutButton.style.display = "none";
         signInButton.style.display = "block";
+        // Hide my recipes button
+        recipesButton.style.display = "none";
     }
 });
 
