@@ -22,13 +22,6 @@
     font-family: 'DM Sans', sans-serif;     
 }
 
-#yellow {
-    background-color: #e3f55f;
-    color: rgb(7, 7, 7);
-    border: none; 
-    font-family: 'DM Sans', sans-serif;     
-}
-
 #lightPink {
     background-color: #F2535A;
     color: white;
@@ -89,7 +82,6 @@
     color: #ffffff ;
     font-family: 'Caprasimo', cursive;
     padding: 4px;
-
 }
 
 #foodTop
@@ -117,8 +109,6 @@
     width: 100px;
     margin-top: 10%;
     margin-left: 40%;
-
-    
     white-space: nowrap;
 }
 
@@ -434,8 +424,24 @@ font-size: 26px;
 .navbar-collapse {
     align-items: center;
 }
+#yellow {
+    background-color: #e3f55f;
+    color: rgb(7, 7, 7);
+    border: none; 
+    font-family: 'DM Sans', sans-serif;     
+}
 #user-name{
     line-height: 2;    
+}
+//google username and pic
+#user-photo {
+    width: 60px;  // width: 5%;
+    height: 60px;  // height: 5%;
+    border-radius: 100px;
+    display: inline; 
+    align-items: end;
+    margin-left: 4px;  //10px;
+    margin-right: 4px;  //10px;
 }
 //** End Navbar styles*/
 
@@ -559,13 +565,13 @@ font-size: 26px;
 //** End different screen sizes styles*/
 
 
-//google username and pic
-    #user-photo {
-        width: 60px;  // width: 5%;
-        height: 60px;  // height: 5%;
-        border-radius: 100px;
-        display: inline; 
-        align-items: end;
-        margin-left: 4px;  //10px;
-        margin-right: 4px;  //10px;
-    }
+// //google username and pic
+//     #user-photo {
+//         width: 60px;  // width: 5%;
+//         height: 60px;  // height: 5%;
+//         border-radius: 100px;
+//         display: inline; 
+//         align-items: end;
+//         margin-left: 4px;  //10px;
+//         margin-right: 4px;  //10px;
+//     }
