@@ -535,6 +535,9 @@ font-size: 26px;
             height: 60px;
             border-radius: 40px;
     }
+    #user-name{
+        line-height: 2   
+    }
 } 
 //* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
