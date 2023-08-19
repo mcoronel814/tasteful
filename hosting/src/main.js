@@ -88,7 +88,7 @@ onAuthStateChanged(auth, (user) => {
     // Show the sign out button and hide the sign in button
     signOutButton.style.display = "block";
     signInButton.style.display = "none";
-    //Show the my recipees  button
+    //Show the my recipes button
     recipesButton.style.display = "block";
   } else {
     // User is signed out
@@ -103,8 +103,8 @@ onAuthStateChanged(auth, (user) => {
     // Hide the sign out button and show the sign in button
     signOutButton.style.display = "none";
     signInButton.style.display = "block";
-    // Hide  the my recipees  button
-    // recipesButton.style.display = "none";
+    // Hide my recipes button
+    recipesButton.style.display = "none";
   }
 });
 
