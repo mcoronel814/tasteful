@@ -408,7 +408,7 @@ font-size: 26px;
 }
 
 
-//** Start Nav bar styles */
+/* ~~~~~~~~~ Start Navbar ~~~~~~~~~~*/
 .navbar-nav {
     display:flex;
     width: auto;
@@ -443,10 +443,10 @@ font-size: 26px;
     margin-left: 4px;  //10px;
     margin-right: 4px;  //10px;
 }
-//** End Navbar styles*/
+/* ~~~~~~~~~  End Navbar  ~~~~~~~~~~~*/
 
-//** Start different Screen Sizes styles*/
-/* Extra small devices (phones, 575px and down) */
+/* ====== Start  Screen Sizes =====*/
+//* Extra small devices (phones, 575px and down) */
 @media only screen and (max-width: 575px)  {
     #meal.col{
         padding-left: 0%;
@@ -458,10 +458,10 @@ font-size: 26px;
     .navbar-nav {
         display:flex;
         flex-direction: column;
-        width: auto;
+        // width: auto;
         padding-left: 10%;
-        margin-bottom:0;
-        list-style:none
+        // margin-bottom:0;
+        // list-style:none
     }
     .collapse {
         &:not(.show) {
@@ -473,8 +473,7 @@ font-size: 26px;
         font-size: 12px;
     }
 }
-
-/* Small devices (portrait tablets and large phones, 576px and up) */
+//* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
     #pinkPicture {
         width: 550px;
@@ -488,8 +487,6 @@ font-size: 26px;
         flex-direction: column;
         width: auto;
         padding-left: 10%;
-        margin-bottom:0;
-        list-style:none
     }
     .collapse {
         &:not(.show) {
@@ -500,14 +497,13 @@ font-size: 26px;
         line-height: 1    
     }
 } 
-/* Medium devices (landscape tablets, 768px and up) */
+//* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
     .fade {
             &:not(.show) {
             opacity: 1;  // 0
             }
         }
-    // scss-docs-start collapse-classes
     .collapse {
         &:not(.show) {
         display: block;  //none
@@ -526,14 +522,13 @@ font-size: 26px;
         flex-direction: row;
         width: auto;
         // padding-left: 8px;
-        margin-bottom:0;
-        list-style:none;
         justify-content: space-between;
+    }
     // .nav-link {
     //     display: block;
     //     padding: 0.5rem 0.5rem;
     // }
-      // scss-docs-end collapse-classes
+    // scss-docs-end collapse-classes
     .button{
             margin-right: auto; //auto
             width: 105px;
@@ -541,16 +536,13 @@ font-size: 26px;
             border-radius: 40px;
     }
 } 
-
-/* Large devices (laptops/desktops, 992px and up) */
+//* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .navbar-nav {
         display:flex;
         flex-direction: row;
         width: auto;
         padding-left: 0%;
-        margin-bottom:0;
-        list-style:none
     }
     .button{
         margin-right: 4px;  //auto;
@@ -558,11 +550,12 @@ font-size: 26px;
         height: 60px;
         border-radius: 40px;
     }
-//     .navbar-expand-lg .navbar-nav .nav-link {
-//         padding-right: .4rem;
-//         padding-left:  .4rem;
-// } 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+    //     .navbar-expand-lg .navbar-nav .nav-link {
+    //         padding-right: .4rem;
+    //         padding-left:  .4rem;
+    // } 
+}
+//* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     #user-name{
         line-height: 4    
@@ -572,8 +565,6 @@ font-size: 26px;
         flex-direction: row;
         width: auto;
         padding-left: 3%;
-        margin-bottom:0;
-        list-style:none
     }
     .button{
         margin-right: auto;
@@ -582,7 +573,7 @@ font-size: 26px;
         border-radius: 40px;
     }
 }
-//** End different screen sizes styles*/
+/*======= End   Screen Sizes ====== */
 
 
 // //google username and pic
