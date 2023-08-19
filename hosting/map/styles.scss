@@ -69,7 +69,18 @@
 #space11{
     line-height: 8;
 }
+#foodExplorer{
+    color: #55358A ;
+    font-family: 'Caprasimo', cursive;
+    padding: 4px;
 
+}
+#foodExplorer2{
+    color: #ffffff ;
+    font-family: 'Caprasimo', cursive;
+    padding: 4px;
+
+}
 
 #foodTop
 {
@@ -648,11 +659,8 @@ font-size: 26px;
 
 }
 #map {
-    position: absolute;
     height: 900px;
     width: 100%;
-    z-index: 1;
-
 
   }
 
@@ -1059,21 +1067,8 @@ text-indent: 30px;
 
 
 //  Navbar
-#Navbar2
+#Navbar
 {
-    // display: none;
-    background-color: transparent;
-    // background-color: #F2535A;
-}
-
-
-#foodExplorer{
-    color: #55358A ;
-    font-family: 'Caprasimo', cursive;
-    // padding: 4px;
-    font-size: 22px;
-    margin-left: 1200px;  
-  
-
-
+    display: "none";
+    background-color: #F2535A;
 }
