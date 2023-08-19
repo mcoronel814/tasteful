@@ -418,7 +418,7 @@ font-size: 26px;
 }
 
 
-//** Start _Nav bar  buttons display on all screen sizes */
+//** Start Nav bar styles */
 .navbar-nav {
     display:flex;
     width: auto;
@@ -437,7 +437,9 @@ font-size: 26px;
 #user-name{
     line-height: 2;    
 }
+//** End Navbar styles*/
 
+//** Start different Screen Sizes styles*/
 /* Extra small devices (phones, 575px and down) */
 @media only screen and (max-width: 575px)  {
     #meal.col{
@@ -518,7 +520,7 @@ font-size: 26px;
         display:flex;
         flex-direction: row;
         width: auto;
-        padding-left: 10%;
+        padding-left: 0%;
         margin-bottom:0;
         list-style:none
     }
@@ -554,15 +556,16 @@ font-size: 26px;
         line-height: 4    
     }
 }
-//** End _Nav bar  buttons display on all screen sizes */
+//** End different screen sizes styles*/
 
 
 //google username and pic
-
     #user-photo {
-        // width: 5%;
-        // height: 5%;
+        width: 60px;  // width: 5%;
+        height: 60px;  // height: 5%;
         border-radius: 100px;
-        margin-left: 10px;
-        margin-right: 10px;
+        display: inline; 
+        align-items: end;
+        margin-left: 4px;  //10px;
+        margin-right: 4px;  //10px;
     }
