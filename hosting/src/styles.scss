@@ -409,13 +409,7 @@ font-size: 26px;
 
 
 /* ~~~~~~~~~~~~~~~ Start Navbar ~~~~~~~~~~~~~~*/
-.navbar-nav {
-    display:flex;
-    width: auto;
-    padding-left: 10%;
-    margin-bottom:0;
-    list-style:none
-}
+// scss-docs-start collapse-classes
 .collapse {
     &:not(.show) {
     display: block;  //none
@@ -424,6 +418,7 @@ font-size: 26px;
 .navbar-collapse {
     align-items: center;
 }
+ // scss-docs-end collapse-classes
 #yellow {
     background-color: #e3f55f;
     color: rgb(7, 7, 7);
@@ -440,17 +435,35 @@ font-size: 26px;
     margin-left: 4px;  //10px;
     margin-right: 4px;  //10px;
 }
+.navbar-nav {
+    display:flex;
+    width: auto;
+    padding-left: 10%;
+    margin-bottom:0;
+    list-style:none
+}
 /* ~~~~~~~~~~~~~~  End Navbar  ~~~~~~~~~~~~~~~*/
 
 /* ====== Start  Screen Sizes =====*/
 //* Smartphones devices (phones, 400px and down) */
 @media only screen and (max-width: 400px)  {
-    .navbar-brand{
-        font-size:  1.5rem;
+    // food plates loop
+    #meal.col{
+        padding-left: 4%;
     }
     #pinkPicture {
         width: 350px;
         margin-top: 0px;
+    }  // food plates loop end
+
+    // scss-docs-start collapse-classes
+    .collapse {
+        &:not(.show) {
+        display: contents;  //none
+        }
+    } 
+    .navbar-brand{
+        font-size:  1.5rem;
     }
     .navbar-nav {
         display:flex;
@@ -461,29 +474,32 @@ font-size: 26px;
         // list-style:none
         align-items: center;
     }
-    .collapse {
-        &:not(.show) {
-        display: contents;  //none
-        }
-    } 
     .button{
         margin-right: auto; //auto
         width: 175px;
         height: 60px;
         border-radius: 40px;
     }
-    #meal.col{
-        padding-left: 4%;
-    }
 }
 //* Extra small devices (401px and up) */
 @media only screen and (min-width: 401px)  {
-    .navbar-brand{
-        font-size:  1.5rem;
+    // food plates loop
+    #meal.col{
+        padding-left: 4%;
     }
     #pinkPicture {
         width: 375px;
         margin-top: 0px;
+    }  // food plates loop end
+
+    // scss-docs-start collapse-classes
+    .collapse {
+        &:not(.show) {
+        display: contents;  //none
+        }
+    }     // scss-docs-end collapse-classes
+    .navbar-brand{
+        font-size:  1.5rem;
     }
     .navbar-nav {
         display:flex;
@@ -494,30 +510,31 @@ font-size: 26px;
         // list-style:none
         align-items: center;
     }
-    .collapse {
-        &:not(.show) {
-        display: contents;  //none
-        }
-    } 
     .button{
         margin-right: auto; //auto
         width: 215px;
         height: 60px;
         border-radius: 40px;
     }
-    #meal.col{
-        padding-left: 4%;
-    }
 }
 //* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
+    // food plates loop
     #pinkPicture {
         width: 550px;
         margin-top: 0px;
-    }
+    } // food plates loop end
+
+    // scss-docs-start collapse-classes
     .navbar-collapse {
         align-items: center;
     }
+    .collapse {
+        &:not(.show) {
+        display: contents;  //none
+        }
+    }     // scss-docs-end collapse-classes
+
     .navbar-nav {
         display:flex;
         flex-direction: column;
@@ -525,17 +542,10 @@ font-size: 26px;
         padding-left: 10%;
         align-items: center;
     }
-    .collapse {
-        &:not(.show) {
-        display: contents;  //none
-        }
-    }
 } 
 //* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
-    .navbar-brand{
-        font-size:  1rem;
-    }
+     // scss-docs-start collapse-classes
     .fade {
             &:not(.show) {
             opacity: 1;  // 0
@@ -553,6 +563,10 @@ font-size: 26px;
             width: auto; //0
             height: auto;
         }
+    }  // scss-docs-end collapse-classes
+
+    .navbar-brand{
+        font-size:  1rem;
     }
     .navbar-nav {
         display:flex;
@@ -561,7 +575,6 @@ font-size: 26px;
         padding-left: 0;
         justify-content: space-between;
     }
-    // scss-docs-end collapse-classes
     .button{
             margin-right: auto; //auto
             width: 105px;
@@ -583,16 +596,15 @@ font-size: 26px;
         height: 60px;
         border-radius: 40px;
     }
-    //     .navbar-expand-lg .navbar-nav .nav-link {
-    //         padding-right: .4rem;
-    //         padding-left:  .4rem;
-    // } 
 }
 //* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    // #user-name{
-    //     line-height: 4    
-    // }
+    p{
+        margin-bottom: 0rem;
+    }
+    .navbar-brand{
+        font-size:  1.25rem;
+    }
     .navbar-nav {
         display:flex;
         flex-direction: row;
