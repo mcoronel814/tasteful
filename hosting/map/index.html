@@ -194,7 +194,10 @@
 
         <div class="col-6" id="map">
 
-      
+          <p id="foodExplorer">
+            Food <br />
+            Explorer
+          </p>
 
     
 
@@ -556,18 +559,15 @@ function initMap() {
         var userLat = position.coords.latitude;
         var userLng = position.coords.longitude;
 
+
+
         // Create a map centered on the user's location
         var map = new google.maps.Map(document.getElementById('map'), {
           center: { lat: userLat, lng: userLng },
           zoom: 15
         });
 
-        document.getElementById("map").innerHTML = ` 
-        <p id="foodExplorer">
-              Food <br />
-              Explorer
-            </p>
-        `;
+
 
 
         const userLocation = { lat: userLat, lng: userLng };
