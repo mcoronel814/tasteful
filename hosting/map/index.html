@@ -76,7 +76,7 @@
       <div class="container" >
         <div class="collapse navbar-collapse" id="navbarNew" >
 
-          <!-- <ul class="navbar-nav ms-auto" id="navbarSupportedContent" >
+           <ul class="navbar-nav ms-auto" id="navbarSupportedContent" >
             <li class="nav-item active">
               <a class="nav-link" href="https://tasteful-48763.web.app/map">
                 <button type="button" id="lightBlue" class="button" >MY RECIPES</button>
@@ -99,13 +99,13 @@
                 </button>
               </a>
             </li>
-          </ul> -->
+          </ul> -
 
           
           
         </div>
 
-        <a class="navbar-brand" href="https://tasteful-48763.web.app/" onmouseenter="change1()" onmouseleave="change2()" >
+        <a class="navbar-brand" href="https://tasteful-48763.web.app/" onmouseenter="change1a()" onmouseleave="change2a()" >
           <p id="foodExplorer">
             Food <br />
             Explorer
@@ -362,11 +362,20 @@ navbarNew.innerHTML = `
 }
 
 
-
-function change2()
+const lightBlue  = document.getElementById('lightBlue');
+function change1a()
 {
-  navbarNew.innerHTML = '';
 
+
+  lightBlue.style.top = "0";
+
+}
+
+
+function change2a()
+{
+
+  lightBlue.style.top = "-30px";
 
 }
 
