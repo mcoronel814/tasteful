@@ -1,397 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- <link rel="stylesheet" href="layout.css" />
-    <link rel="stylesheet" href="placeInformation.css" /> -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+  <!-- font Open Sans -->
 
-        <!-- font Caprasimo -->
-        <link
-        href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"
-        rel="stylesheet"
-      />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet" />
 
+  <!-- font Caprasimo -->
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet" />
 
-         <!-- font League Spartan -->
-    <link
-    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap"
-    rel="stylesheet"
-/>
+  <!-- font League Spartan -->
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@800&display=swap" rel="stylesheet" />
 
-    <title>Knives, Out!</title>
-  </head>
-  <body>
+  <title>Knives, Out!</title>
+</head>
 
-                  
-   
+<body>
+  <!-- Nav Bar  -->
+  <nav class="navbar navbar-expand-lg fixed-top navbarScroll" id="navNew" onmouseover="change1a()">
+    <img src="iceCream.png" alt="" style="display: none" />
 
-  <!-- <nav class="navbar navbar-expand-lg navbarScroll"  id="navNew"  onmouseover="change1a()">
-     
- 
-<img src="iceCream.png" alt="" style="display: none;">
-
-    <div  id="linksBtn" style="display: none;">
-    
+    <div class="container" id="linksBtn" style="display: none">
       <ul class="navbar-nav ms-auto" id="navbarSupportedContent">
-      <li class="nav-item active">
-        <a class="nav-link" href="https://tasteful-48763.web.app/map">
-          <button type="button" id="lightBlue" class="button" >MY RECIPES</button>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          href="https://tasteful-48763.web.app/cookbook"
-        >
-          <button type="button" id="darkBlue" class="button" >
-            COOKBOOK
-          </button>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://tasteful-48763.web.app/aboutus">
-          <button type="button" id="lightPink" class="button" >
-            ABOUT US
-          </button>
-        </a>
-      </li>
-    </ul> 
-
-  </div>
-
-
-
-<a  href="https://tasteful-48763.web.app/"  >
-  <p id="foodExplorer"  style="display: block;">
-    Food <br />
-    Explorer
-  </p>
-</a>
-</nav> -->
-
-
-<nav class="navbar navbar-expand-lg fixed-top navbarScroll" id="navNew"  onmouseover="change1a()">
- 
-  <img src="iceCream.png" alt="" style="display: none;">
- 
-  <div class="container"  id="linksBtn" style="display: none;">
-      
-   
-    <ul class="navbar-nav ms-auto" id="navbarSupportedContent">
-      <li class="nav-item active">
-        <a class="nav-link" href="https://tasteful-48763.web.app/map">
-          <button type="button" id="lightBlue" class="button" >MY RECIPES</button>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          href="https://tasteful-48763.web.app/cookbook"
-        >
-          <button type="button" id="darkBlue" class="button" >
-            COOKBOOK
-          </button>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://tasteful-48763.web.app/aboutus">
-          <button type="button" id="lightPink" class="button" >
-            ABOUT US
-          </button>
-        </a>
-      </li>
-    </ul> 
-          
-      </div>
-
-      <a  href="https://tasteful-48763.web.app/"  >
-        <p id="foodExplorer"  >
-          Food <br />
-          Explorer
-        </p>
-      </a>
-
-
-
-  
-</nav>
-
-
-
-
-    <div class="container-fluid text-center" id="displaEverything">
-
-      <div class="row">
-        <div class="col info1" id="blue1">
-          <div class="container-fluid text-center" id="body1">
-            <div class="row">
-              <div class="col">
-                <form action="">
-                  <input type="search" id="searchBar" placeholder="   " />
-                  <img src="search.png" alt="search" id="search" />
-                </form>
-
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-
-                <h1 id="restaurantName"></h1>
-                <br />
-
-                <!-- <div id="starRate">  -->
-
-                <h5 id="restaurantScore"></h5>
-
-                <h5 id="restaurantType">
-                  <br />
-                </h5>
-
-                <!-- stars -->
-                <div class="image-container" id="imageContainer">
-
-
-                  <img src="star1.png" style="display:none">
-                  <!-- <img src="placeholder.png" display="none">
-                  <img src="link.png" display="none">
-                  <img src="time.png" display="none"> -->
-
-                </div>
-                <br />
-                <br />
-
-                <!-- </div> -->
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <div id="myTopnav" class="topnav">
-                  <a href="#" class="active" id="Overview">Overview</a>
-                  <a href="#" id="reviews"> Reviews</a>
-                </div>
-
-                <hr id="greyLine" />
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <p id="describe">
-                  Big Slices with creamy artichokes topping & other
-                </p>
-
-                <p id="describe1">
-                  unique twist draw crowds to this casual pie spot.
-                </p>
-
-                <p id="describe2">Dine-in - Takeout - Delivery</p>
-
-                <hr id="greyLine" />
-                <br />
-                <br />
-
-                <img src="placeholder.png" alt="" id="pin" />
-                <h5 id="address"></h5>
-
-                <img src="link.png" alt="" id="link" />
-                <h5 id="website"></h5>
-                <!-- <a id="website" href="#" target="_blank"> Check Out Our Website!</a> -->
-
-                <br />
-
-                <img src="time.png" alt="" id="time" />
-
-                <p id="OpeningHours"></p>
-
-                <br />
-                <br />
-                <p></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" id="yellow1">
-          <div class="container-fluid text-center" id="recipes">
-            <!-- <div class="row" >
-
-               <div class="col" >
-                
-                col
-
-                <hr id="recipe1">
-              
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                
-                col
-                <hr id="recipe2">
-              
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                col
-                <hr id="recipe3">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                
-                col
-                <hr id="recipe4">
-              
-              </div>
-            </div>  -->
-          </div>
-        </div>
-
-        <div class="col-6" id="map">
-          <!-- -->
-
-          <!-- 2 of 3 (wider)  -->
-        </div>
-      </div>
-
-      <!-- <div class="row">
-          <div class="col">
-            1 of 3
-          </div>
-          <div class="col-5">
-            2 of 3 (wider)
-          </div>
-          <div class="col">
-            3 of 3
-          </div>
-        </div> -->
+        <li class="nav-item active">
+          <a class="nav-link" href="https://tasteful-48763.web.app/map">
+            <button type="button" id="lightBlue" class="button">
+              MY RECIPES
+            </button>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://tasteful-48763.web.app/cookbook">
+            <button type="button" id="darkBlue" class="button">
+              COOKBOOK
+            </button>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://tasteful-48763.web.app/aboutus">
+            <button type="button" id="lightPink" class="button">
+              ABOUT US
+            </button>
+          </a>
+        </li>
+      </ul>
     </div>
 
-    <!-- Google JavaScript -->
+    <a href="https://tasteful-48763.web.app/">
+      <p id="foodExplorer">
+        Food <br />
+        Explorer
+      </p>
+    </a>
+  </nav>
+  <!--End  Nav Bar  -->
 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCojeyZ3gqEIRutinm6DuOUvA9nrSiYSLQ&libraries=places&callback=initMap"
-      async
-      defer
-    ></script>
-    <!--  -->
-    <!-- <script src="script2.js"></script>-->
-    <!-- <script src="script3.js"></script> -->
-    <!-- <script type="module" src="./script4.js"></script> -->
-    <script type="module" src="./map.js"></script>
-    <!-- linking script file -->
-    <!-- linking script file -->
+  <div class="container-fluid text-center" id="displaEverything">
+    <div class="row">
+      <!-- Div container for restaurant information: Name, Rating, Reviews, Website  -->
+      <div class="col info1" id="blue1">
+        <div class="container-fluid text-center" id="body1">
+          <div class="row">
+            <div class="col">
+              <!-- Search Bar  -->
+              <form action="">
+                <input type="search" id="searchBar" placeholder="   " />
+                <img src="search.png" alt="search" id="search" />
+              </form>
+              <!-- End Search Bar  -->
 
-    <!-- <script src="script7.js"></script> -->
-    <!-- <script src="meal.js"></script> -->
-    <!-- <script src="star.js"></script> -->
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script> -->
+              <!-- Restaurant Name  -->
+              <h1 id="restaurantName"></h1>
+              <br />
 
+              <!-- Restaurant Score  -->
+              <h5 id="restaurantScore"></h5>
 
+              <h5 id="restaurantType">
+                <br />
+              </h5>
 
+              <!-- Restaurant Score stars -->
+              <div class="image-container" id="imageContainer">
+                <img src="star1.png" style="display: none" />
+              </div>
+              <br />
+              <br />
+            </div>
+          </div>
 
-  </body>
+          <div class="row">
+            <div class="col">
+              <div id="myTopnav" class="topnav">
+                <!-- Overview Section -->
+                <a href="" class="active" id="Overview">Overview</a>
 
+                <!-- Reviews Section -->
+                <a href="#" id="reviews"> Reviews</a>
+              </div>
 
+              <hr id="greyLine" />
+            </div>
+          </div>
 
-  <script>
+          <div class="row">
+            <div class="col">
+              <!-- Editorial Summary Section -->
+              <p id="describe">
+                Lorem ipsum dolor sit amet consectetur adipisicin
+              </p>
 
+              <p id="describe1">
+                Lorem ipsum dolor sit amet consectetur adipisicin
+              </p>
 
-    // script4a.js "/assets/iceCream-790313cc.png";
+              <p id="describe2">Dine-in - Takeout - Delivery</p>
 
+              <hr id="greyLine" />
+              <br />
+              <br />
 
+              <!-- Pin  Picture -->
+              <img src="placeholder.png" alt="" id="pin" />
+              <h5 id="address"></h5>
 
+              <!-- Link  Picture -->
+              <img src="link.png" alt="" id="link" />
+              <h5 id="website"></h5>
+              <br />
 
+              <!-- Time  Picture -->
+              <img src="time.png" alt="" id="time" />
+              <p id="OpeningHours"></p>
+              <br />
+              <br />
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    var linksBtn = document.getElementById("linksBtn");
-var imh = document.getElementById("imh");
-var navNew = document.getElementById("navNew");
-var foodExplorer = document.getElementById("foodExplorer");
+      <!-- Recipe Suggestion section -->
+      <div class="col" id="yellow1">
+        <div class="container-fluid text-center" id="recipes"></div>
+      </div>
+      <!-- End Suggestion section -->
 
+      <!--Map section -->
+      <div class="col-6" id="map"></div>
+    </div>
+    <!--End Map section -->
+  </div>
 
+  <!-- Google JavaScript -->
 
-var lightBlue = document.getElementById("lightBlue");
-var lightPink = document.getElementById("lightPink");
-var darkBlue = document.getElementById("darkBlue");
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCojeyZ3gqEIRutinm6DuOUvA9nrSiYSLQ&libraries=places&callback=initMap"
+    async defer></script>
 
-var iceCream = document.createElement("img");
+  <!-- User Login Information JavaScript -->
+  <script type="module" src="./map.js"></script>
 
+  <!-- End Body -->
+</body>
 
-var paragraph = document.createElement("p");
+<script>
+  // script4a.js
 
+  //Variables used by the function change1a()
+  var linksBtn = document.getElementById("linksBtn");
+  var imh = document.getElementById("imh");
+  var navNew = document.getElementById("navNew");
+  var foodExplorer = document.getElementById("foodExplorer");
+  var lightBlue = document.getElementById("lightBlue");
+  var lightPink = document.getElementById("lightPink");
+  var darkBlue = document.getElementById("darkBlue");
+  var iceCream = document.createElement("img");
+  var paragraph = document.createElement("p");
 
-
-function change1a()
-  {
-
-
-
-foodExplorer.addEventListener("mouseenter", () => {
-
-
-
-      linksBtn.style.display= "block";
+  //Function used to display Nav bar when the user over the link "Food Explorer"
+  function change1a() {
+    foodExplorer.addEventListener("mouseenter", () => {
+      linksBtn.style.display = "block";
       iceCream.style.display = "block";
       paragraph.style.display = "block";
-      
 
       navNew.style.backgroundColor = "#FFEBDE";
       navNew.style.overflow = "hidden";
-      navNew.style.height= "500px"
-      lightPink.style.marginBottom = "380px"
-      linksBtn.style.marginLeft = "-50px"
+      navNew.style.height = "500px";
+
+      lightPink.style.marginBottom = "380px";
+      linksBtn.style.marginLeft = "-50px";
 
       foodExplorer.style.top = "2%";
       foodExplorer.style.left = "90%";
 
-      // iceCream.src = "/assets/iceCream-790313cc.png";
       iceCream.src = "/assets/iceCream-790313cc.png";
-      iceCream.alt = "iceCream " ;
+      iceCream.alt = "iceCream ";
       iceCream.style.width = "490px";
       iceCream.style.height = "490px";
       iceCream.style.rotate = "35deg";
@@ -399,91 +222,65 @@ foodExplorer.addEventListener("mouseenter", () => {
       iceCream.style.left = "20px ";
       iceCream.style.top = "150px ";
 
-
       navNew.appendChild(iceCream);
 
       paragraph.innerHTML = `Discover Global <br> Flavors from the <br> comfort of your Couch`;
       paragraph.style.fontFamily = "League Spartan', sans-serif";
-     
+
       paragraph.style.fontSize = "60px";
       paragraph.style.color = "#FF6666";
       paragraph.style.fontWeight = "bold";
       paragraph.style.position = "absolute";
       paragraph.style.left = "650px ";
       paragraph.style.top = "170px ";
-  
 
       navNew.appendChild(paragraph);
-
-
-
-
- });
-
-navNew.addEventListener("mouseleave", () => {
-
-      linksBtn.style.display= "none";
-      
-      navNew.style.backgroundColor = "transparent";
-      navNew.style.height= "100px";
-      iceCream.style.display = "none";
-      paragraph.style.display = "none";
-
-
-
     });
 
+    navNew.addEventListener("mouseleave", () => {
+      linksBtn.style.display = "none";
 
-
-
-
-
-
-
+      navNew.style.backgroundColor = "transparent";
+      navNew.style.height = "100px";
+      iceCream.style.display = "none";
+      paragraph.style.display = "none";
+    });
   }
 
+  //Variables used by the function fetchRecipes()
+  const recipeContainer = document.getElementById("recipes");
 
+  //Function used to Fetch recipes from TheMealDB API
+  async function fetchRecipes() {
+    const apiKey = "1";
 
+    // Number of recipes to retrieve
+    const numberOfRecipes = 3;
 
+    try {
+      const response = await fetch(
+        `https://www.themealdb.com/api/json/v2/${apiKey}/randomselection.php`
+      );
+      const data = await response.json();
 
-const recipeContainer = document.getElementById('recipes');
-
-    // Fetch recipes from TheMealDB API
-    async function fetchRecipes() {
-
-
-
-
-
-  const apiKey = '1';
-
-      // Number of recipes to retrieve
-      const numberOfRecipes = 3;
-
-
-      try {
-    const response = await fetch(`https://www.themealdb.com/api/json/v2/${apiKey}/randomselection.php`);
-        const data = await response.json();
-
-        const recipes = data.meals.slice(0, numberOfRecipes);
-        displayRecipes(recipes);
-      } catch (error) {
-    console.error('Error fetching recipes:', error);
-      }
+      const recipes = data.meals.slice(0, numberOfRecipes);
+      displayRecipes(recipes);
+    } catch (error) {
+      console.error("Error fetching recipes:", error);
     }
+  }
 
+  // Function used to  Display recipes in the HTML container
+  function displayRecipes(recipes) {
+    recipeContainer.innerHTML = "";
+    recipes.forEach((recipe) => {
+      const recipeCard = document.createElement("div");
+      recipeCard.classList.add("col");
 
-    // Display recipes in the HTML container
-    function displayRecipes(recipes) {
-  recipeContainer.innerHTML = '';
-  recipes.forEach(recipe => {
-    const recipeCard = document.createElement('div');
-    recipeCard.classList.add('col');
+      // Truncate instructions to the first 100 words
+      const truncatedInstructions = truncateText(recipe.strInstructions, 45);
 
-        // Truncate instructions to the first 100 words
-        const truncatedInstructions = truncateText(recipe.strInstructions, 45);
-
-        recipeCard.innerHTML = `
+      recipeCard.innerHTML = `
         <span class="hiddentxt">
             <h2 id="RecipeName" >${recipe.strMeal}</h2>
         </span>
@@ -501,134 +298,96 @@ const recipeContainer = document.getElementById('recipes');
 
         `;
 
-        recipeContainer.appendChild(recipeCard);
-      });
+      recipeContainer.appendChild(recipeCard);
+    });
+  }
+
+  // Function used to truncate text to a specified number of words
+  function truncateText(text, maxLength) {
+    const words = text.split(" ");
+    if (words.length > maxLength) {
+      return words.slice(0, maxLength).join(" ") + "...";
     }
+    return text;
+  }
 
+  // Function used to display the restaurant rating in number of stars
 
-    //truncate text to a specified number of words
-    function truncateText(text, maxLength) {
-  const words = text.split(' ');
-      if (words.length > maxLength) {
-    return words.slice(0, maxLength).join(' ') + '...';
-      }
-      return text;
+  function stars(numberOfStars) {
+    const container = document.getElementById("imageContainer");
+
+    const imageWidth = 13;
+    const imageHeight = 13;
+
+    for (let i = 0; i < Math.round(numberOfStars); i++) {
+      const imageBox = document.createElement("div");
+      imageBox.className = "image-box";
+
+      const image = document.createElement("img");
+      image.src = "/assets/star1-b170b7f3.png";
+      image.alt = "Image " + (i + 1);
+      image.style.width = imageWidth + "px";
+      image.style.height = imageHeight + "px";
+
+      imageBox.appendChild(image);
+      container.appendChild(imageBox);
     }
+  }
 
+  //Function used to change the div container (id = "body1" ) layout when user click on reviews
+  function newLayout(reviews, rating) {
+    const body1 = document.getElementById("body1");
 
-
-
-
-    //display the restaurant rating in number of stars
-
-    function stars(numberOfStars) {
-
-      const container = document.getElementById("imageContainer");
-
-      const imageWidth = 13;
-      const imageHeight = 13;
-
-      for (let i = 0; i < Math.round(numberOfStars); i++) {
-
-
-        const imageBox = document.createElement("div");
-        imageBox.className = "image-box";
-
-
-        const image = document.createElement("img");
-        image.src = "/assets/star1-b170b7f3.png";
-        image.alt = "Image " + (i + 1);
-        image.style.width = imageWidth + "px";
-        image.style.height = imageHeight + "px";
-
-        imageBox.appendChild(image);
-        container.appendChild(imageBox);
-
-
-      }
-    }
-
-
-
-
-    //layout when user click on reviews
-    function newLayout(reviews, rating) {
-
-      const body1 = document.getElementById("body1");
-
-
-  body1.innerHTML = '';
-  const rate1 = document.createElement('div');
-  rate1.classList.add('note');
-      rate1.innerHTML = `<h2 id="rate1" > ${rating} </h2>
+    body1.innerHTML = "";
+    const rate1 = document.createElement("div");
+    rate1.classList.add("note");
+    rate1.innerHTML = `<h2 id="rate1" > ${rating} </h2>
      <div class="image-container" id="imageContainer">
-     
-     `
+      `;
 
+    body1.appendChild(rate1);
 
-      body1.appendChild(rate1);
+    for (let i = 0; i < 3; i++) {
+      const author = reviews[i]["author_name"];
+      const text = reviews[i]["text"];
+      const rating = reviews[i]["rating"];
+      const visited = reviews[i]["relative_time_description"];
 
-      for (let i = 0; i < 3; i++) {
+      const reviewCard = document.createElement("div");
+      reviewCard.classList.add("col");
 
-    const author = reviews[i]['author_name'];
-    const text = reviews[i]['text'];
-    const rating = reviews[i]['rating'];
-    const visited = reviews[i]['relative_time_description'];
-
-    const reviewCard = document.createElement('div');
-    reviewCard.classList.add('col');
-
-    reviewCard.innerHTML =
-
-      `
-                <h2 id="author" > ${author} </h2>
-
-        
-
-
-               
+      reviewCard.innerHTML = `
+                <h2 id="author" > ${author} </h2>             
                 <p id="visited" > ${visited} </p>
-
-       
-
                 <p id="review" > ${text} </p>
-
                 <hr id="greyLine">
                 
-                `
-
-
-        body1.appendChild(reviewCard);
-     
-      }
+                `;
+      body1.appendChild(reviewCard);
     }
+  }
 
+  //Function used to change the div container (id = "body1" ) layout when user click on another marker (if they had already clicked on review link before)
+  function oldLayout() {
+    const body1 = document.getElementById("body1");
 
-
-    //layout when the user click on the marker after clicking on reviews
-    function oldLayout() {
-      const body1 = document.getElementById("body1");
-
-  body1.innerHTML = '';
-  const div = document.createElement('div');
-  div.classList.add('row');
-      div.innerHTML = `
+    body1.innerHTML = "";
+    const div = document.createElement("div");
+    div.classList.add("row");
+    div.innerHTML = `
   <div class="col">
   <form action="">
     <input type="search" id="searchBar" placeholder="   " />
     <img src="/assets/search-55725427.png" alt="search" id="search" />
   </form>
-
   <br />
   <br />
   <br />
   <br />
   <br />
   <br />
-
   <h1 id="restaurantName"></h1>
   <br />
-
   <!-- <div id="starRate">  -->
 
   <h5 id="restaurantScore"></h5>
@@ -661,9 +420,9 @@ const recipeContainer = document.getElementById('recipes');
 
 <div class="row">
   <div class="col">
-    <p id="describeA">Big Slices with creamy artichokes topping & other</p>
+    <p id="describeA">Lorem ipsum dolor sit amet consectetur adipisicin</p>
 
-    <p id="describeB">unique twist draw crowds to this casual pie spot.</p>
+    <p id="describeB">Lorem ipsum dolor sit amet consectetur adipisicin.</p>
 
     <p id="describeC">Dine-in - Takeout - Delivery</p>
 
@@ -689,355 +448,200 @@ const recipeContainer = document.getElementById('recipes');
     <p></p>
   </div>
 </div>
+  `;
+    body1.appendChild(div);
+  }
 
-  
-  `
+  //variables Used for the init function
+  const restaurants = [];
+  var reviewCount = 0;
 
-      body1.appendChild(div);
+  //set map size the map size to plain screen in the begining
+  var map2 = document.getElementById("map");
+  map2.classList.remove("col-6");
 
+  //change info block display to none
+  var blue1 = document.getElementById("blue1");
+  blue1.style.display = "none";
+  var yellow1 = document.getElementById("yellow1");
+  yellow1.style.display = "none";
 
-    }
+  //Function used to display the map
+  function initMap() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        // Retrieve latitude and longitude from the position object
+        var userLat = position.coords.latitude;
+        var userLng = position.coords.longitude;
 
+        // Create a map centered on the user's location
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: userLat, lng: userLng },
+          zoom: 15,
+        });
 
+        const userLocation = { lat: userLat, lng: userLng };
 
+        const service = new google.maps.places.PlacesService(map);
 
-    //variables
-    const restaurants = [];
-    var reviewCount = 0;
-
-
-    //set map size the map size to plain screen in the begining
-    var map2 = document.getElementById("map");
-map2.classList.remove("col-6")
-
-
-    //change info block display to none
-    var blue1 = document.getElementById("blue1");
-    blue1.style.display = "none";
-    var yellow1 = document.getElementById("yellow1");
-    yellow1.style.display = "none";
-
-
-    function initMap() {
-      // const map = new google.maps.Map(document.getElementById("map"), {
-      //   center: { lat: 40.7128, lng: -74.0060 },
-      //   zoom: 15,
-      // });
-
-      // const userLocation = { lat: 40.7128, lng: -74.0060 };
-
-
-
-
-      if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      function (position) {
-          // Retrieve latitude and longitude from the position object
-          var userLat = position.coords.latitude;
-          var userLng = position.coords.longitude;
-
-          // Create a map centered on the user's location
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: userLat, lng: userLng },
-          zoom: 15
-          });
-
-
-
-          const userLocation = { lat: userLat, lng: userLng };
-
-
-
-
-
-
-
-          const service = new google.maps.places.PlacesService(map);
-
-          service.nearbySearch(
-            {
-              location: userLocation,
-              radius: 5000,
-              type: "restaurant",
-            },
-            async (results, status) => {
-              if (status === google.maps.places.PlacesServiceStatus.OK) {
-                for (const place of results) {
-                  const details = await new Promise((resolve, reject) => {
-                    service.getDetails(
-                      {
-                        placeId: place.place_id,
-                      fields: ["name", "formatted_address", "geometry.location", "reviews", "rating", "types", "website", "editorial_summary", "price_level", "opening_hours"],
-                      },
-                      (placeDetails, placeStatus) => {
-                      if (placeStatus === google.maps.places.PlacesServiceStatus.OK) {
-                          resolve(placeDetails);
-                        } else {
-                          reject(placeStatus);
-                        }
+        service.nearbySearch(
+          {
+            location: userLocation,
+            radius: 5000,
+            type: "restaurant",
+          },
+          async (results, status) => {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+              for (const place of results) {
+                const details = await new Promise((resolve, reject) => {
+                  service.getDetails(
+                    {
+                      placeId: place.place_id,
+                      fields: [
+                        "name",
+                        "formatted_address",
+                        "geometry.location",
+                        "reviews",
+                        "rating",
+                        "types",
+                        "website",
+                        "editorial_summary",
+                        "price_level",
+                        "opening_hours",
+                      ],
+                    },
+                    (placeDetails, placeStatus) => {
+                      if (
+                        placeStatus ===
+                        google.maps.places.PlacesServiceStatus.OK
+                      ) {
+                        resolve(placeDetails);
+                      } else {
+                        reject(placeStatus);
                       }
-                    );
-                  });
-
-                  const restaurant = {
-                    name: details.name,
-                    address: details.formatted_address,
-                    location: details.geometry.location,
-                    reviews: details.reviews,
-                    rating: details.rating,
-                    types: details.types,
-                    website: details.website,
-                    url: details.url,
-                    editorial_summary: details.editorial_summary,
-                    price_level: details.price_level,
-                  opening_hours: details.opening_hours
-
-
-                  };
-                  restaurants.push(restaurant);
-
-
-
-
-
-
-                  const marker = new google.maps.Marker({
-                    position: restaurant.location,
-                    map: map,
-                    title: restaurant.name,
-
-
-
-                  });
-
-
-
-
-
-                  const infowindow2 = new google.maps.InfoWindow({
-                    content: `<strong>${restaurant.name}</strong><br>${restaurant.address}<br><a href="${restaurant.website}" target="_blank">Visit Website</a>`,
-                  });
-
-                  marker.addListener("click", () => {
-                    // map2.className = "col-6";
-
-                    if (reviewCount > 0) {
-                      oldLayout();
                     }
-                    // blue1.style.display = "block";
-                    //map.classList.remove("col-12")
-                    // map2.classList.add("col-6");
-                    //map2.className = "col-6";
-                  map2.style.width= "50%";
-                  map2.setAttribute('class', 'col-6');
-                    blue1.style.display = "block";
-                    yellow1.style.display = "block";
+                  );
+                });
 
+                const restaurant = {
+                  name: details.name,
+                  address: details.formatted_address,
+                  location: details.geometry.location,
+                  reviews: details.reviews,
+                  rating: details.rating,
+                  types: details.types,
+                  website: details.website,
+                  url: details.url,
+                  editorial_summary: details.editorial_summary,
+                  price_level: details.price_level,
+                  opening_hours: details.opening_hours,
+                };
+                restaurants.push(restaurant);
 
-                    //
+                const marker = new google.maps.Marker({
+                  position: restaurant.location,
+                  map: map,
+                  title: restaurant.name,
+                });
 
-                  var imageContainers = document.getElementsByClassName("image-box");
-                    for (var i = 0; i < imageContainers.length; i++) {
-                      imageContainers[i].style.display = "none";
-                    }
+                const infowindow2 = new google.maps.InfoWindow({
+                  content: `<strong>${restaurant.name}</strong><br>${restaurant.address}<br><a href="${restaurant.website}" target="_blank">Visit Website</a>`,
+                });
 
+                marker.addListener("click", () => {
+                  // map2.className = "col-6";
 
-                    fetchRecipes();
-                    const name = restaurant.name;
-                    document.getElementById("restaurantName").innerHTML = name;
+                  if (reviewCount > 0) {
+                    oldLayout();
+                  }
 
-                    var rating = restaurant.rating;
+                  map2.style.width = "50%";
+                  map2.setAttribute("class", "col-6");
+                  blue1.style.display = "block";
+                  yellow1.style.display = "block";
 
-                    stars(rating);
+                  var imageContainers =
+                    document.getElementsByClassName("image-box");
+                  for (var i = 0; i < imageContainers.length; i++) {
+                    imageContainers[i].style.display = "none";
+                  }
 
-                    var price_level = restaurant.price_level;
-                    var price_level1 = "";
+                  fetchRecipes();
+                  const name = restaurant.name;
+                  document.getElementById("restaurantName").innerHTML = name;
 
-                    if (price_level == 1) {
-                      price_level1 = "$ ~ Inexpensive";
-                    } else if (price_level == 2) {
-                      price_level1 = "$$ ~ Moderate";
-                    } else if (price_level == 3) {
-                      price_level1 = "$$$ ~ Expensive";
-                    } else if (price_level == 4) {
-                      price_level1 = "$$$$ ~ Very Expensive";
-                    }
+                  var rating = restaurant.rating;
 
+                  stars(rating);
 
+                  var price_level = restaurant.price_level;
+                  var price_level1 = "";
 
+                  if (price_level == 1) {
+                    price_level1 = "$ ~ Inexpensive";
+                  } else if (price_level == 2) {
+                    price_level1 = "$$ ~ Moderate";
+                  } else if (price_level == 3) {
+                    price_level1 = "$$$ ~ Expensive";
+                  } else if (price_level == 4) {
+                    price_level1 = "$$$$ ~ Very Expensive";
+                  }
 
-                  // const container = document.getElementById("imageContainer");
-                  // const numberOfImages = rating ;
-
-                  // const imageWidth = 15;   
-                  // const imageHeight = 15;  
-
-                  // for (let i = 0; i < Math.round(numberOfImages); i++) {
-
-
-                  //     const imageBox = document.createElement("div");
-                  //     imageBox.className = "image-box";
-
-                  //     const image = document.createElement("img");
-                  //     image.src = "star.png";
-                  //     image.alt = "Image " + (i + 1);
-                  //     image.style.width = imageWidth + "px";
-                  //     image.style.height = imageHeight + "px";
-
-                  //     imageBox.appendChild(image);
-                  //     container.appendChild(imageBox);
-
-                  //     numberOfImages = 0;
-
-
-                  // }
-
-
-
-
-
-
-
-
-
-                  document.getElementById("restaurantScore").innerHTML = rating;
+                  document.getElementById("restaurantScore").innerHTML =
+                    rating;
                   // document.getElementById("restaurantScore").innerHTML = price_level1 ;
 
+                  var types = restaurant.types;
+                  types = types[0];
+                  types = types[0].toUpperCase() + types.substring(1);
 
+                  document.getElementById("restaurantType").innerHTML =
+                    types + " Place";
 
+                  const address = restaurant.address;
 
-                    var types = restaurant.types;
-                    types = types[0];
-                    types = types[0].toUpperCase() + types.substring(1);
+                  document.getElementById("address").innerHTML = address;
 
-                  document.getElementById("restaurantType").innerHTML = types + " Place";
+                  const opening_hours =
+                    restaurant.opening_hours["weekday_text"];
 
-                    const address = restaurant.address;
+                  // console.log("first", opening_hours);
 
-                    document.getElementById("address").innerHTML = address;
+                  let weekday1 = "";
 
-                  const opening_hours = restaurant.opening_hours['weekday_text'];
-
-
-
-                    // console.log("first", opening_hours);
-
-                    let weekday1 = "";
-
-                    for (let i = 0; i < opening_hours.length; i++) {
-                      if (opening_hours[i] != ",") {
-                        weekday1 = weekday1 + opening_hours[i] + "<br>";
-                        // console.log(weekday1);
-                      }
+                  for (let i = 0; i < opening_hours.length; i++) {
+                    if (opening_hours[i] != ",") {
+                      weekday1 = weekday1 + opening_hours[i] + "<br>";
+                      // console.log(weekday1);
                     }
+                  }
 
+                  document.getElementById("OpeningHours").innerHTML =
+                    "Opening Hours: <br> " + weekday1;
 
+                  const website = restaurant.website;
 
-                  document.getElementById("OpeningHours").innerHTML = "Opening Hours: <br> " + weekday1;
-                  //  console.log("This is a line." + "<br>" + "This is another line.");
-                  // document.getElementById("OpeningHours").innerHTML =  opening_hours  ;
+                  document.getElementById("website").innerHTML = website;
 
+                  const reviews = restaurant.reviews;
+                  var reviews2 = document.getElementById("reviews");
+                  reviews2.addEventListener("click", function () {
+                    reviewCount += 1;
 
+                    newLayout(reviews, rating);
+                    console.log("step1 finished");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    const website = restaurant.website;
-
-                  // const link = document.getElementById("website");
-
-                  // link.setAttribute("href", website);
-
-
-
-                    document.getElementById("website").innerHTML = website;
-
-
-
-                  // document.getElementById("Reviews").innerHTML =reviews;
-
-                  // const change = state2();
-
-                  // if (change)
-                  // {
-                  //   newLayout(reviews);
-                  // }
-
-
-
-
-
-                  //Reviews
-                  // for (let i = 0; i < 5; i++) {
-                  //     console.log(`Author: `, reviews[i]['author_name'] + "\n " + `Reviews: `, reviews[i]['text'] + "\n " +  "rating:  " + reviews[i]['rating'] + "\n " + "Visited:  "  + reviews[i]['relative_time_description'] );
-                  //    }
-
-
-
-
-
-                    const reviews = restaurant.reviews;
-                    var reviews2 = document.getElementById("reviews");
-                    reviews2.addEventListener("click", function () {
-                      reviewCount += 1;
-
-                      newLayout(reviews, rating);
-                      console.log("step1 finished");
-
-                      marker.addEventListener("click", oldLayout);
-                      console.log("step2 finished");
-
-                    });
-
-                  // marker.addEventListener("click", oldLayout);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    marker.addEventListener("click", oldLayout);
+                    console.log("step2 finished");
                   });
-
-
-
-                }
+                });
               }
             }
-          );
-      }
-
-    )
+          }
+        );
+      });
     }
-}
-
-  </script>
-
-
+  }
+</script>
 
 </html>
