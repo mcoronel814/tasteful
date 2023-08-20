@@ -791,7 +791,7 @@ text-indent: 30px;
      margin-right: 160px; 
      /* text-align: start; */
      font-size: 15px;
-     /* position: fixed; */
+    position: absolute; 
      text-decoration: none;
 
  }
@@ -806,6 +806,7 @@ text-indent: 30px;
      margin-right: 160px; 
      /* text-align: start; */
      font-size: 15px;
+     left: 50px;
      /* position: fixed; */
  }
  #reviews
@@ -813,8 +814,9 @@ text-indent: 30px;
     color: rgb(164, 166, 167);
     font-size: 15px;
     text-align: left; 
-    /* position: fixed; */
+    position: absolute; 
     text-decoration: none;
+    left: 100px;
 
  }
  #reviews1
