@@ -490,8 +490,8 @@ footer{
         height: 60px;
         border-radius: 40px;
     }
-    #guyPicture{
-        height: 200px;
+    #guyPicture, #inputName, #inputEmail, #inputInquiry{
+    width: -webkit-fill-available;
     }
 }
 //* Medium Smartphones devices (phones, 301px and up) */
