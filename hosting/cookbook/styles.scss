@@ -99,14 +99,16 @@
     background-color:#FFEBDE;
 
 }
-
+.center {
+    text-align: center;
+}
 #foodName
 {
     font-family: 'Fasthand', cursive;
     font-size: 70px;
-    width: 100px;
-    margin-top: 10%;
-    margin-left: 40%;
+    // width: 100px;
+    // margin-top: 10%;
+    // margin-left: 40%;
 
     
     white-space: nowrap;
