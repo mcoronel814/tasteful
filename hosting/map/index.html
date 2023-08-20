@@ -59,7 +59,7 @@
                   <li class="nav-item">
                       <!-- <a class="nav-link" href="#contact">Contact</a> -->
 
-                      <a class="navbar-brand" href="https://tasteful-48763.web.app/" onmouseover="change1()">
+                      <a class="navbar-brand" href="https://tasteful-48763.web.app/" onmouseover="change1()" onmouseout="change2()">
                         <p id="foodExplorer">
                           Food <br />
                           Explorer
@@ -333,7 +333,7 @@ navbarNew.innerHTML = '';
 
 navbarNew.innerHTML = `    
 
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarNew">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item active">
               <a class="nav-link" href="https://tasteful-48763.web.app/map">
@@ -373,6 +373,36 @@ navbarNew.innerHTML = `
 `;
 }
 
+
+
+function change2()
+{
+  navbarNew.innerHTML = '';
+
+  navbarNew.innerHTML = `
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+
+  
+
+                  <li class="nav-item">
+                      <!-- <a class="nav-link" href="#contact">Contact</a> -->
+
+                      <a class="navbar-brand" href="https://tasteful-48763.web.app/" onmouseover="change1()">
+                        <p id="foodExplorer">
+                          Food <br />
+                          Explorer
+                        </p>
+                      </a>
+
+
+                  </li>
+              </ul>
+              
+          </div>
+      </div> `;
+
+}
 
 
 
