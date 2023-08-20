@@ -342,8 +342,7 @@
   <script>
 
 
-    // script4a.js
-
+    // script4a.js "/assets/iceCream-790313cc.png";
 
 
 
@@ -366,16 +365,15 @@ var iceCream = document.createElement("img");
 var paragraph = document.createElement("p");
 
 
+
 function change1a()
   {
 
-    linksBtn.style.display= "block";
 
+linksBtn.style.display= "block";
+foodExplorer.addEventListener("mouseenter", () => {
 
-
-
-
-  navNew.addEventListener("mouseenter", () => {
+ 
 
       linksBtn.style.display= "block";
       iceCream.style.display = "block";
@@ -391,14 +389,8 @@ function change1a()
       foodExplorer.style.top = "2%";
       foodExplorer.style.left = "90%";
 
-
-
-      
-
-
-   
+      // iceCream.src = "/assets/iceCream-790313cc.png";
       iceCream.src = "/assets/iceCream-790313cc.png";
-      //iceCream.src = "iceCream.png";
       iceCream.alt = "iceCream " ;
       iceCream.style.width = "490px";
       iceCream.style.height = "490px";
@@ -426,29 +418,9 @@ function change1a()
 
 
 
-      navNew.appendChild(iceCream);
-
-      paragraph.innerHTML = `Discover Global <br> Flavors from the <br> comfort of your Couch`;
-      paragraph.style.fontFamily = "League Spartan', sans-serif";
-     
-      paragraph.style.fontSize = "60px";
-      paragraph.style.color = "#FF6666";
-      paragraph.style.fontWeight = "bold";
-      paragraph.style.position = "absolute";
-      paragraph.style.left = "650px ";
-      paragraph.style.top = "150px ";
-  
-
-      navNew.appendChild(paragraph);
-
-
-
-
  });
 
-    navNew.addEventListener("mouseleave", () => {
-
-
+navNew.addEventListener("mouseleave", () => {
 
       linksBtn.style.display= "none";
       
@@ -462,7 +434,14 @@ function change1a()
     });
 
 
+
+
+
+
+
+
   }
+
 
 
 
