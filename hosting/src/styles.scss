@@ -250,7 +250,10 @@ footer{
     width: 220px;
 }
 #contactRow{
-    display:flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 }
 #contactHead{
     display: contents;
@@ -641,6 +644,11 @@ footer{
         height: 175px;
     }
     #bu2{
+        margin-top: -9%;
+        margin-left: 62%;
+        width: 220px;
+    }
+    #contactBtn.button{
         margin-top: -9%;
         margin-left: 62%;
         width: 220px;
