@@ -491,7 +491,7 @@ footer{
         border-radius: 40px;
     }
     #guyPicture{
-        width: 200px;
+        width: 225px;
     }
     #inputName, #inputEmail, #inputInquiry{
     width: -webkit-fill-available;
@@ -568,9 +568,9 @@ footer{
         height: 60px;
         border-radius: 40px;
     }
-    // #inputInquiry {
-    //     height: 60px;
-    // }
+    #guyPicture{
+        height: 350px;
+    }
 }
 //* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
