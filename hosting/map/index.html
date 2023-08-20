@@ -74,11 +74,11 @@
 
   <nav class="navbar navbar-expand-lg navbarScroll">
       <div class="container">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: none;">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item active">
               <a class="nav-link" href="https://tasteful-48763.web.app/map">
-                <button type="button" id="lightBlue" class="button" style="display: none;">MY RECIPES</button>
+                <button type="button" id="lightBlue" class="button" >MY RECIPES</button>
               </a>
             </li>
             <li class="nav-item">
@@ -86,14 +86,14 @@
                 class="nav-link"
                 href="https://tasteful-48763.web.app/cookbook"
               >
-                <button type="button" id="darkBlue" class="button" style="display: none;">
+                <button type="button" id="darkBlue" class="button" >
                   COOKBOOK
                 </button>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://tasteful-48763.web.app/aboutus">
-                <button type="button" id="lightPink" class="button" style="display: none;">
+                <button type="button" id="lightPink" class="button" >
                   ABOUT US
                 </button>
               </a>
@@ -407,30 +407,46 @@ function change2()
 
 
 
-const lightPink = document.getElementById('lightPink');
-const lightBlue = document.getElementById('lightBlue');
-const darkBlue = document.getElementById('darkBlue');
+// const lightPink = document.getElementById('lightPink');
+// const lightBlue = document.getElementById('lightBlue');
+// const darkBlue = document.getElementById('darkBlue');
 
+const navbarSupportedContent = document.getElementById('navbarSupportedContent');
 function change4()
 {
 
 
-  lightPink.style.display = "block";
-  lightBlue.style.display = "block";
-  darkBlue.style.display = "block";
+  navbarSupportedContent.style.display = "block";
+
+
+  // lightBlue.style.display = "block";
+  // darkBlue.style.display = "block";
 
 }
-
 
 function change5()
 {
 
 
-  lightPink.style.display = "none";
-  lightBlue.style.display = "none";
-  darkBlue.style.display = "none";
+  navbarSupportedContent.style.display = "none";
+
+  
+  // lightBlue.style.display = "block";
+  // darkBlue.style.display = "block";
 
 }
+
+
+
+// function change5()
+// {
+
+
+//   lightPink.style.display = "none";
+//   lightBlue.style.display = "none";
+//   darkBlue.style.display = "none";
+
+// }
 
 
 const recipeContainer = document.getElementById('recipes');
