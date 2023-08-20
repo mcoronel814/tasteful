@@ -183,7 +183,7 @@ font-size: 26px;
 #look{
     height: 60px;
     width: 250px ;
-    margin-top: 12px;
+    // margin-top: 12px;
     border-radius: 40px;
     text-indent: 20px;
    
@@ -441,12 +441,222 @@ font-size: 26px;
 
 }
 
-//google username and pic
 
-#user-photo {
-    width: 5%;
-    height: 5%;
-    border-radius: 100px;
-    margin-left: 10px;
-    margin-right: 10px;
+/* ~~~~~~~~~~~~~~~ Start Navbar ~~~~~~~~~~~~~~*/
+// scss-docs-start collapse-classes
+.collapse {
+    &:not(.show) {
+    display: block;  //none
+    }
 }
+.navbar-collapse {
+    align-items: center;
+}
+ // scss-docs-end collapse-classes
+#yellow {
+    background-color: #e3f55f;
+    color: rgb(7, 7, 7);
+    border: none; 
+    font-family: 'DM Sans', sans-serif;     
+}
+//google username and pic
+#user-photo {
+    width: 60px;  // width: 5%;
+    height: 60px;  // height: 5%;
+    border-radius: 100px;
+    display: inline; 
+    align-items: end;
+    margin-left: 4px;  //10px;
+    margin-right: 4px;  //10px;
+}
+.navbar-nav {
+    display:flex;
+    width: auto;
+    padding-left: 10%;
+    margin-bottom:0;
+    list-style:none
+}
+/* ~~~~~~~~~~~~~~  End Navbar  ~~~~~~~~~~~~~~~*/
+
+/* ====== Start  Screen Sizes =====*/
+//* Smartphones devices (phones, 400px and down) */
+@media only screen and (max-width: 400px)  {
+    // food plates loop
+    #meal.col{
+        padding-left: 4%;
+    }
+    #pinkPicture {
+        width: 350px;
+        margin-top: 0px;
+    }  // food plates loop end
+
+    // scss-docs-start collapse-classes
+    .collapse {
+        &:not(.show) {
+        display: contents;  //none
+        }
+    }      // scss-docs-end collapse-classes
+    .navbar-brand{
+        font-size:  1.5rem;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: column;
+        // width: auto;
+        padding-left: 10%;
+        // margin-bottom:0;
+        // list-style:none
+        align-items: center;
+    }
+    .button{
+        margin-right: auto; //auto
+        width: 175px;
+        height: 60px;
+        border-radius: 40px;
+    }
+}
+//* Extra small devices (401px and up) */
+@media only screen and (min-width: 401px)  {
+    // food plates loop
+    #meal.col{
+        padding-left: 4%;
+    }
+    #pinkPicture {
+        width: 375px;
+        margin-top: 0px;
+    }  // food plates loop end
+
+    // scss-docs-start collapse-classes
+    .collapse {
+        &:not(.show) {
+        display: contents;  //none
+        }
+    }     // scss-docs-end collapse-classes
+    .navbar-brand{
+        font-size:  1.5rem;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: column;
+        // width: auto;
+        padding-left: 10%;
+        // margin-bottom:0;
+        // list-style:none
+        align-items: center;
+    }
+    .button{
+        margin-right: auto; //auto
+        width: 215px;
+        height: 60px;
+        border-radius: 40px;
+    }
+}
+//* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    // food plates loop
+    #pinkPicture {
+        width: 550px;
+        margin-top: 0px;
+    } // food plates loop end
+
+    // scss-docs-start collapse-classes
+    .navbar-collapse {
+        align-items: center;
+    }
+    .collapse {
+        &:not(.show) {
+        display: contents;  //none
+        }
+    }     // scss-docs-end collapse-classes
+    .navbar-brand{
+        font-size:  2.25rem;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: column;
+        width: auto;
+        padding-left: 10%;
+        align-items: center;
+    }
+} 
+//* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+     // scss-docs-start collapse-classes
+    .fade {
+            &:not(.show) {
+            opacity: 1;  // 0
+            }
+        }
+    .collapse {
+        &:not(.show) {
+        display: block;  //none
+        }
+    }
+    .collapsing {
+        height: auto; //0
+        overflow: auto; //hidden
+        &.collapse-horizontal {
+            width: auto; //0
+            height: auto;
+        }
+    }  // scss-docs-end collapse-classes
+    .navbar-brand{
+        font-size:  1.5rem;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: row;
+        width: auto;
+        padding-left: 0;
+        justify-content: space-between;
+    }
+    .button{
+            margin-right: auto; //auto
+            width: 105px;
+            height: 60px;
+            border-radius: 40px;
+    }
+} 
+//* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    p{
+        margin-bottom: 0rem;
+    }
+    .navbar-brand{
+        font-size:  1.35rem;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: row;
+        width: auto;
+        padding-left: 0%;
+    }
+    .button{
+        margin-right: 4px;  //auto;
+        width: 125px;
+        height: 60px;
+        border-radius: 40px;
+    }
+}
+//* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    p{
+        margin-bottom: 0rem;
+    }
+    .navbar-brand{
+        font-size:  1.35rem;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: row;
+        width: auto;
+        padding-left: 3%;
+    }
+    .button{
+        margin-right: auto;
+        width: 135px;
+        height: 60px;
+        border-radius: 40px;
+    }
+}
+/*======= End   Screen Sizes ====== */
