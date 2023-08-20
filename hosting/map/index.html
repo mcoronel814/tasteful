@@ -90,6 +90,7 @@
 </a>
 </nav> -->
 
+
 <nav class="navbar navbar-expand-lg fixed-top navbarScroll" id="navNew"  onmouseover="change1a()">
  
   <img src="iceCream.png" alt="" style="display: none;">
@@ -125,14 +126,18 @@
       </div>
 
       <a  href="https://tasteful-48763.web.app/"  >
-        <p id="foodExplorer"  style="display: block;">
+        <p id="foodExplorer"  >
           Food <br />
           Explorer
         </p>
       </a>
 
+
+
   
 </nav>
+
+
 
 
     <div class="container-fluid text-center" id="displaEverything">
@@ -342,9 +347,14 @@
 
 
 
+
+
     var linksBtn = document.getElementById("linksBtn");
+var imh = document.getElementById("imh");
 var navNew = document.getElementById("navNew");
 var foodExplorer = document.getElementById("foodExplorer");
+
+
 
 var lightBlue = document.getElementById("lightBlue");
 var lightPink = document.getElementById("lightPink");
@@ -358,7 +368,7 @@ var paragraph = document.createElement("p");
 
 function change1a()
   {
-    foodExplorer.style.marginLeft = "500px";
+
     linksBtn.style.display= "block";
 
 
@@ -366,7 +376,7 @@ function change1a()
 
 
   navNew.addEventListener("mouseenter", () => {
-      foodExplorer.style.display = "block";
+
       linksBtn.style.display= "block";
       iceCream.style.display = "block";
       paragraph.style.display = "block";
@@ -377,27 +387,38 @@ function change1a()
       navNew.style.height= "500px"
       lightPink.style.marginBottom = "380px"
       linksBtn.style.marginLeft = "-50px"
+
+      foodExplorer.style.top = "15%";
+      foodExplorer.style.left = "90%";
+
+
+
       
-      foodExplorer.style.marginBottom = "380px"
+
 
    
       iceCream.src = "/assets/iceCream-790313cc.png";
+      //iceCream.src = "iceCream.png";
       iceCream.alt = "iceCream " ;
       iceCream.style.width = "490px";
       iceCream.style.height = "490px";
-      iceCream.style.rotate = "25deg"
-      iceCream.style.marginLeft = "-1900px"
-      iceCream.style.marginRight = "95px"
-      iceCream.style.marginTop = "300px"
+      iceCream.style.rotate = "25deg";
+      iceCream.style.position = "absolute";
+      iceCream.style.left = "20px ";
+      iceCream.style.top = "100px ";
+
 
       navNew.appendChild(iceCream);
-      paragraph.style.marginTop = "70px"
+
       paragraph.innerHTML = `Discover Global <br> Flavors from the <br> comfort of your Couch`;
       paragraph.style.fontFamily = "League Spartan', sans-serif";
      
       paragraph.style.fontSize = "60px";
       paragraph.style.color = "#FF6666";
       paragraph.style.fontWeight = "bold";
+      paragraph.style.position = "absolute";
+      paragraph.style.left = "650px ";
+      paragraph.style.top = "150px ";
   
 
       navNew.appendChild(paragraph);
@@ -408,9 +429,8 @@ function change1a()
  });
 
     navNew.addEventListener("mouseleave", () => {
-      foodExplorer.style.display = "block";
-      foodExplorer.style.marginLeft = "1100px";
-      foodExplorer.style.marginBottom = "-20px"
+
+
 
       linksBtn.style.display= "none";
       
