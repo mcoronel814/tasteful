@@ -570,6 +570,14 @@ font-size: 26px;
         display: contents;  //none
         }
     }     // scss-docs-end collapse-classes
+    #foodName.p{
+        margin-top: 25rem;
+    }
+    #two_cols{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
     .navbar-brand{
         font-size:  2.25rem;
     }
@@ -602,6 +610,9 @@ font-size: 26px;
             height: auto;
         }
     }  // scss-docs-end collapse-classes
+    #foodName.p{
+        margin-top: 13rem;
+    }
     .navbar-brand{
         font-size:  1.5rem;
     }
@@ -623,6 +634,9 @@ font-size: 26px;
 @media only screen and (min-width: 992px) {
     p{
         margin-bottom: 0rem;
+    }
+    #foodName.p{
+        margin-top: 8rem;
     }
     .navbar-brand{
         font-size:  1.35rem;
