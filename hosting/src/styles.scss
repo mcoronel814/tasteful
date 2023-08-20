@@ -46,8 +46,12 @@
     color: #FFEBDE;
     font-size: 55px;
     font-family: 'League Spartan', sans-serif;
-    
-    
+}
+#textUsername
+{
+    color: #FFEBDE;
+    font-size: 30px;
+    font-family: 'League Spartan', sans-serif;
 }
 #white{
     color: #ffffff;
@@ -78,7 +82,6 @@
     color: #ffffff ;
     font-family: 'Caprasimo', cursive;
     padding: 4px;
-
 }
 
 #foodTop
@@ -88,7 +91,7 @@
     height: 400px;  
 }
 .button{
-    margin-right: 40px;
+    margin-right: auto;
     width: 145px;
     height: 60px;
     border-radius: 40px;
@@ -106,8 +109,6 @@
     width: 100px;
     margin-top: 10%;
     margin-left: 40%;
-
-    
     white-space: nowrap;
 }
 
@@ -162,12 +163,8 @@ font-size: 26px;
 
 }
 
-#recipeResult1
-{
+#recipeResult1{
     font-size: 22px;
-
-
-
 }
 
 #look{
@@ -176,31 +173,21 @@ font-size: 26px;
     margin-top: 12px;
     border-radius: 40px;
     text-indent: 20px;
-   
 }
 
 #search{
-
     width:30px;
     height: 30px;
 }
 
-#guyPicture
-{
+#guyPicture{
     height: 350px;
     width: 350 px;
     margin-left: -80%;
-
-
-
-
 } 
 
  footer{
-
     height: 100px;
-
-
 }  
 
 #iputName
@@ -412,8 +399,6 @@ font-size: 26px;
     /* background-image: url('whiteBackg.png');
     background-size: cover; 
     width: 1000px;   */
- 
-
 }
 /* imgs loop of plates of food */
 #pinkPicture {
@@ -422,7 +407,34 @@ font-size: 26px;
     margin-top: 0px;
 }
 
-//** Start _Nav bar  buttons display on all screen sizes */
+
+/* ~~~~~~~~~~~~~~~ Start Navbar ~~~~~~~~~~~~~~*/
+// scss-docs-start collapse-classes
+.collapse {
+    &:not(.show) {
+    display: block;  //none
+    }
+}
+.navbar-collapse {
+    align-items: center;
+}
+ // scss-docs-end collapse-classes
+#yellow {
+    background-color: #e3f55f;
+    color: rgb(7, 7, 7);
+    border: none; 
+    font-family: 'DM Sans', sans-serif;     
+}
+//google username and pic
+#user-photo {
+    width: 60px;  // width: 5%;
+    height: 60px;  // height: 5%;
+    border-radius: 100px;
+    display: inline; 
+    align-items: end;
+    margin-left: 4px;  //10px;
+    margin-right: 4px;  //10px;
+}
 .navbar-nav {
     display:flex;
     width: auto;
@@ -430,138 +442,199 @@ font-size: 26px;
     margin-bottom:0;
     list-style:none
 }
-.collapse {
-    &:not(.show) {
-    display: block;  //none
-    }
-}
-.navbar-collapse {
-    // For always expanded or extra full navbars, ensure content aligns itself
-    // properly vertically. Can be easily overridden with flex utilities.
-    align-items: center;
-}
-// .navbar-nav:not(#dup_nav_navbar) {
-//     flex-direction: row;
-// }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 575px)  {
-    // .navbar-nav :not(#dup_nav_navbar) {
-    //     flex-direction: column;
-    // }
+/* ~~~~~~~~~~~~~~  End Navbar  ~~~~~~~~~~~~~~~*/
+
+/* ====== Start  Screen Sizes =====*/
+//* Smartphones devices (phones, 400px and down) */
+@media only screen and (max-width: 400px)  {
+    // food plates loop
     #meal.col{
-        padding-left: 0%;
+        padding-left: 4%;
     }
     #pinkPicture {
-        width: 500px;
+        width: 350px;
         margin-top: 0px;
-    }
-    .navbar-nav {
+    }  // food plates loop end
 
-        display:flex;
-        flex-direction: column;
-        width: auto;
-        padding-left: 10%;
-        margin-bottom:0;
-        list-style:none
-    }
+    // scss-docs-start collapse-classes
     .collapse {
         &:not(.show) {
         display: contents;  //none
         }
-    } 
+    }      // scss-docs-end collapse-classes
+    .navbar-brand{
+        font-size:  1.5rem;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: column;
+        // width: auto;
+        padding-left: 10%;
+        // margin-bottom:0;
+        // list-style:none
+        align-items: center;
+    }
+    .button{
+        margin-right: auto; //auto
+        width: 175px;
+        height: 60px;
+        border-radius: 40px;
+    }
 }
+//* Extra small devices (401px and up) */
+@media only screen and (min-width: 401px)  {
+    // food plates loop
+    #meal.col{
+        padding-left: 4%;
+    }
+    #pinkPicture {
+        width: 375px;
+        margin-top: 0px;
+    }  // food plates loop end
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+    // scss-docs-start collapse-classes
+    .collapse {
+        &:not(.show) {
+        display: contents;  //none
+        }
+    }     // scss-docs-end collapse-classes
+    .navbar-brand{
+        font-size:  1.5rem;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: column;
+        // width: auto;
+        padding-left: 10%;
+        // margin-bottom:0;
+        // list-style:none
+        align-items: center;
+    }
+    .button{
+        margin-right: auto; //auto
+        width: 215px;
+        height: 60px;
+        border-radius: 40px;
+    }
+}
+//* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
+    // food plates loop
     #pinkPicture {
         width: 550px;
         margin-top: 0px;
-    }
+    } // food plates loop end
+
+    // scss-docs-start collapse-classes
     .navbar-collapse {
-        // For always expanded or extra full navbars, ensure content aligns itself
-        // properly vertically. Can be easily overridden with flex utilities.
         align-items: center;
+    }
+    .collapse {
+        &:not(.show) {
+        display: contents;  //none
+        }
+    }     // scss-docs-end collapse-classes
+    .navbar-brand{
+        font-size:  2.25rem;
     }
     .navbar-nav {
         display:flex;
         flex-direction: column;
         width: auto;
         padding-left: 10%;
-        margin-bottom:0;
-        list-style:none
-    }
-    .collapse {
-        &:not(.show) {
-        display: contents;  //none
-        }
+        align-items: center;
     }
 } 
-/* Medium devices (landscape tablets, 768px and up) */
+//* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
+     // scss-docs-start collapse-classes
     .fade {
-        //@include transition($transition-fade); //OC
-        
             &:not(.show) {
             opacity: 1;  // 0
             }
         }
-        
-        // scss-docs-start collapse-classes
-        .collapse {
-            &:not(.show) {
-            display: block;  //none
-            }
+    .collapse {
+        &:not(.show) {
+        display: block;  //none
         }
-        
-        .collapsing {
-            height: auto; //0
-            overflow: auto; //hidden
-            //@include transition($transition-collapse); //OC
-        
-            &.collapse-horizontal {
+    }
+    .collapsing {
+        height: auto; //0
+        overflow: auto; //hidden
+        &.collapse-horizontal {
             width: auto; //0
             height: auto;
-           // @include transition($transition-collapse-width); //OC
-            }
         }
-        .navbar-nav {
-            display:flex;
-            flex-direction: row;
-            width: auto;
-            padding-left: 10%;
-            margin-bottom:0;
-            list-style:none
-        }
-      // scss-docs-end collapse-classes
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+    }  // scss-docs-end collapse-classes
+    .navbar-brand{
+        font-size:  1.5rem;
+    }
     .navbar-nav {
         display:flex;
         flex-direction: row;
         width: auto;
-        padding-left: 10%;
-        margin-bottom:0;
-        list-style:none
+        padding-left: 0;
+        justify-content: space-between;
+    }
+    .button{
+            margin-right: auto; //auto
+            width: 105px;
+            height: 60px;
+            border-radius: 40px;
     }
 } 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-// @media only screen and (min-width: 1200px) {
-//     #meal  {
-//         margin-top: 0%;
-//         // margin-bottom: 7%;
-//         }
-// }
-//** End _Nav bar  buttons display on all screen sizes */
-
-
-//google username and pic
-
-#user-photo {
-    width: 5%;
-    height: 5%;
-    border-radius: 100px;
-    margin-left: 10px;
-    margin-right: 10px;
+//* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    p{
+        margin-bottom: 0rem;
+    }
+    .navbar-brand{
+        font-size:  1.35rem;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: row;
+        width: auto;
+        padding-left: 0%;
+    }
+    .button{
+        margin-right: 4px;  //auto;
+        width: 125px;
+        height: 60px;
+        border-radius: 40px;
+    }
 }
+//* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    p{
+        margin-bottom: 0rem;
+    }
+    .navbar-brand{
+        font-size:  1.35rem;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: row;
+        width: auto;
+        padding-left: 3%;
+    }
+    .button{
+        margin-right: auto;
+        width: 135px;
+        height: 60px;
+        border-radius: 40px;
+    }
+}
+/*======= End   Screen Sizes ====== */
+
+
+// //google username and pic
+//     #user-photo {
+//         width: 60px;  // width: 5%;
+//         height: 60px;  // height: 5%;
+//         border-radius: 100px;
+//         display: inline; 
+//         align-items: end;
+//         margin-left: 4px;  //10px;
+//         margin-right: 4px;  //10px;
+//     }
