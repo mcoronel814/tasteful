@@ -252,7 +252,9 @@ footer{
 #contactRow{
     display:flex;
 }
-// #contactHead
+#contactHead{
+    display: contents;
+}
 // #contactPic
 // #contactNameEmail
 // #contactInputbox
