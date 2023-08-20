@@ -208,7 +208,7 @@ font-size: 26px;
 
 #inputInquiry
 {
-    height: 175px;
+    height: 60px; //175px
     width: 283px;
     border-radius: 20px;
     text-indent: 20px;
@@ -516,6 +516,9 @@ font-size: 26px;
         height: 60px;
         border-radius: 40px;
     }
+    // #inputInquiry {
+    //     height: 60px;
+    // }
 }
 //* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
@@ -623,6 +626,9 @@ font-size: 26px;
         width: 135px;
         height: 60px;
         border-radius: 40px;
+    }
+    #inputInquiry {
+        height: 175px;
     }
 }
 /*======= End   Screen Sizes ====== */
