@@ -104,7 +104,7 @@
           
         </div>
 
-        <a class="navbar-brand" href="https://tasteful-48763.web.app/" onmouseover="change4()">
+        <a class="navbar-brand" href="https://tasteful-48763.web.app/" onmouseover="change4()" onmouseout="change5()"  >
           <p id="foodExplorer">
             Food <br />
             Explorer
@@ -421,6 +421,16 @@ function change4()
 
 }
 
+
+function change5()
+{
+
+
+  lightPink.style.display = "none";
+  lightBlue.style.display = "none";
+  darkBlue.style.display = "none";
+
+}
 
 
 const recipeContainer = document.getElementById('recipes');
