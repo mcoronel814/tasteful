@@ -455,8 +455,47 @@ footer{
 /* ~~~~~~~~~~~~~~  End Navbar  ~~~~~~~~~~~~~~~*/
 
 /* ====== Start  Screen Sizes =====*/
-//* Smartphones devices (phones, 400px and down) */
-@media only screen and (max-width: 400px)  {
+//* Small Smartphones devices (phones, 300px and down) */
+@media only screen and (max-width: 300px)  {
+    // food plates loop
+    #meal.col{
+        padding-left: 4%;
+    }
+    #pinkPicture {
+        width: 250px;
+        margin-top: 0px;
+    }  // food plates loop end
+
+    // scss-docs-start collapse-classes
+    .collapse {
+        &:not(.show) {
+        display: contents;  //none
+        }
+    }      // scss-docs-end collapse-classes
+    .navbar-brand{
+        font-size:  1.5rem;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: column;
+        // width: auto;
+        padding-left: 5%;  // 10%;
+        // margin-bottom:0;
+        // list-style:none
+        align-items: center;
+    }
+    #lightBlue.button, #lightPink.button, #darkBlue.button, #yellow.button, #sign-in-button.button, sign-out-button.button{
+        margin-right: auto; //auto
+        width: 175px;
+        height: 60px;
+        border-radius: 40px;
+    }
+    #guyPicture{
+        height: 200px;
+    }
+}
+//* Medium Smartphones devices (phones, 301px and up) */
+@media only screen and (min-width: 301px)  {
     // food plates loop
     #meal.col{
         padding-left: 4%;
