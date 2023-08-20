@@ -99,14 +99,16 @@
     background-color:#FFEBDE;
 
 }
-
+.center {
+    text-align: center;
+}
 #foodName
 {
     font-family: 'Fasthand', cursive;
     font-size: 70px;
-    width: 100px;
-    margin-top: 10%;
-    margin-left: 40%;
+    // width: 100px;
+    // margin-top: 10%;
+    // margin-left: 40%;
 
     
     white-space: nowrap;
@@ -118,7 +120,7 @@
     font-family: 'Cormorant Garamond', serif;
     width:60px;
     height: 60px;
-    margin-left: 30%;  
+    // margin-left: 30%;  
 
 }
 #forkKnife
@@ -481,21 +483,18 @@ font-size: 26px;
 /* ====== Start  Screen Sizes =====*/
 //* Smartphones devices (phones, 400px and down) */
 @media only screen and (max-width: 400px)  {
-    // food plates loop
-    #meal.col{
-        padding-left: 4%;
-    }
-    #pinkPicture {
-        width: 350px;
-        margin-top: 0px;
-    }  // food plates loop end
-
     // scss-docs-start collapse-classes
     .collapse {
         &:not(.show) {
         display: contents;  //none
         }
     }      // scss-docs-end collapse-classes
+    #foodExplorer{
+        margin-bottom: 0rem;
+    }
+    #foodName{
+        font-size: 55px;
+    }
     .navbar-brand{
         font-size:  1.5rem;
     }
@@ -517,15 +516,15 @@ font-size: 26px;
 }
 //* Extra small devices (401px and up) */
 @media only screen and (min-width: 401px)  {
-    // food plates loop
-    #meal.col{
-        padding-left: 4%;
+    .center{
+        margin-top: 27em;
     }
-    #pinkPicture {
-        width: 375px;
-        margin-top: 0px;
-    }  // food plates loop end
-
+    #foodExplorer{
+        margin-bottom: 0rem;
+    }
+    #foodName{
+        font-size: 55px;
+    }
     // scss-docs-start collapse-classes
     .collapse {
         &:not(.show) {
@@ -568,6 +567,14 @@ font-size: 26px;
         display: contents;  //none
         }
     }     // scss-docs-end collapse-classes
+    .center{
+        margin-top: 25rem;
+    }
+    #two_cols{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
     .navbar-brand{
         font-size:  2.25rem;
     }
@@ -600,6 +607,12 @@ font-size: 26px;
             height: auto;
         }
     }  // scss-docs-end collapse-classes
+    .center{
+        margin-top: 13rem;
+    }
+    #foodName{
+        font-size: 68px;
+    }
     .navbar-brand{
         font-size:  1.5rem;
     }
@@ -619,8 +632,11 @@ font-size: 26px;
 } 
 //* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    p{
+    #foodExplorer{
         margin-bottom: 0rem;
+    }
+    .center{
+        margin-top: 8rem;
     }
     .navbar-brand{
         font-size:  1.35rem;
@@ -640,8 +656,11 @@ font-size: 26px;
 }
 //* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    p{
+    #foodExplorer{
         margin-bottom: 0rem;
+    }
+    #foodName{
+        margin-top: 8rem;
     }
     .navbar-brand{
         font-size:  1.35rem;
