@@ -249,15 +249,15 @@ footer{
     margin-left: 62%;
     width: 220px;
 }
-#contactRow{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-}
-#contactHead{
-    display: contents;
-}
+// #contactRow{
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     align-items: center;
+// }
+// #contactHead{
+//     display: contents;
+// }
 // #contactPic
 // #contactNameEmail
 // #contactInputbox
@@ -417,6 +417,16 @@ footer{
     margin-top: 0px;
 }
 
+/* new contact us for all sizes */
+#contactRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#contactHead{
+    display: contents;
+}
 
 /* ~~~~~~~~~~~~~~~ Start Navbar ~~~~~~~~~~~~~~*/
 // scss-docs-start collapse-classes
