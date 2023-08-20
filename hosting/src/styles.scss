@@ -569,7 +569,7 @@ footer{
         border-radius: 40px;
     }
     #guyPicture{
-        height: 350px;
+        height: 300px;
     }
 }
 //* Small devices (portrait tablets and large phones, 576px and up) */
@@ -598,6 +598,9 @@ footer{
         width: auto;
         padding-left: 10%;
         align-items: center;
+    }
+    #guyPicture{
+        height: 350px;
     }
 } 
 //* Medium devices (landscape tablets, 768px and up) */
