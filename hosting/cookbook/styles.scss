@@ -483,21 +483,18 @@ font-size: 26px;
 /* ====== Start  Screen Sizes =====*/
 //* Smartphones devices (phones, 400px and down) */
 @media only screen and (max-width: 400px)  {
-    // food plates loop
-    #meal.col{
-        padding-left: 4%;
-    }
-    #pinkPicture {
-        width: 350px;
-        margin-top: 0px;
-    }  // food plates loop end
-
     // scss-docs-start collapse-classes
     .collapse {
         &:not(.show) {
         display: contents;  //none
         }
     }      // scss-docs-end collapse-classes
+    #foodExplorer{
+        margin-bottom: 0rem;
+    }
+    #foodName{
+        font-size: 55px;
+    }
     .navbar-brand{
         font-size:  1.5rem;
     }
@@ -519,15 +516,15 @@ font-size: 26px;
 }
 //* Extra small devices (401px and up) */
 @media only screen and (min-width: 401px)  {
-    // food plates loop
-    #meal.col{
-        padding-left: 4%;
+    .center{
+        margin-top: 27em;
     }
-    #pinkPicture {
-        width: 375px;
-        margin-top: 0px;
-    }  // food plates loop end
-
+    #foodExplorer{
+        margin-bottom: 0rem;
+    }
+    #foodName{
+        font-size: 55px;
+    }
     // scss-docs-start collapse-classes
     .collapse {
         &:not(.show) {
@@ -570,7 +567,7 @@ font-size: 26px;
         display: contents;  //none
         }
     }     // scss-docs-end collapse-classes
-    #foodName.p{
+    .center{
         margin-top: 25rem;
     }
     #two_cols{
@@ -612,6 +609,9 @@ font-size: 26px;
     }  // scss-docs-end collapse-classes
     .center{
         margin-top: 13rem;
+    }
+    #foodName{
+        font-size: 68px;
     }
     .navbar-brand{
         font-size:  1.5rem;
