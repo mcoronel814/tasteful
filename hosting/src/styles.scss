@@ -238,21 +238,17 @@ font-size: 26px;
     height: 90px;
     width: 90px;
     margin-bottom: -95%;
-
 }
 
 #footcolor{
-
     background-color: #F2535A;
 }
 
-#bu2
-{
-    margin-top: -9%;
-    margin-left: 62%;
-    width: 220px;
-
-}
+// #bu2{
+//     margin-top: -9%;
+//     margin-left: 62%;
+//     width: 220px;
+// }
 
 #profileSize
 {
@@ -637,6 +633,11 @@ font-size: 26px;
     }
     #inputInquiry {
         height: 175px;
+    }
+    #contactBtn{
+        margin-top: -9%;
+        margin-left: 62%;
+        width: 220px;
     }
 }
 /*======= End   Screen Sizes ====== */
