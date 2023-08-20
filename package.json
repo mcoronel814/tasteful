@@ -19,5 +19,8 @@
   "homepage": "https://gitlab.com/tw-p3/front-and-back#readme",
   "devDependencies": {
     "firebase-tools": "^12.4.7"
+  },
+  "dependencies": {
+    "firebase": "^10.2.0"
   }
 }

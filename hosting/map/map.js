@@ -1,3 +1,5 @@
+
+
 // Import our custom CSS
 import './styles.scss'
 
@@ -120,3 +122,7 @@ signOutButton.addEventListener("click", mySignOut); // Use your custom function 
 
 // Call getRedirectResult when the page loads
 myGetRedirectResult(); // Use your custom function name
+
+
+
+
