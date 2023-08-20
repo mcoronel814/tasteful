@@ -183,14 +183,14 @@ font-size: 26px;
 #guyPicture{
     height: 350px;
     width: 350 px;
-    margin-left: -80%;
+    // margin-left: -80%;
 } 
 
- footer{
+footer{
     height: 100px;
 }  
 
-#iputName
+#inputName
 {
     height: 60px;
     width: 300px;
@@ -224,7 +224,7 @@ font-size: 26px;
 #us
 {
     color: #FDFAF9;
-    text-indent: -150px;
+    // text-indent: -150px;
     font-family: 'Bebas Neue', sans-serif;
 }
 #us2
@@ -238,21 +238,31 @@ font-size: 26px;
     height: 90px;
     width: 90px;
     margin-bottom: -95%;
-
 }
 
 #footcolor{
-
     background-color: #F2535A;
 }
 
-#bu2
-{
+#bu2{
     margin-top: -9%;
     margin-left: 62%;
     width: 220px;
-
 }
+// #contactRow{
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     align-items: center;
+// }
+// #contactHead{
+//     display: contents;
+// }
+// #contactPic
+// #contactNameEmail
+// #contactInputbox
+// #contactBtn{
+// }
 
 #profileSize
 {
@@ -407,6 +417,16 @@ font-size: 26px;
     margin-top: 0px;
 }
 
+/* new contact us for all sizes */
+#contactRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#contactHead{
+    display: contents;
+}
 
 /* ~~~~~~~~~~~~~~~ Start Navbar ~~~~~~~~~~~~~~*/
 // scss-docs-start collapse-classes
@@ -445,8 +465,50 @@ font-size: 26px;
 /* ~~~~~~~~~~~~~~  End Navbar  ~~~~~~~~~~~~~~~*/
 
 /* ====== Start  Screen Sizes =====*/
-//* Smartphones devices (phones, 400px and down) */
-@media only screen and (max-width: 400px)  {
+//* Small Smartphones devices (phones, 300px and down) */
+@media only screen and (max-width: 300px)  {
+    // food plates loop
+    #meal.col{
+        padding-left: 4%;
+    }
+    #pinkPicture {
+        width: 250px;
+        margin-top: 0px;
+    }  // food plates loop end
+
+    // scss-docs-start collapse-classes
+    .collapse {
+        &:not(.show) {
+        display: contents;  //none
+        }
+    }      // scss-docs-end collapse-classes
+    .navbar-brand{
+        font-size:  1.5rem;
+    }
+    .navbar-nav {
+        display:flex;
+        flex-direction: column;
+        // width: auto;
+        padding-left: 5%;  // 10%;
+        // margin-bottom:0;
+        // list-style:none
+        align-items: center;
+    }
+    #lightBlue.button, #lightPink.button, #darkBlue.button, #yellow.button, #sign-in-button.button, #sign-out-button.button{
+        margin-right: auto; //auto
+        width: 175px;
+        height: 60px;
+        border-radius: 40px;
+    }
+    #guyPicture{
+        height: 225px;
+    }
+    #inputName, #inputEmail, #inputInquiry{
+    width: -webkit-fill-available;
+    }
+}
+//* Medium Smartphones devices (phones, 301px and up) */
+@media only screen and (min-width: 301px)  {
     // food plates loop
     #meal.col{
         padding-left: 4%;
@@ -469,16 +531,19 @@ font-size: 26px;
         display:flex;
         flex-direction: column;
         // width: auto;
-        padding-left: 10%;
+        padding-left: 7%;
         // margin-bottom:0;
         // list-style:none
         align-items: center;
     }
-    .button{
+    #lightBlue.button, #lightPink.button, #darkBlue.button, #yellow.button, #sign-in-button.button, #sign-out-button.button{
         margin-right: auto; //auto
         width: 175px;
         height: 60px;
         border-radius: 40px;
+    }
+    #guyPicture{
+        height: 250px;
     }
 }
 //* Extra small devices (401px and up) */
@@ -510,11 +575,14 @@ font-size: 26px;
         // list-style:none
         align-items: center;
     }
-    .button{
+    #lightBlue.button, #lightPink.button, #darkBlue.button, #yellow.button, #sign-in-button.button, #sign-out-button.button{
         margin-right: auto; //auto
         width: 215px;
         height: 60px;
         border-radius: 40px;
+    }
+    #guyPicture{
+        height: 275px;
     }
 }
 //* Small devices (portrait tablets and large phones, 576px and up) */
@@ -543,6 +611,9 @@ font-size: 26px;
         width: auto;
         padding-left: 10%;
         align-items: center;
+    }
+    #guyPicture{
+        height: 350px;
     }
 } 
 //* Medium devices (landscape tablets, 768px and up) */
@@ -576,7 +647,7 @@ font-size: 26px;
         padding-left: 0;
         justify-content: space-between;
     }
-    .button{
+    #lightBlue.button, #lightPink.button, #darkBlue.button, #yellow.button, #sign-in-button.button, #sign-out-button.button{
             margin-right: auto; //auto
             width: 105px;
             height: 60px;
@@ -597,12 +668,17 @@ font-size: 26px;
         width: auto;
         padding-left: 0%;
     }
-    .button{
+    #lightBlue.button, #lightPink.button, #darkBlue.button, #yellow.button, #sign-in-button.button, #sign-out-button.button{
         margin-right: 4px;  //auto;
         width: 125px;
         height: 60px;
         border-radius: 40px;
     }
+    #inputInquiry {
+        height: 175px;
+    }
+    #contactPic.col, #contactNameEmail.col, #contactInputbox.col, #contactBtn.col{
+        flex: 1 0 50%; }
 }
 //* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -618,12 +694,27 @@ font-size: 26px;
         width: auto;
         padding-left: 3%;
     }
-    .button{
+    #lightBlue.button, #lightPink.button, #darkBlue.button, #yellow.button, #sign-in-button.button, #sign-out-button.button{
         margin-right: auto;
         width: 135px;
         height: 60px;
         border-radius: 40px;
     }
+    #inputInquiry {
+        height: 175px;
+    }
+    #bu2{
+        margin-top: -9%;
+        margin-left: 62%;
+        width: 220px;
+    }
+    #contactBtn.button{
+        margin-top: -9%;
+        margin-left: 62%;
+        width: 220px;
+    }
+    #contactPic.col, #contactNameEmail.col, #contactInputbox.col, #contactBtn.col{
+        flex: 1 0 0%; }
 }
 /*======= End   Screen Sizes ====== */
 
