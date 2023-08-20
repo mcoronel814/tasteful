@@ -703,6 +703,8 @@ footer{
         margin-left: 62%;
         width: 220px;
     }
+    #contactPic.col, #contactNameEmail.col, #contactInputbox.col, #contactBtn.col{
+        flex: 1 0 0%; }
 }
 /*======= End   Screen Sizes ====== */
 
