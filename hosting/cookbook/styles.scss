@@ -543,6 +543,12 @@ font-size: 26px;
     border: none; 
     font-family: 'DM Sans', sans-serif;     
 }
+#sign-in-button,  #sign-out-button{
+    background-color: #fffffe;
+    color: rgb(7, 7, 7);
+    border: none; 
+    font-family: 'DM Sans', sans-serif;     
+}
 //google username and pic
 #user-photo {
     width: 60px;  // width: 5%;
@@ -723,17 +729,26 @@ font-size: 26px;
     .navbar-brand{
         font-size:  1.35rem;
     }
-    .navbar-nav {
-        display:flex;
-        flex-direction: row;
-        width: auto;
-        padding-left: 0%;
-    }
+    // .navbar-nav {
+    //     display:flex;
+    //     flex-direction: row;
+    //     width: auto;
+    //     padding-left: 0%;
+    // }
     .button{
         margin-right: 4px;  //auto;
         width: 125px;
         height: 60px;
         border-radius: 40px;
+    }
+    .navbar-nav{
+    display: flex;
+    // flex-direction: row;
+    width: auto;
+    padding-left: 5%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
     }
 }
 //* Extra large devices (large laptops and desktops, 1200px and up) */
