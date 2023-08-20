@@ -484,13 +484,16 @@ footer{
         // list-style:none
         align-items: center;
     }
-    #lightBlue.button, #lightPink.button, #darkBlue.button, #yellow.button, #sign-in-button.button, sign-out-button.button{
+    #lightBlue.button, #lightPink.button, #darkBlue.button, #yellow.button, #sign-in-button.button, #sign-out-button.button{
         margin-right: auto; //auto
         width: 175px;
         height: 60px;
         border-radius: 40px;
     }
-    #guyPicture, #inputName, #inputEmail, #inputInquiry{
+    #guyPicture{
+        width: 200px;
+    }
+    #inputName, #inputEmail, #inputInquiry{
     width: -webkit-fill-available;
     }
 }
@@ -523,7 +526,7 @@ footer{
         // list-style:none
         align-items: center;
     }
-    #lightBlue.button, #lightPink.button, #darkBlue.button, #yellow.button, #sign-in-button.button, sign-out-button.button{
+    #lightBlue.button, #lightPink.button, #darkBlue.button, #yellow.button, #sign-in-button.button, #sign-out-button.button{
         margin-right: auto; //auto
         width: 175px;
         height: 60px;
