@@ -832,5 +832,16 @@ ul li{
         height: 60px;
         border-radius: 40px;
     }
+    #ulSearchBarAndBtn{
+        display: flex;
+        justify-content: center;
+    }
+    #liSearchBarAndBtn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 /*======= End   Screen Sizes ====== */
