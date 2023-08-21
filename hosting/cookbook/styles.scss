@@ -846,5 +846,10 @@ ul li{
     #foodName{
         margin-top: 3rem;
     }
+    #navContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
 }
 /*======= End   Screen Sizes ====== */
