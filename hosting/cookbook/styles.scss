@@ -529,6 +529,23 @@ font-size: 26px;
     display: flex;
     justify-content: center;
 }
+#ulSearchBarAndBtn{
+    display: flex;
+    justify-content: center;
+}
+#liSearchBarAndBtn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
 /* ~~~~~~~~~~~~~~~ Start Navbar ~~~~~~~~~~~~~~*/
 // scss-docs-start collapse-classes
 .collapse {
@@ -769,6 +786,18 @@ ul li
     // justify-content: flex-end;
     // align-items: center;
     // }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    #ulSearchBarAndBtn{
+        display: flex;
+        justify-content: end;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
 }
 //* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
