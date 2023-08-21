@@ -759,13 +759,13 @@ ul li{
             height: 60px;
             border-radius: 40px;
     }
-    .navbar-expand-lg .navbar-collapse {
-        display: flex!important;
-        flex-basis: auto;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        flex-direction: column;
-    }
+    // .navbar-expand-lg .navbar-collapse {
+    //     display: flex!important;
+    //     flex-basis: auto;
+    //     flex-wrap: wrap;
+    //     justify-content: flex-end;
+    //     flex-direction: column;
+    // }
 } 
 //* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -842,6 +842,9 @@ ul li{
         justify-content: flex-end;
         flex-direction: row;
         align-items: center;
+    }
+    #foodName{
+        margin-top: 3rem;
     }
 }
 /*======= End   Screen Sizes ====== */
