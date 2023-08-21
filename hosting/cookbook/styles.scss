@@ -700,6 +700,8 @@ font-size: 26px;
     }
     #foodName{
         font-size: 68px;
+        margin-top: 10rem;
+
     }
     .navbar-brand{
         font-size:  1.5rem;
@@ -717,18 +719,21 @@ font-size: 26px;
             height: 60px;
             border-radius: 40px;
     }
-    // .container{
-    //     display: flex;
-    //     flex-wrap: nowrap;
-    //     align-items: center;
-    //     justify-content: space-between;
-    //     flex-direction: row;
-    // }
+    .container{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 } 
 //* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     #foodExplorer{
         margin-bottom: 0rem;
+    }
+    #foodName{
+        margin-top: 8rem;
     }
     .center{
         margin-top: 8rem;
