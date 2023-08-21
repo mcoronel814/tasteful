@@ -704,13 +704,13 @@ ul li{
         padding-left: 10%;
         align-items: center;
     }
-    #regNavBtns{
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        padding-left: 10%;
-        align-items: center;
-    }
+    // #regNavBtns{
+    //     display: flex;
+    //     flex-direction: column;
+    //     width: auto;
+    //     padding-left: 10%;
+    //     align-items: center;
+    // }
 } 
 //* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -805,12 +805,12 @@ ul li{
     //     flex-wrap: wrap;
     //     justify-content: flex-end;
     // }
-    #ulSearchBarAndBtn{
-        display: flex;
-        justify-content: end;
-        flex-wrap: nowrap;
-        flex-direction: row;
-    }
+    // #ulSearchBarAndBtn{
+    //     display: flex;
+    //     justify-content: end;
+    //     flex-wrap: nowrap;
+    //     flex-direction: row;
+    // }
 }
 //* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
