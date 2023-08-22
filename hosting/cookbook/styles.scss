@@ -641,12 +641,12 @@ ul li{
     .navbar-collapse {
         align-items: center;
     }
-    .collapse {
-        &:not(.show) {
-        display: flex;  //none;
-        flex-direction: column;
-        }
-    }     // scss-docs-end collapse-classes
+    // .collapse {
+    //     &:not(.show) {
+    //     display: flex;  //none;
+    //     flex-direction: column;
+    //     }
+    // }     // scss-docs-end collapse-classes
     .center{
         margin-top: 25rem;
     }
