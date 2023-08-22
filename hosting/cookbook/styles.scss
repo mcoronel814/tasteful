@@ -776,27 +776,28 @@ ul li{
     //     flex-wrap: nowrap;
     //     flex-direction: row;
     // }
-    #regNavBtns{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-    #ulSearchBarAndBtn{
-        display: flex;
-        justify-content: center;
-    }
-    #liSearchBarAndBtn{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        flex-direction: row;
-        align-items: center;
-    }
-    #navContainer{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
+    /* new try */
+    // #regNavBtns{
+    //     display: flex;
+    //     flex-direction: row;
+    //     flex-wrap: nowrap;
+    // }
+    // #ulSearchBarAndBtn{
+    //     display: flex;
+    //     justify-content: center;
+    // }
+    // #liSearchBarAndBtn{
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: flex-end;
+    //     flex-direction: row;
+    //     align-items: center;
+    // }
+    // #navContainer{
+    //     display: flex;
+    //     flex-direction: row;
+    //     flex-wrap: nowrap;
+    // }
 }
 //* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
