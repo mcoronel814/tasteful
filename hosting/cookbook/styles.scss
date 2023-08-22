@@ -634,6 +634,12 @@ ul li{
     //     flex-direction: row;
     //     margin-bottom: 4rem;
     // }
+    #two_cols{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 4rem;
+    }
 }
 //* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
@@ -649,12 +655,6 @@ ul li{
     // }     // scss-docs-end collapse-classes
     .center{
         margin-top: 25rem;
-    }
-    #two_cols{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        margin-bottom: 4rem;
     }
     .navbar-brand{
         font-size:  2.25rem;
@@ -678,6 +678,12 @@ ul li{
     }
     #foodName{
         margin-top: 26rem;
+    }
+    #two_cols{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 4rem;
     }
 } 
 //* Medium devices (landscape tablets, 768px and up) */
