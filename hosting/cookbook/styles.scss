@@ -728,7 +728,16 @@ ul li{
     //     flex-direction: column;
     // }
     #navColor2{
-        margin-top: 98px 
+        margin-top: 98px;
+    }
+    #nav2.container{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: right;
+    }
+    #foodName{
+        margin-top: 9rem;
     }
 } 
 //* Large devices (laptops/desktops, 992px and up) */
