@@ -676,11 +676,11 @@ ul li{
 //* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
      // scss-docs-start collapse-classes
-    .fade {
-            &:not(.show) {
-            opacity: 1;  // 0
-            }
-        }
+    // .fade {
+    //         &:not(.show) {
+    //         opacity: 1;  // 0
+    //         }
+    //     }
     .collapse {
         &:not(.show) {
         display: flex;  //none;
