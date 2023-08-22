@@ -822,11 +822,12 @@ ul li{
     #foodName{
         margin-top: 3rem;
     }
-        #regNavBtns{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
+    /* try with to get searchbar btn stack*/
+    //     #regNavBtns{
+    //     display: flex;
+    //     flex-direction: row;
+    //     flex-wrap: nowrap;
+    // }
     #ulSearchBarAndBtn{
         display: flex;
         justify-content: center;
