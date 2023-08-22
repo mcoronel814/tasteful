@@ -665,7 +665,7 @@ ul li{
     //     padding-left: 10%;
     //     align-items: center;
     // }
-    // #regNavBtns{
+    // #nav1Btns{
     //     display: flex;
     //     flex-direction: column;
     //     width: auto;
@@ -738,6 +738,10 @@ ul li{
         align-items: center;
         justify-content: right;
     }
+    #nav1Btns.navbar-nav.ms-auto{
+        display:flex;
+        flex-direction: row;
+    }
     #foodName{
         margin-top: 9rem;
     }
@@ -787,7 +791,7 @@ ul li{
     //     flex-direction: row;
     // }
     /* new try */
-    #regNavBtns.navbar-nav{
+    #nav1Btns.navbar-nav{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -836,7 +840,7 @@ ul li{
         margin-top: 3rem;
     }
     /* try with to get searchbar btn stack*/
-    //     #regNavBtns{
+    //     #nav1Btns{
     //     display: flex;
     //     flex-direction: row;
     //     flex-wrap: nowrap;
