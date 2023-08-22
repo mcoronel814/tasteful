@@ -628,9 +628,16 @@ ul li{
     .button{
         margin-left: 4px;
         margin-right: 4px;
-        width: 215px;
+        width: 145px;
         height: 60px;
         border-radius: 40px;
+    }
+    #nav1ul.navbar-nav.ms-auto{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        // padding-left: 10%;
+        align-items: center;
     }
     #nav2ul.navbar-nav.ms-auto{
         display: flex;
