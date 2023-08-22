@@ -498,7 +498,7 @@ footer{
 #navColor2{
     background-color: #7EA1D2; 
 }
-// #ulSearchBarAndBtn{
+// #nav2ul{
 //     display: flex;
 //     justify-content: center;
 // }
@@ -666,7 +666,7 @@ ul li{
     //     padding-left: 10%;
     //     align-items: center;
     // }
-    #nav1Btns.navbar-nav.ms-auto{
+    #nav1ul.navbar-nav.ms-auto{
         display: flex;
         flex-direction: column;
         width: auto;
@@ -735,7 +735,11 @@ ul li{
         flex-wrap: nowrap;
         align-items: center;
     }
-    #nav1Btns.navbar-nav.ms-auto{
+    #nav1ul.navbar-nav.ms-auto{
+        display:flex;
+        flex-direction: row;
+    }
+    #nav2ul{
         display:flex;
         flex-direction: row;
     }
@@ -790,19 +794,19 @@ ul li{
     //     flex-wrap: wrap;
     //     justify-content: flex-end;
     // }
-    // #ulSearchBarAndBtn{
+    // #nav2ul{
     //     display: flex;
     //     justify-content: end;
     //     flex-wrap: nowrap;
     //     flex-direction: row;
     // }
     /* new try */
-    #nav1Btns.navbar-nav{
+    #nav1ul.navbar-nav{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
     }
-    // #ulSearchBarAndBtn{
+    // #nav2ul{
     //     display: flex;
     //     justify-content: center;
     // }
@@ -846,12 +850,12 @@ ul li{
         margin-top: 3rem;
     }
     /* try with to get searchbar btn stack*/
-    //     #nav1Btns{
+    //     #nav1ul{
     //     display: flex;
     //     flex-direction: row;
     //     flex-wrap: nowrap;
     // }
-    #ulSearchBarAndBtn{
+    #nav2ul{
         display: flex;
         justify-content: center;
     }
