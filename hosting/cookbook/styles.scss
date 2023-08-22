@@ -654,6 +654,7 @@ ul li{
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        margin-bottom: 4rem;
     }
     .navbar-brand{
         font-size:  2.25rem;
@@ -665,13 +666,13 @@ ul li{
     //     padding-left: 10%;
     //     align-items: center;
     // }
-    // #nav1Btns{
-    //     display: flex;
-    //     flex-direction: column;
-    //     width: auto;
-    //     padding-left: 10%;
-    //     align-items: center;
-    // }
+    #nav1Btns.navbar-nav.ms-auto{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        // padding-left: 10%;
+        align-items: center;
+    }
 } 
 //* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
