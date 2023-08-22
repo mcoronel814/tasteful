@@ -96,7 +96,7 @@ onAuthStateChanged(auth, (user) => {
     signOutButton.style.display = "block";
     signInButton.style.display = "none";
     //Show the my recipes button
-    recipesButton.style.display = "block";
+    recipesButton.style.display = "none";
 
     // Get the user's uid
     const uid = user.uid;
