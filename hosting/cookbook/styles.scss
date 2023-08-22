@@ -607,6 +607,12 @@ ul li{
         &:not(.show) {
         display: contents;  //none
         }
+    }   
+    .collapse.navbar-collapse.navbar2{
+        &:not(.show) {
+            display: flex;  //none;
+            flex-direction: row;
+            }
     }     // scss-docs-end collapse-classes
     .navbar-brand{
         font-size:  1.5rem;
