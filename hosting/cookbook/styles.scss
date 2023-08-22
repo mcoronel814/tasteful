@@ -643,7 +643,8 @@ ul li{
     }
     .collapse {
         &:not(.show) {
-        display: contents;  //none
+        display: flex;  //none;
+        flex-direction: column;
         }
     }     // scss-docs-end collapse-classes
     .center{
