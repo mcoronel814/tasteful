@@ -154,7 +154,7 @@ font-size: 26px;
 
 #navColor
 {
-   background-color: #7EA1D2;
+    background-color: #7EA1D2;
 }
 
 
@@ -491,10 +491,10 @@ footer{
 
 }
 /* cookbook navbar rework */
-#foodName{
-    display: flex;
-    justify-content: center;
-}
+// #foodName{
+//     display: flex;
+//     justify-content: center;
+// }
 // #ulSearchBarAndBtn{
 //     display: flex;
 //     justify-content: center;
@@ -599,9 +599,6 @@ ul li{
     #foodExplorer{
         margin-bottom: 0rem;
     }
-    #foodName{
-        font-size: 55px;
-    }
     // scss-docs-start collapse-classes
     .collapse {
         &:not(.show) {
@@ -627,6 +624,7 @@ ul li{
     }
     #foodName{
         margin-top: 20rem;
+        font-size: 55px;
     }
     // #two_cols {
     //     display: flex;
@@ -636,12 +634,6 @@ ul li{
 }
 //* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
-    // food plates loop
-    #pinkPicture {
-        width: 550px;
-        margin-top: 0px;
-    } // food plates loop end
-
     // scss-docs-start collapse-classes
     .navbar-collapse {
         align-items: center;
@@ -701,13 +693,13 @@ ul li{
     .center{
         margin-top: 13rem;
     }
-    #foodName{
-        font-size: 68px;
-        margin-top: 5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    // #foodName{
+    //     font-size: 68px;
+    //     margin-top: 5rem;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    // }
     .navbar-brand{
         font-size:  1.5rem;
     }
@@ -843,6 +835,10 @@ ul li{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+    }
+    #navColor2{
+        background-color: #7EA1D2;
+        margin-top: 98px 
     }
 }
 /*======= End   Screen Sizes ====== */
