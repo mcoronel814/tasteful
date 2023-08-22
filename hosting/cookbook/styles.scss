@@ -689,7 +689,7 @@ ul li{
         margin-top: 25rem;
     }
     .navbar-brand{
-        font-size:  2.25rem;
+        font-size:  2rem;
     }
     // .navbar-nav {
     //     display:flex;
@@ -698,6 +698,13 @@ ul li{
     //     padding-left: 10%;
     //     align-items: center;
     // }
+    .button{
+        margin-left: 4px;
+        margin-right: 4px;
+        width: 175px;
+        height: 60px;
+        border-radius: 40px;
+    }
     #nav1ul.navbar-nav.ms-auto{
         display: flex;
         flex-direction: column;
