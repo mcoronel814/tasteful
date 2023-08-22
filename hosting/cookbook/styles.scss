@@ -645,15 +645,14 @@ ul li{
     .navbar-brand{
         font-size:  1.5rem;
     }
-    .navbar-nav {
-        display:flex;
-        flex-direction: column;
-        // width: auto;
-        padding-left: 10%;
-        // margin-bottom:0;
-        // list-style:none
-        align-items: center;
-    }
+    // .navbar-nav {
+    //     display:flex;
+    //     flex-direction: column;
+    //     // width: auto;
+    //     padding-left: 10%;
+    //     // margin-bottom:0;
+    //     // list-style:none
+    //     align-items: center;}
     .button{
         margin-right: auto; //auto
         width: 215px;
@@ -663,11 +662,11 @@ ul li{
     #foodName{
         margin-top: 20rem;
     }
-    #two_cols {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 4rem;
-    }
+    // #two_cols {
+    //     display: flex;
+    //     flex-direction: row;
+    //     margin-bottom: 4rem;
+    // }
 }
 //* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
@@ -746,13 +745,13 @@ ul li{
     .navbar-brand{
         font-size:  1.5rem;
     }
-    .navbar-nav {
-        display:flex;
-        flex-direction: row;
-        width: auto;
-        padding-left: 0;
-        justify-content: space-between;
-    }
+    // .navbar-nav {
+    //     display:flex;
+    //     flex-direction: row;
+    //     width: auto;
+    //     padding-left: 0;
+    //     justify-content: space-between;
+    // }
     .button{
             margin-right: auto; //auto
             width: 105px;
@@ -778,12 +777,12 @@ ul li{
     .navbar-brand{
         font-size:  1.35rem;
     }
-    .navbar-nav {
-        display:flex;
-        flex-direction: row;
-        width: auto;
-        padding-left: 3%; //0%;
-    }
+    // .navbar-nav {
+    //     display:flex;
+    //     flex-direction: row;
+    //     width: auto;
+    //     padding-left: 3%; //0%;
+    // }
     .button{
         margin-right: 4px;  //auto;
         width: 140px;
@@ -811,6 +810,22 @@ ul li{
     //     flex-wrap: nowrap;
     //     flex-direction: row;
     // }
+    #ulSearchBarAndBtn{
+        display: flex;
+        justify-content: center;
+    }
+    #liSearchBarAndBtn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+    }
+    #navContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 }
 //* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -832,6 +847,9 @@ ul li{
         height: 60px;
         border-radius: 40px;
     }
+    #foodName{
+        margin-top: 3rem;
+    }
     #ulSearchBarAndBtn{
         display: flex;
         justify-content: center;
@@ -843,13 +861,10 @@ ul li{
         flex-direction: row;
         align-items: center;
     }
-    #foodName{
-        margin-top: 3rem;
-    }
     #navContainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 }
 /*======= End   Screen Sizes ====== */
