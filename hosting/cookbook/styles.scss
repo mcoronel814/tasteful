@@ -631,6 +631,10 @@ ul li{
         height: 60px;
         border-radius: 40px;
     }
+    #nav2ul.navbar-nav.ms-auto{
+        display: flex;
+        flex-direction: row;
+    }
     #nav2Color{
         margin-top: 320px;
     }
