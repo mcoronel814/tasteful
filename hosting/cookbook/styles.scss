@@ -495,6 +495,9 @@ footer{
     display: flex;
     justify-content: center;
 }
+#navColor2{
+    background-color: #7EA1D2; 
+}
 // #ulSearchBarAndBtn{
 //     display: flex;
 //     justify-content: center;
@@ -790,6 +793,9 @@ ul li{
     //     flex-direction: row;
     //     flex-wrap: nowrap;
     // }
+    #navColor2{
+        margin-top: 98px 
+    }
 }
 //* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -837,7 +843,6 @@ ul li{
         flex-wrap: nowrap;
     }
     #navColor2{
-        background-color: #7EA1D2;
         margin-top: 98px 
     }
 }
