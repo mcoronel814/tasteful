@@ -729,6 +729,15 @@ ul li{
     //     justify-content: flex-end;
     //     flex-direction: column;
     // }
+    #nav1.container{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    #nav1Btns.navbar-nav.ms-auto{
+        display:flex;
+        flex-direction: row;
+    }
     #navColor2{
         margin-top: 98px;
     }
@@ -737,10 +746,6 @@ ul li{
         flex-wrap: nowrap;
         align-items: center;
         justify-content: right;
-    }
-    #nav1Btns.navbar-nav.ms-auto{
-        display:flex;
-        flex-direction: row;
     }
     #foodName{
         margin-top: 9rem;
