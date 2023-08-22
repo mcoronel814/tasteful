@@ -78,7 +78,17 @@
                             <button style="display: none;" class="button" id="sign-in-button">Sign in with Google</button>
                             <button style="display: none;" class="button" id="sign-out-button">Sign out</button>
                         </a>
-                    </li> 
+                    </li>
+                    <li>
+                        <ul class="navbar-nav ms-auto" id="ulSearchBarAndBtn">
+                            <li class="nav-item" id="ilSearchBarAndBtn">
+                                <form id="searchForm" onsubmit="performSearch(); return false;">
+                                    <input type="text" placeholder="Search for recipes..." id="recipeSearch">
+                                </form>
+                            </li>
+                            <li class="nav-item"><a class="nav-link"><button type="submit" class="button" id="lightPink">Search</button></a></li>
+                        </ul>
+                    </li>
                 </ul>
                     <!-- <li class="nav-item">
                         <form id="searchForm" onsubmit="performSearch(); return false;">
@@ -86,17 +96,16 @@
                             <button type="submit" class="button" id="lightPink">Search</button>
                         </form>
                     </li> -->
-                <ul class="navbar-nav ms-auto" id="ulSearchBarAndBtn">
+                <!-- <ul class="navbar-nav ms-auto" id="ulSearchBarAndBtn">
                     <li class="nav-item" id="ilSearchBarAndBtn">
                         <form id="searchForm" onsubmit="performSearch(); return false;">
                             <input type="text" placeholder="Search for recipes..." id="recipeSearch">
-                            <!-- <input type="text" placeholder="Search for recipes..." id="recipeSearch" class="button" id="lightBlue"> -->
-                            <!-- <button type="submit" class="button" id="lightPink">Search</button> -->
                         </form>
                     </li>
                     <li class="nav-item"><a class="nav-link"><button type="submit" class="button" id="lightPink">Search</button></a></li>
-                    
-                </ul>
+                </ul> -->
+                <!-- <input type="text" placeholder="Search for recipes..." id="recipeSearch" class="button" id="lightBlue"> -->
+                <!-- <button type="submit" class="button" id="lightPink">Search</button> -->
             </div>
         </div>
     </nav>
