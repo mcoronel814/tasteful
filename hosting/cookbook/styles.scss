@@ -152,7 +152,7 @@ font-size: 26px;
     margin-left: 50%;
   }
 
-#navColor
+#nav1Color
 {
     background-color: #7EA1D2;
 }
@@ -495,7 +495,7 @@ footer{
     display: flex;
     justify-content: center;
 }
-#navColor2{
+#nav2Color{
     background-color: #7EA1D2; 
 }
 // #nav2ul{
@@ -673,6 +673,9 @@ ul li{
         // padding-left: 10%;
         align-items: center;
     }
+    #nav2Color{
+        margin-top: 320px;
+    }
 } 
 //* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -739,12 +742,12 @@ ul li{
         display:flex;
         flex-direction: row;
     }
+    #nav2Color{
+        margin-top: 98px;
+    }
     #nav2ul{
         display:flex;
         flex-direction: row;
-    }
-    #navColor2{
-        margin-top: 98px;
     }
     #nav2.container{
         display: flex;
@@ -822,7 +825,7 @@ ul li{
     //     flex-direction: row;
     //     flex-wrap: nowrap;
     // }
-    #navColor2{
+    #nav2Color{
         margin-top: 98px 
     }
 }
@@ -871,7 +874,7 @@ ul li{
         flex-direction: row;
         flex-wrap: nowrap;
     }
-    #navColor2{
+    #nav2Color{
         margin-top: 98px 
     }
 }
