@@ -822,6 +822,11 @@ ul li{
     #foodName{
         margin-top: 3rem;
     }
+        #regNavBtns{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
     #ulSearchBarAndBtn{
         display: flex;
         justify-content: center;
