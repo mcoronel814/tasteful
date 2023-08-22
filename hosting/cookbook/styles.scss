@@ -683,7 +683,8 @@ ul li{
         }
     .collapse {
         &:not(.show) {
-        display: flex;  //none
+        display: flex;  //none;
+        flex-direction: row;
         }
     }
     .collapsing {
