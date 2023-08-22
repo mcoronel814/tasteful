@@ -626,7 +626,8 @@ ul li{
     //     // list-style:none
     //     align-items: center;}
     .button{
-        margin-right: auto; //auto
+        margin-left: 4px;
+        margin-right: 4px;
         width: 215px;
         height: 60px;
         border-radius: 40px;
@@ -638,6 +639,17 @@ ul li{
     #nav2Color{
         margin-top: 320px;
     }
+    #ilSearchBarAndBtn.nav-item{
+        display: flex;
+        align-items: center;
+        }
+    // #liSearchBarAndBtn{
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: flex-end;
+    //     flex-direction: row;
+    //     align-items: center;
+    // }
     #foodName{
         margin-top: 20rem;
         font-size: 55px;
@@ -770,6 +782,10 @@ ul li{
     #nav2ul{
         display:flex;
         flex-direction: row;
+    }
+    #ilSearchBarAndBtn.nav-item{
+    display: flex;
+    align-items: center;
     }
     #nav2.container{
         display: flex;
