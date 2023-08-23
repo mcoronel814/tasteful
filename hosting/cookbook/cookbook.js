@@ -217,7 +217,7 @@ onAuthStateChanged(auth, (user) => {
         // Show the user's name and photo in the nav bar
         // userName.textContent = user.displayName;
         // foodExplorer.innerHTML = `Hello! <br> ${user.displayName}`;
-        foodExplorer.innerHTML = `Food <br> Explorer`
+        foodExplorer.innerHTML = `Tasteful`
         // userPhoto.src = user.photoURL;
         // Show the sign out button and hide the sign in button
         
