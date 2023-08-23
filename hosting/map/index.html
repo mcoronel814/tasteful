@@ -132,7 +132,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicin
               </p>
 
-              <p id="describe2">Dine-in - Takeout - Delivery</p>
+              <p id="describe1">Dine-in - Takeout - Delivery</p>
 
               <hr id="greyLine" />
               <br />
@@ -144,7 +144,17 @@
 
               <!-- Link  Picture -->
               <img src="link.png" alt="" id="link" />
-              <h5 id="website"></h5>
+
+          
+
+                <a href="" id="website" target="_blank">
+                  <h5 id="website1">
+                    Visit Restaurant Website!
+                  </h5>
+                   
+                </a>
+            
+
               <br />
 
               <!-- Time  Picture -->
@@ -435,7 +445,14 @@
     <h5 id="address"></h5>
 
     <img src="/assets/link-7971481a.png" alt="" id="linkB" />
-    <h5 id="website"></h5>
+    
+         <!-- <h5 id="website1"></h5> -->
+                 <a href="" id="website" target="_blank">
+                  <h5 id="website1">
+                    Visit Restaurant Website!
+                  </h5>
+                   
+                </a>
 
     <br />
 
@@ -596,7 +613,7 @@
                   types = types[0].toUpperCase() + types.substring(1);
 
                   document.getElementById("restaurantType").innerHTML =
-                    types + " Place";
+                    types ;
 
                   const address = restaurant.address;
 
@@ -620,8 +637,11 @@
                     "Opening Hours: <br> " + weekday1;
 
                   const website = restaurant.website;
+                  var websiteLink =  document.getElementById("website");
 
-                  document.getElementById("website").innerHTML = website;
+                  // document.getElementById("website").innerHTML = website;
+                  
+                  websiteLink.setAttribute("href",website ); 
 
                   const reviews = restaurant.reviews;
                   var reviews2 = document.getElementById("reviews");

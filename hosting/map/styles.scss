@@ -881,8 +881,9 @@ text-indent: 30px;
  
  #describeA
  {
+    text-align: left;
      font-size: 13px;
-     text-indent: 5px;
+    //  text-indent: 5px;
   
  }
  
@@ -890,7 +891,8 @@ text-indent: 30px;
  {
      margin-top: -12px;
      font-size: 13px;
-     text-indent: 5px;
+    //  text-indent: 5px;
+     text-align: left;
  }
  
  
@@ -898,7 +900,8 @@ text-indent: 30px;
  {
      margin-top: 15px;
      font-size: 13px;
-     text-indent: -40%;
+    //  text-indent: -40%;
+
  }
  
  #address
@@ -912,11 +915,24 @@ text-indent: 30px;
  
  #website
  {
-     margin-top: -22px;
+    position: relative;
+    //  margin-top: -22px;
      font-size: 13px;
      /* text-indent: -7%;  */
-     text-align: left;
-     margin-left: 30px;
+    //  text-align: center;
+    // margin-left: 30px;
+    // right: -90px;
+     text-decoration: none;
+ }
+ 
+  
+ #website1
+ {
+    margin-top: -22px;
+    font-size: 13px;
+    /* text-indent: -7%;  */
+    text-align: left;
+    margin-left: 30px;
  }
  
  #pin
@@ -929,10 +945,12 @@ text-indent: 30px;
  
  #link
  {
-     width: 30px;
-     height: 30px;
-     margin-top: 30px;
-     margin-left: -105%; 
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+    // margin-left: -95%;
+     margin-left: -105%;
+    //  margin-left: 50%;  
      /* text-align: left; */
  }
  
