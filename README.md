@@ -1,6 +1,6 @@
-# front and back
+# Tasteful
 
-
+Tasteful is our web app that helps users discover more delicious cuisine! Tasteful combines localized restaurant listings alongside recipes suggestions to deliver new and comprehensive answers when trying to decide what you want to eat. 
 
 ## Getting started
 
