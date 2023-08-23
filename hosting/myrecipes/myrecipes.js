@@ -52,8 +52,6 @@ const signOutButton = document.getElementById("sign-out-button");
 const userName = document.getElementById("user-name");
 const userPhoto = document.getElementById("user-photo");
 const recipesButton = document.getElementById("yellow");
-const foodExplorer = document.getElementById("foodExplorer"); 
-
 
 // Create an instance of the GoogleAuthProvider class
 const provider = new GoogleAuthProvider();
@@ -90,50 +88,15 @@ onAuthStateChanged(auth, (user) => {
     window.currentUser = user;
     // localStorage.setItem("currentUser", JSON.stringify(user));
 
-
-    // foodExplorer.innerHTML = `Hello! <br> ${user.displayName}`;
-    foodExplorer.innerHTML = `
-    <a class="navbar-brand" href="https://tasteful-48763.web.app/">
-    <p id="foodExplorer">
-        Tasteful
-    </p>
-    </a>
-    `;
-    // userPhoto.src = user.photoURL;
-
     // Update the UI elements
     // Show the user's name and photo in the nav bar
-    // userName.textContent = user.displayName;
-    // userPhoto.src = user.photoURL;
+    userName.textContent = user.displayName;
+    userPhoto.src = user.photoURL;
     // Show the sign out button and hide the sign in button
-
     signOutButton.style.display = "block";
-
- 
-  //   signInButton.style.display = "none";
-
-  //   foodExplorer.addEventListener("mouseenter", () => { 
-
-
-  //     signOutButton.style.display = "block";
-
-  //  });
-
-  //  userPhoto.addEventListener("mouseenter", () => { 
-
-
-  //     signOutButton.style.display = "block";
-
-  //  });
-
-  //  signOutButton.addEventListener("mouseleave", () => {
-
-  //     signOutButton.style.display = "none";
-      
-  //   });
-    
+    signInButton.style.display = "none";
     //Show the my recipes button
-    recipesButton.style.display = "none";
+    recipesButton.style.display = "block";
 
     // Get the user's uid
     const uid = user.uid;
@@ -202,8 +165,6 @@ onAuthStateChanged(auth, (user) => {
           }
         );
       } else {
-
-
         // There is no image file
         // Create a recipe object with only values and no imageUrl
         const recipe = {
@@ -366,8 +327,8 @@ onAuthStateChanged(auth, (user) => {
 
     // Update the UI elements
     // Hide the user's name and photo in the nav bar
-    // userName.textContent = "Guest";
-    // userPhoto.src = "./assets/knife_fork_icon-6a4a4b01.png";
+    userName.textContent = "Guest";
+    userPhoto.src = "./assets/knife_fork_icon-6a4a4b01.png";
     // Hide the sign out button and show the sign in button
     signOutButton.style.display = "none";
     signInButton.style.display = "block";
