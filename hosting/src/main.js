@@ -45,6 +45,10 @@ const userName = document.getElementById("user-name");
 const userPhoto = document.getElementById("user-photo");
 const recipesButton = document.getElementById("yellow"); 
 
+const lightBlue = document.getElementById("lightBlue"); 
+const lightPink = document.getElementById("lightPink"); 
+const darkBlue = document.getElementById("darkBlue"); 
+
 
 // Create an instance of the GoogleAuthProvider class
 const provider = new GoogleAuthProvider();
@@ -109,6 +113,12 @@ onAuthStateChanged(auth, (user) => {
         signInButton.style.display = "block";
         // Hide my recipes button
         recipesButton.style.display = "none";
+
+
+        lightBlue.style.marginRight = "40px";
+        lightPink.style.marginRight = "40px";
+        darkBlue.style.marginRight = "40px";
+        // lightBlue.style.marginRight = "40px";
     }
 });
 
