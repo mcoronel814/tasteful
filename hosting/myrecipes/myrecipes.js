@@ -99,8 +99,31 @@ onAuthStateChanged(auth, (user) => {
     // userName.textContent = user.displayName;
     // userPhoto.src = user.photoURL;
     // Show the sign out button and hide the sign in button
-    signOutButton.style.display = "block";
+
+
+ 
     signInButton.style.display = "none";
+
+    foodExplorer.addEventListener("mouseenter", () => { 
+
+
+      signOutButton.style.display = "block";
+
+   });
+
+   userPhoto.addEventListener("mouseenter", () => { 
+
+
+      signOutButton.style.display = "block";
+
+   });
+
+   signOutButton.addEventListener("mouseleave", () => {
+
+      signOutButton.style.display = "none";
+      
+    });
+    
     //Show the my recipes button
     recipesButton.style.display = "none";
 
