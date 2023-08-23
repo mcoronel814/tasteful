@@ -101,7 +101,7 @@ onAuthStateChanged(auth, (user) => {
 
         // userName.textContent = "Guest";
 
-        // userPhoto.src = "./assets/knife_fork_icon-6a4a4b01.png";
+        userPhoto.src = "./assets/knife_fork_icon-6a4a4b01.png";
 
 
         // Hide the sign out button and show the sign in button
