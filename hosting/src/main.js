@@ -118,6 +118,11 @@ onAuthStateChanged(auth, (user) => {
         lightBlue.style.marginRight = "40px";
         lightPink.style.marginRight = "40px";
         darkBlue.style.marginRight = "40px";
+
+        lightBlue.style.width = "210px"
+        lightPink.style.width = "210px"
+        darkBlue.style.width = "210px"
+        signInButton.style.width = "210px"
         // lightBlue.style.marginRight = "40px";
     }
 });
