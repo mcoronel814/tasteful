@@ -40,6 +40,7 @@ const button = document.querySelector("#signin");
 
 // Get a reference to the UI elements
 const signInButton = document.getElementById("sign-in-button");
+const logInButton = document.getElementById("log-in-button");
 const signOutButton = document.getElementById("sign-out-button");
 const userName = document.getElementById("user-name");
 const userPhoto = document.getElementById("user-photo");
@@ -110,6 +111,7 @@ onAuthStateChanged(auth, (user) => {
         // Hide the sign out button and show the sign in button
         signOutButton.style.display = "none";
         signInButton.style.display = "block";
+        logInButton.style.display = "block";
         // Hide my recipes button
         recipesButton.style.display = "none";
     }
