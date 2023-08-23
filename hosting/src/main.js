@@ -88,10 +88,27 @@ onAuthStateChanged(auth, (user) => {
         foodExplorer.innerHTML = `Hello! <br> ${user.displayName}`;
         userPhoto.src = user.photoURL;
         // Show the sign out button and hide the sign in button
-        signOutButton.style.display = "block";
+        
         signInButton.style.display = "none";
         //Show the my recipes button
         recipesButton.style.display = "block";
+
+        
+        foodExplorer.addEventListener("mouseenter", () => { 
+
+
+            signOutButton.style.display = "block";
+
+         });
+
+         signOutButton.addEventListener("mouseleave", () => {
+
+            signOutButton.style.display = "none";
+            
+          });
+
+
+
     } else {
         // User is signed out
         // Clear the user's information from the global variable or the local storage

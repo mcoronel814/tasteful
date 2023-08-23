@@ -448,14 +448,23 @@ footer{
 #sign-in-button
 {
     position: relative;
-    left: 20%;
+    left: 25%;
     background-color: #FFBD59;
     color: rgb(255, 255, 255);
     border: none; 
     font-family: 'DM Sans', sans-serif; 
 
 }
+#sign-out-button
+{
+    position: relative;
+    left: 25%;
+    background-color: #FFBD59;
+    color: rgb(255, 255, 255);
+    border: none; 
+    font-family: 'DM Sans', sans-serif; 
 
+}
 
 
 #log-in-button
