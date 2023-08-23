@@ -217,7 +217,12 @@ onAuthStateChanged(auth, (user) => {
         // Show the user's name and photo in the nav bar
         // userName.textContent = user.displayName;
         // foodExplorer.innerHTML = `Hello! <br> ${user.displayName}`;
-        foodExplorer.innerHTML = `Tasteful`
+        foodExplorer.innerHTML = `
+        <a class="navbar-brand" href="https://tasteful-48763.web.app/">
+
+        <p id="foodExplorer">  Tasteful  </p> </a>
+        
+        `
         // userPhoto.src = user.photoURL;
         // Show the sign out button and hide the sign in button
         
@@ -225,26 +230,28 @@ onAuthStateChanged(auth, (user) => {
         //Show the my recipes button
         recipesButton.style.display = "block";
 
-
-        foodExplorer.addEventListener("mouseenter", () => { 
-
-
-            signOutButton.style.display = "block";
-
-         });
-
-         userPhoto.addEventListener("mouseenter", () => { 
+        signOutButton.style.display = "block";
 
 
-            signOutButton.style.display = "block";
+        // foodExplorer.addEventListener("mouseenter", () => { 
 
-         });
 
-         signOutButton.addEventListener("mouseleave", () => {
+        //     signOutButton.style.display = "block";
 
-            signOutButton.style.display = "none";
+        //  });
+
+        //  userPhoto.addEventListener("mouseenter", () => { 
+
+
+        //     signOutButton.style.display = "block";
+
+        //  });
+
+        //  signOutButton.addEventListener("mouseleave", () => {
+
+        //     signOutButton.style.display = "none";
             
-          });
+        //   });
 
 
 

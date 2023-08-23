@@ -92,27 +92,28 @@ onAuthStateChanged(auth, (user) => {
         signInButton.style.display = "none";
         //Show the my recipes button
         recipesButton.style.display = "block";
+        signOutButton.style.display = "block";
 
 
-        foodExplorer.addEventListener("mouseenter", () => { 
+        // foodExplorer.addEventListener("mouseenter", () => { 
 
 
-            signOutButton.style.display = "block";
+        //     signOutButton.style.display = "block";
 
-         });
+        //  });
 
-         userPhoto.addEventListener("mouseenter", () => { 
+        //  userPhoto.addEventListener("mouseenter", () => { 
 
 
-            signOutButton.style.display = "block";
+        //     signOutButton.style.display = "block";
 
-         });
+        //  });
 
-         signOutButton.addEventListener("mouseleave", () => {
+        //  signOutButton.addEventListener("mouseleave", () => {
 
-            signOutButton.style.display = "none";
+        //     signOutButton.style.display = "none";
             
-          });
+        //   });
 
 
 
