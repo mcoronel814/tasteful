@@ -115,9 +115,10 @@ onAuthStateChanged(auth, (user) => {
         recipesButton.style.display = "none";
 
 
-        lightBlue.style.marginRight = "40px";
-        lightPink.style.marginRight = "40px";
-        darkBlue.style.marginRight = "40px";
+        lightBlue.style.marginRight = "25px";
+        lightPink.style.marginRight = "25px";
+        darkBlue.style.marginRight = "25px";
+        signInButton.style.marginRight = "25px";
 
         lightBlue.style.width = "195px"
         lightPink.style.width = "195px"
