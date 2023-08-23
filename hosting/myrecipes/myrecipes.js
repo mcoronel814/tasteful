@@ -91,12 +91,10 @@ onAuthStateChanged(auth, (user) => {
     // localStorage.setItem("currentUser", JSON.stringify(user));
 
 
-    foodExplorer.innerHTML = `Hello! <br> ${user.displayName}`;
+    // foodExplorer.innerHTML = `Hello! <br> ${user.displayName}`;
     foodExplorer.innerHTML = `
     <a class="navbar-brand" href="https://tasteful-48763.web.app/">
     <p id="foodExplorer">
-        <!-- Food <br />
-        Explorer -->
         Tasteful
     </p>
     </a>
@@ -204,6 +202,8 @@ onAuthStateChanged(auth, (user) => {
           }
         );
       } else {
+
+
         // There is no image file
         // Create a recipe object with only values and no imageUrl
         const recipe = {
@@ -366,8 +366,8 @@ onAuthStateChanged(auth, (user) => {
 
     // Update the UI elements
     // Hide the user's name and photo in the nav bar
-    userName.textContent = "Guest";
-    userPhoto.src = "./assets/knife_fork_icon-6a4a4b01.png";
+    // userName.textContent = "Guest";
+    // userPhoto.src = "./assets/knife_fork_icon-6a4a4b01.png";
     // Hide the sign out button and show the sign in button
     signOutButton.style.display = "none";
     signInButton.style.display = "block";

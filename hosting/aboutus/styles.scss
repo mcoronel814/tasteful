@@ -7,7 +7,13 @@
     border: none; 
     font-family: 'DM Sans', sans-serif;     
 }
-
+.yellow2
+{
+    background-color: #A8DF8E;
+    border: none;
+    font-family: 'DM Sans', sans-serif;   
+    color: #ffffff;
+}
 #newBlue {
     background-color: #4870c6;
     color: white;
@@ -456,7 +462,7 @@ footer{
 }
 #yellow {
     background-color: #FFBD59;
-    color: rgb(7, 7, 7);
+    color: rgb(255, 255, 255);
     border: none; 
     font-family: 'DM Sans', sans-serif;     
 }
@@ -471,16 +477,18 @@ footer{
     margin-right: 4px;  //10px;
 }
 
-#sign-out-button
-{
-    // position: relative;
-    // left: 25%;
-    background-color: #FFBD59;
-    color: rgb(255, 255, 255);
-    border: none; 
-    font-family: 'DM Sans', sans-serif; 
+// #sign-out-button
+// {
+//     // position: relative;
+//     // left: 25%;
+//     background-color: #FFBD59;
+//     color: rgb(255, 255, 255);
+//     border: none; 
+//     font-family: 'DM Sans', sans-serif; 
 
-}
+// }
+
+
 /* ~~~~~~~~~~~~~~  End Navbar  ~~~~~~~~~~~~~~~*/
 
 /* ====== Start  Screen Sizes =====*/

@@ -127,7 +127,7 @@ onAuthStateChanged(auth, (user) => {
         // Hide the user's name and photo in the nav bar
 
         // userName.textContent = "Guest";
-        foodExplorer.innerHTML = `<p id="foodExplorer" > Food <br> Explorer </p>`;
+        foodExplorer.innerHTML = `<p id="foodExplorer" > Tasteful </p>`;
 
         // userPhoto.src = "./assets/knife_fork_icon-6a4a4b01.png";
         userPhoto.style.display = "none";

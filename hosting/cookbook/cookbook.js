@@ -265,16 +265,16 @@ onAuthStateChanged(auth, (user) => {
         // Hide the user's name and photo in the nav bar
 
         // userName.textContent = "Guest";
-        foodExplorer.innerHTML = `<p id="foodExplorer" > Food <br> Explorer </p>`;
+        // foodExplorer.innerHTML = `<p id="foodExplorer" > Food <br> Explorer </p>`;
 
         // userPhoto.src = "./assets/knife_fork_icon-6a4a4b01.png";
-        userPhoto.style.display = "none";
+        // userPhoto.style.display = "none";
 
 
         // Hide the sign out button and show the sign in button
         signOutButton.style.display = "none";
         signInButton.style.display = "block";
-        logInButton.style.display = "block";
+        // logInButton.style.display = "block";
         // Hide my recipes button
         recipesButton.style.display = "none";
       

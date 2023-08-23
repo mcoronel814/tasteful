@@ -82,7 +82,7 @@ onAuthStateChanged(auth, (user) => {
         // Update the UI elements
         // Show the user's name and photo in the nav bar
         // userName.textContent = user.displayName;
-        userPhoto.src = user.photoURL;
+        // userPhoto.src = user.photoURL;
         // Show the sign out button and hide the sign in button
         signOutButton.style.display = "block";
         signInButton.style.display = "none";
@@ -96,8 +96,8 @@ onAuthStateChanged(auth, (user) => {
 
         // Update the UI elements
         // Hide the user's name and photo in the nav bar
-        userName.textContent = "Guest";
-        userPhoto.src = "./assets/knife_fork_icon-6a4a4b01.png";
+        // userName.textContent = "Guest";
+        // userPhoto.src = "./assets/knife_fork_icon-6a4a4b01.png";
         // Hide the sign out button and show the sign in button
         signOutButton.style.display = "none";
         signInButton.style.display = "block";
