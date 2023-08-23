@@ -93,8 +93,15 @@ onAuthStateChanged(auth, (user) => {
         //Show the my recipes button
         recipesButton.style.display = "block";
 
-        
+
         foodExplorer.addEventListener("mouseenter", () => { 
+
+
+            signOutButton.style.display = "block";
+
+         });
+
+         userPhoto.addEventListener("mouseenter", () => { 
 
 
             signOutButton.style.display = "block";
