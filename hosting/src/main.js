@@ -119,6 +119,7 @@ onAuthStateChanged(auth, (user) => {
         lightPink.style.marginRight = "25px";
         darkBlue.style.marginRight = "25px";
         signInButton.style.marginRight = "25px";
+        signInButton.style.marginLeft = "25px";
 
         lightBlue.style.width = "195px"
         lightPink.style.width = "195px"
