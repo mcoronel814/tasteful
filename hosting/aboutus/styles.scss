@@ -455,7 +455,7 @@ footer{
     align-items: center;
 }
 #yellow {
-    background-color: #e3f55f;
+    background-color: #FFBD59;
     color: rgb(7, 7, 7);
     border: none; 
     font-family: 'DM Sans', sans-serif;     
@@ -469,6 +469,17 @@ footer{
     align-items: end;
     margin-left: 4px;  //10px;
     margin-right: 4px;  //10px;
+}
+
+#sign-out-button
+{
+    // position: relative;
+    // left: 25%;
+    background-color: #FFBD59;
+    color: rgb(255, 255, 255);
+    border: none; 
+    font-family: 'DM Sans', sans-serif; 
+
 }
 /* ~~~~~~~~~~~~~~  End Navbar  ~~~~~~~~~~~~~~~*/
 
