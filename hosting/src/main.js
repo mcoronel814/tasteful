@@ -103,7 +103,8 @@ onAuthStateChanged(auth, (user) => {
         // userName.textContent = "Guest";
         foodExplorer.innerHTML = `<p id="foodExplorer" > Food <br> Explorer </p>`;
 
-        userPhoto.src = "./assets/knife_fork_icon-6a4a4b01.png";
+        // userPhoto.src = "./assets/knife_fork_icon-6a4a4b01.png";
+        userPhoto.style.display = "none";
 
 
         // Hide the sign out button and show the sign in button
