@@ -526,12 +526,13 @@ footer{
     align-items: center;
 }
  // scss-docs-end collapse-classes
-#yellow {
-    background-color: #e3f55f;
-    color: rgb(7, 7, 7);
+ #yellow {
+    background-color: #FFBD59;
+    color: rgb(255, 255, 255);
     border: none; 
     font-family: 'DM Sans', sans-serif;     
 }
+
 #sign-in-button,  #sign-out-button{
     background-color: #fffffe;
     color: rgb(7, 7, 7);
