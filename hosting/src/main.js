@@ -44,7 +44,7 @@ const signOutButton = document.getElementById("sign-out-button");
 const userName = document.getElementById("user-name");
 const userPhoto = document.getElementById("user-photo");
 const recipesButton = document.getElementById("yellow"); 
-
+const foodExplorer = document.getElementById("foodExplorer"); 
 
 // Create an instance of the GoogleAuthProvider class
 const provider = new GoogleAuthProvider();
@@ -84,6 +84,7 @@ onAuthStateChanged(auth, (user) => {
         // Update the UI elements
         // Show the user's name and photo in the nav bar
         // userName.textContent = user.displayName;
+        foodExplorer.innerHTML = `Hi" <br> ${user.displayName}`;
         userPhoto.src = user.photoURL;
         // Show the sign out button and hide the sign in button
         signOutButton.style.display = "block";
