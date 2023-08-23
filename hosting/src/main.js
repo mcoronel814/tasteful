@@ -98,8 +98,12 @@ onAuthStateChanged(auth, (user) => {
 
         // Update the UI elements
         // Hide the user's name and photo in the nav bar
-        userName.textContent = "Guest";
-        userPhoto.src = "./assets/knife_fork_icon-6a4a4b01.png";
+
+        // userName.textContent = "Guest";
+
+        // userPhoto.src = "./assets/knife_fork_icon-6a4a4b01.png";
+
+
         // Hide the sign out button and show the sign in button
         signOutButton.style.display = "none";
         signInButton.style.display = "block";
