@@ -114,7 +114,7 @@ onAuthStateChanged(auth, (user) => {
         logInButton.style.display = "block";
         // Hide my recipes button
         recipesButton.style.display = "none";
-        signInButton.style.marginRight = "20px"
+        signInButton.style.marginRight = "-50px"
     }
 });
 
