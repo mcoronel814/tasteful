@@ -12,4 +12,4 @@ April Gilmore (Full Stack)
 
 Peter Itodo (Full Stack)
 
-Kanchana Iyer (Full Stack)
+Kanchana Iyer (Frontend)
